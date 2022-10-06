@@ -1,0 +1,12 @@
+package datavspherevirtualmachine
+
+
+type DataVsphereVirtualMachineVapp struct {
+	// A map of customizable vApp properties and their values.
+	//
+	// Allows customization of VMs cloned from OVF templates which have customizable vApp properties.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/virtual_machine#properties DataVsphereVirtualMachine#properties}
+	Properties *map[string]*string `field:"optional" json:"properties" yaml:"properties"`
+}
+
