@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datastorecluster
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DatastoreCluster) validateOverrideLogicalIdParameters(newLogi
 }
 
 func validateDatastoreCluster_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatastoreCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatastoreCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package havmoverride
 
@@ -54,6 +53,14 @@ func (h *jsiiProxy_HaVmOverride) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func validateHaVmOverride_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateHaVmOverride_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHaVmOverride_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

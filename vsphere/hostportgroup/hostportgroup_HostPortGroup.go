@@ -2,10 +2,10 @@ package hostportgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/hostportgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1044,6 +1044,44 @@ func HostPortGroup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.hostPortGroup.HostPortGroup",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HostPortGroup_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHostPortGroup_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.hostPortGroup.HostPortGroup",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HostPortGroup_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHostPortGroup_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.hostPortGroup.HostPortGroup",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

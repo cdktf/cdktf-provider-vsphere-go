@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package computeclustervmhostrule
 
@@ -54,6 +53,14 @@ func (c *jsiiProxy_ComputeClusterVmHostRule) validateOverrideLogicalIdParameters
 }
 
 func validateComputeClusterVmHostRule_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeClusterVmHostRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeClusterVmHostRule_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package virtualmachinesnapshot
 
@@ -54,6 +53,14 @@ func (v *jsiiProxy_VirtualMachineSnapshot) validateOverrideLogicalIdParameters(n
 }
 
 func validateVirtualMachineSnapshot_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualMachineSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualMachineSnapshot_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

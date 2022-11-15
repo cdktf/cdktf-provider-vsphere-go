@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datavspherecontentlibraryitem
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataVsphereContentLibraryItem) validateOverrideLogicalIdParam
 }
 
 func validateDataVsphereContentLibraryItem_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereContentLibraryItem_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereContentLibraryItem_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

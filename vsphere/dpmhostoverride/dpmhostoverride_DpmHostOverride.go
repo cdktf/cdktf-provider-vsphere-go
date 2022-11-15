@@ -2,10 +2,10 @@ package dpmhostoverride
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/dpmhostoverride/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -557,6 +557,44 @@ func DpmHostOverride_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DpmHostOverride_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDpmHostOverride_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DpmHostOverride_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDpmHostOverride_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

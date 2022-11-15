@@ -2,10 +2,10 @@ package vmstoragepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmstoragepolicy/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/vmstoragepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -511,6 +511,44 @@ func VmStoragePolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VmStoragePolicy_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVmStoragePolicy_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VmStoragePolicy_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVmStoragePolicy_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

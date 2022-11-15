@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datavspherecustomattribute
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataVsphereCustomAttribute) validateOverrideLogicalIdParamete
 }
 
 func validateDataVsphereCustomAttribute_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereCustomAttribute_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereCustomAttribute_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

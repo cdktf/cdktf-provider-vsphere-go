@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package contentlibrary
 
@@ -62,6 +61,14 @@ func (c *jsiiProxy_ContentLibrary) validatePutSubscriptionParameters(value *Cont
 }
 
 func validateContentLibrary_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateContentLibrary_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContentLibrary_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

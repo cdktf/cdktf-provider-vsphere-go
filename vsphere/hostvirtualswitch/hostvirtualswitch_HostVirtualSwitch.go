@@ -2,10 +2,10 @@ package hostvirtualswitch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostvirtualswitch/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/hostvirtualswitch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1149,6 +1149,44 @@ func HostVirtualSwitch_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HostVirtualSwitch_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHostVirtualSwitch_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HostVirtualSwitch_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHostVirtualSwitch_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

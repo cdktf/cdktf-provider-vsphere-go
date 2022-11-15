@@ -2,10 +2,10 @@ package datavspherevirtualmachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/datavspherevirtualmachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -2242,6 +2242,44 @@ func DataVsphereVirtualMachine_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereVirtualMachine_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereVirtualMachine_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereVirtualMachine_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereVirtualMachine_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

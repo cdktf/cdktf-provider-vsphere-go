@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package role
 
@@ -54,6 +53,14 @@ func (r *jsiiProxy_Role) validateOverrideLogicalIdParameters(newLogicalId *strin
 }
 
 func validateRole_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRole_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package hostportgroup
 
@@ -54,6 +53,14 @@ func (h *jsiiProxy_HostPortGroup) validateOverrideLogicalIdParameters(newLogical
 }
 
 func validateHostPortGroup_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateHostPortGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHostPortGroup_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

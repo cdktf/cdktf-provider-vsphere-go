@@ -2,10 +2,10 @@ package datavsphererole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphererole/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/datavsphererole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -508,6 +508,44 @@ func DataVsphereRole_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereRole_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereRole_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereRole_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereRole_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

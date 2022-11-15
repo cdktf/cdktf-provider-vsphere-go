@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package nasdatastore
 
@@ -54,6 +53,14 @@ func (n *jsiiProxy_NasDatastore) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func validateNasDatastore_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateNasDatastore_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNasDatastore_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

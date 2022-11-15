@@ -2,10 +2,10 @@ package datavsphereresourcepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereresourcepool/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/datavsphereresourcepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -439,6 +439,44 @@ func DataVsphereResourcePool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereResourcePool_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereResourcePool_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereResourcePool_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereResourcePool_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datavspherecomputeclusterhostgroup
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataVsphereComputeClusterHostGroup) validateOverrideLogicalId
 }
 
 func validateDataVsphereComputeClusterHostGroup_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereComputeClusterHostGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereComputeClusterHostGroup_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

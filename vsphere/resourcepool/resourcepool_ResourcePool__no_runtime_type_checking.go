@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package resourcepool
 
@@ -54,6 +53,14 @@ func (r *jsiiProxy_ResourcePool) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func validateResourcePool_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateResourcePool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateResourcePool_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package computeclustervmantiaffinityrule
 
@@ -54,6 +53,14 @@ func (c *jsiiProxy_ComputeClusterVmAntiAffinityRule) validateOverrideLogicalIdPa
 }
 
 func validateComputeClusterVmAntiAffinityRule_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeClusterVmAntiAffinityRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeClusterVmAntiAffinityRule_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datavsphereresourcepool
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataVsphereResourcePool) validateOverrideLogicalIdParameters(
 }
 
 func validateDataVsphereResourcePool_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereResourcePool_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereResourcePool_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

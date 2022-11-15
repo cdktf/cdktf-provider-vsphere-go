@@ -2,10 +2,10 @@ package computeclustervmantiaffinityrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/computeclustervmantiaffinityrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -591,6 +591,44 @@ func ComputeClusterVmAntiAffinityRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ComputeClusterVmAntiAffinityRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateComputeClusterVmAntiAffinityRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ComputeClusterVmAntiAffinityRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateComputeClusterVmAntiAffinityRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

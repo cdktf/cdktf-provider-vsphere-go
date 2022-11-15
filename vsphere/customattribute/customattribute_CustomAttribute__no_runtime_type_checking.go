@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package customattribute
 
@@ -54,6 +53,14 @@ func (c *jsiiProxy_CustomAttribute) validateOverrideLogicalIdParameters(newLogic
 }
 
 func validateCustomAttribute_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateCustomAttribute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCustomAttribute_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package drsvmoverride
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DrsVmOverride) validateOverrideLogicalIdParameters(newLogical
 }
 
 func validateDrsVmOverride_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDrsVmOverride_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDrsVmOverride_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

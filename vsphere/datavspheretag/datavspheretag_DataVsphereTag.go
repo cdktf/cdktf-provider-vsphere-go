@@ -2,10 +2,10 @@ package datavspheretag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretag/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/datavspheretag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -448,6 +448,44 @@ func DataVsphereTag_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereTag_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereTag_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereTag_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereTag_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

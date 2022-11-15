@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datavspherehostpcidevice
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataVsphereHostPciDevice) validateOverrideLogicalIdParameters
 }
 
 func validateDataVsphereHostPciDevice_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereHostPciDevice_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereHostPciDevice_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

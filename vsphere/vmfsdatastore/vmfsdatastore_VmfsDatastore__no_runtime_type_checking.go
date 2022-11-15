@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package vmfsdatastore
 
@@ -54,6 +53,14 @@ func (v *jsiiProxy_VmfsDatastore) validateOverrideLogicalIdParameters(newLogical
 }
 
 func validateVmfsDatastore_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateVmfsDatastore_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVmfsDatastore_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

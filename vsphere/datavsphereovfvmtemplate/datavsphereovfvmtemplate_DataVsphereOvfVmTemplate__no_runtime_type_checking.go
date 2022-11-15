@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datavsphereovfvmtemplate
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataVsphereOvfVmTemplate) validateOverrideLogicalIdParameters
 }
 
 func validateDataVsphereOvfVmTemplate_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereOvfVmTemplate_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereOvfVmTemplate_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

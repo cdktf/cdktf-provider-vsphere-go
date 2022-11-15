@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package contentlibraryitem
 
@@ -54,6 +53,14 @@ func (c *jsiiProxy_ContentLibraryItem) validateOverrideLogicalIdParameters(newLo
 }
 
 func validateContentLibraryItem_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateContentLibraryItem_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContentLibraryItem_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

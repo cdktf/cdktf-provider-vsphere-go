@@ -2,10 +2,10 @@ package datavspherecustomattribute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecustomattribute/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/datavspherecustomattribute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -414,6 +414,44 @@ func DataVsphereCustomAttribute_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereCustomAttribute_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereCustomAttribute_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereCustomAttribute_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereCustomAttribute_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

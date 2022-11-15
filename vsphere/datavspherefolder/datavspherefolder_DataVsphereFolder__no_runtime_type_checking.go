@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datavspherefolder
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataVsphereFolder) validateOverrideLogicalIdParameters(newLog
 }
 
 func validateDataVsphereFolder_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereFolder_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereFolder_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

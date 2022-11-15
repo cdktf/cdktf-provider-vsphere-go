@@ -2,10 +2,10 @@ package datavspherecontentlibraryitem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecontentlibraryitem/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/datavspherecontentlibraryitem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -471,6 +471,44 @@ func DataVsphereContentLibraryItem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereContentLibraryItem_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereContentLibraryItem_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVsphereContentLibraryItem_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVsphereContentLibraryItem_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

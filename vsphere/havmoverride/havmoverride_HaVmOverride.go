@@ -2,10 +2,10 @@ package havmoverride
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/havmoverride/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/havmoverride/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -942,6 +942,44 @@ func HaVmOverride_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.haVmOverride.HaVmOverride",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HaVmOverride_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHaVmOverride_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.haVmOverride.HaVmOverride",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func HaVmOverride_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateHaVmOverride_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.haVmOverride.HaVmOverride",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

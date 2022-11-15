@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datavspherevirtualmachine
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DataVsphereVirtualMachine) validatePutVappParameters(value *D
 }
 
 func validateDataVsphereVirtualMachine_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereVirtualMachine_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereVirtualMachine_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

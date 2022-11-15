@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dpmhostoverride
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DpmHostOverride) validateOverrideLogicalIdParameters(newLogic
 }
 
 func validateDpmHostOverride_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDpmHostOverride_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDpmHostOverride_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

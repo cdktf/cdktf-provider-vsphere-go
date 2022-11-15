@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package tagcategory
 
@@ -54,6 +53,14 @@ func (t *jsiiProxy_TagCategory) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func validateTagCategory_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateTagCategory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTagCategory_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

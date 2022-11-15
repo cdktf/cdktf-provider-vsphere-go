@@ -2,10 +2,10 @@ package virtualmachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/virtualmachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -3027,6 +3027,44 @@ func VirtualMachine_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.virtualMachine.VirtualMachine",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VirtualMachine_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVirtualMachine_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.virtualMachine.VirtualMachine",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VirtualMachine_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVirtualMachine_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.virtualMachine.VirtualMachine",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

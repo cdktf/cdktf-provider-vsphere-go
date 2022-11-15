@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package hostvirtualswitch
 
@@ -54,6 +53,14 @@ func (h *jsiiProxy_HostVirtualSwitch) validateOverrideLogicalIdParameters(newLog
 }
 
 func validateHostVirtualSwitch_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateHostVirtualSwitch_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHostVirtualSwitch_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -2,10 +2,10 @@ package nasdatastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/nasdatastore/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/nasdatastore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -888,6 +888,44 @@ func NasDatastore_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.nasDatastore.NasDatastore",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NasDatastore_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNasDatastore_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.nasDatastore.NasDatastore",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NasDatastore_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNasDatastore_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.nasDatastore.NasDatastore",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

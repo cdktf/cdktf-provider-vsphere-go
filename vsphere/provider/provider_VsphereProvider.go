@@ -2,10 +2,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/provider/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v2/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -668,6 +668,44 @@ func VsphereProvider_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vsphere.provider.VsphereProvider",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VsphereProvider_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVsphereProvider_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.provider.VsphereProvider",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VsphereProvider_IsTerraformProvider(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVsphereProvider_IsTerraformProviderParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.provider.VsphereProvider",
+		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
 	)

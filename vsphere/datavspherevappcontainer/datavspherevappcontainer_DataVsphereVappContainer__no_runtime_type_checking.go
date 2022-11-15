@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datavspherevappcontainer
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataVsphereVappContainer) validateOverrideLogicalIdParameters
 }
 
 func validateDataVsphereVappContainer_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereVappContainer_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVsphereVappContainer_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
