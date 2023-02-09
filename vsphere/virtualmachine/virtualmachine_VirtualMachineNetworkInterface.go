@@ -6,7 +6,7 @@ type VirtualMachineNetworkInterface struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#network_id VirtualMachine#network_id}
 	NetworkId *string `field:"required" json:"networkId" yaml:"networkId"`
-	// The controller type. Can be one of e1000, e1000e, or vmxnet3.
+	// The controller type. Can be one of e1000, e1000e, vmxnet3, or vrdma.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#adapter_type VirtualMachine#adapter_type}
 	AdapterType *string `field:"optional" json:"adapterType" yaml:"adapterType"`

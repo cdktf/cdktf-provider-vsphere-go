@@ -300,7 +300,43 @@ func (j *jsiiProxy_ComputeCluster) validateSetTagsParameters(val *[]*string) err
 	return nil
 }
 
+func (j *jsiiProxy_ComputeCluster) validateSetVsanCompressionEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeCluster) validateSetVsanDedupEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeCluster) validateSetVsanDitEncryptionEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeCluster) validateSetVsanDitRekeyIntervalParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeCluster) validateSetVsanEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeCluster) validateSetVsanNetworkDiagnosticModeEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeCluster) validateSetVsanPerformanceEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeCluster) validateSetVsanRemoteDatastoreIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeCluster) validateSetVsanUnmapEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeCluster) validateSetVsanVerboseModeEnabledParameters(val interface{}) error {
 	return nil
 }
 

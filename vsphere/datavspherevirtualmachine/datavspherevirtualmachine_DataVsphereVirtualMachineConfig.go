@@ -95,6 +95,10 @@ type DataVsphereVirtualMachineConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/virtual_machine#extra_config DataVsphereVirtualMachine#extra_config}
 	ExtraConfig *map[string]*string `field:"optional" json:"extraConfig" yaml:"extraConfig"`
+	// Allow the virtual machine to be rebooted when a change to `extra_config` occurs.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/virtual_machine#extra_config_reboot_required DataVsphereVirtualMachine#extra_config_reboot_required}
+	ExtraConfigRebootRequired interface{} `field:"optional" json:"extraConfigRebootRequired" yaml:"extraConfigRebootRequired"`
 	// The firmware interface to use on the virtual machine. Can be one of bios or efi.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/virtual_machine#firmware DataVsphereVirtualMachine#firmware}

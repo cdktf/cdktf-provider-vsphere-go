@@ -26,7 +26,7 @@ type DataVsphereDatacenterConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name of the datacenter.
 	//
-	// This can be a name or path.	Can be omitted if there is only one datacenter in your inventory.
+	// This can be a name or path. Can be omitted if there is only one datacenter in your inventory.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/datacenter#name DataVsphereDatacenter#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`

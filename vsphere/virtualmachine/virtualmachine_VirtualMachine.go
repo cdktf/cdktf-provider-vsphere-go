@@ -29,8 +29,8 @@ type VirtualMachine interface {
 	BootRetryEnabledInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	Cdrom() VirtualMachineCdromOutputReference
-	CdromInput() *VirtualMachineCdrom
+	Cdrom() VirtualMachineCdromList
+	CdromInput() interface{}
 	ChangeVersion() *string
 	Clone() VirtualMachineCloneOutputReference
 	CloneInput() *VirtualMachineClone
@@ -99,6 +99,9 @@ type VirtualMachine interface {
 	ExtraConfig() *map[string]*string
 	SetExtraConfig(val *map[string]*string)
 	ExtraConfigInput() *map[string]*string
+	ExtraConfigRebootRequired() interface{}
+	SetExtraConfigRebootRequired(val interface{})
+	ExtraConfigRebootRequiredInput() interface{}
 	Firmware() *string
 	SetFirmware(val *string)
 	FirmwareInput() *string
@@ -310,7 +313,7 @@ type VirtualMachine interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCdrom(value *VirtualMachineCdrom)
+	PutCdrom(value interface{})
 	PutClone(value *VirtualMachineClone)
 	PutDisk(value interface{})
 	PutNetworkInterface(value interface{})
@@ -340,6 +343,7 @@ type VirtualMachine interface {
 	ResetEnableLogging()
 	ResetEptRviMode()
 	ResetExtraConfig()
+	ResetExtraConfigRebootRequired()
 	ResetFirmware()
 	ResetFolder()
 	ResetForcePowerOff()
@@ -516,8 +520,8 @@ func (j *jsiiProxy_VirtualMachine) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_VirtualMachine) Cdrom() VirtualMachineCdromOutputReference {
-	var returns VirtualMachineCdromOutputReference
+func (j *jsiiProxy_VirtualMachine) Cdrom() VirtualMachineCdromList {
+	var returns VirtualMachineCdromList
 	_jsii_.Get(
 		j,
 		"cdrom",
@@ -526,8 +530,8 @@ func (j *jsiiProxy_VirtualMachine) Cdrom() VirtualMachineCdromOutputReference {
 	return returns
 }
 
-func (j *jsiiProxy_VirtualMachine) CdromInput() *VirtualMachineCdrom {
-	var returns *VirtualMachineCdrom
+func (j *jsiiProxy_VirtualMachine) CdromInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"cdromInput",
@@ -951,6 +955,26 @@ func (j *jsiiProxy_VirtualMachine) ExtraConfigInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"extraConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachine) ExtraConfigRebootRequired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extraConfigRebootRequired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachine) ExtraConfigRebootRequiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extraConfigRebootRequiredInput",
 		&returns,
 	)
 	return returns
@@ -2444,6 +2468,17 @@ func (j *jsiiProxy_VirtualMachine)SetExtraConfig(val *map[string]*string) {
 	)
 }
 
+func (j *jsiiProxy_VirtualMachine)SetExtraConfigRebootRequired(val interface{}) {
+	if err := j.validateSetExtraConfigRebootRequiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extraConfigRebootRequired",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VirtualMachine)SetFirmware(val *string) {
 	if err := j.validateSetFirmwareParameters(val); err != nil {
 		panic(err)
@@ -3265,7 +3300,7 @@ func (v *jsiiProxy_VirtualMachine) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (v *jsiiProxy_VirtualMachine) PutCdrom(value *VirtualMachineCdrom) {
+func (v *jsiiProxy_VirtualMachine) PutCdrom(value interface{}) {
 	if err := v.validatePutCdromParameters(value); err != nil {
 		panic(err)
 	}
@@ -3519,6 +3554,14 @@ func (v *jsiiProxy_VirtualMachine) ResetExtraConfig() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetExtraConfig",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualMachine) ResetExtraConfigRebootRequired() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetExtraConfigRebootRequired",
 		nil, // no parameters
 	)
 }

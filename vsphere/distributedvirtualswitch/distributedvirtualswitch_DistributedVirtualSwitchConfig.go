@@ -350,7 +350,9 @@ type DistributedVirtualSwitchConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/distributed_virtual_switch#vdp_share_level DistributedVirtualSwitch#vdp_share_level}
 	VdpShareLevel *string `field:"optional" json:"vdpShareLevel" yaml:"vdpShareLevel"`
-	// The version of this virtual switch. Allowed versions are 7.0.3, 7.0.0, 6.6.0, 6.5.0, 6.0.0, 5.5.0, 5.1.0, and 5.0.0.
+	// The version of this virtual switch.
+	//
+	// Allowed versions are 8.0.0, 7.0.3, 7.0.2, 7.0.0, 6.6.0, 6.5.0, 6.0.0, 5.5.0, 5.1.0, and 5.0.0.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/distributed_virtual_switch#version DistributedVirtualSwitch#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`

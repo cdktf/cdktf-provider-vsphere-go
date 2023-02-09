@@ -34,8 +34,8 @@ type VirtualMachineCdromOutputReference interface {
 	DeviceAddress() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *VirtualMachineCdrom
-	SetInternalValue(val *VirtualMachineCdrom)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Key() *float64
 	Path() *string
 	SetPath(val *string)
@@ -180,8 +180,8 @@ func (j *jsiiProxy_VirtualMachineCdromOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VirtualMachineCdromOutputReference) InternalValue() *VirtualMachineCdrom {
-	var returns *VirtualMachineCdrom
+func (j *jsiiProxy_VirtualMachineCdromOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -241,29 +241,29 @@ func (j *jsiiProxy_VirtualMachineCdromOutputReference) TerraformResource() cdktf
 }
 
 
-func NewVirtualMachineCdromOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VirtualMachineCdromOutputReference {
+func NewVirtualMachineCdromOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) VirtualMachineCdromOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewVirtualMachineCdromOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewVirtualMachineCdromOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_VirtualMachineCdromOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewVirtualMachineCdromOutputReference_Override(v VirtualMachineCdromOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVirtualMachineCdromOutputReference_Override(v VirtualMachineCdromOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)
 }
@@ -312,7 +312,7 @@ func (j *jsiiProxy_VirtualMachineCdromOutputReference)SetDatastoreId(val *string
 	)
 }
 
-func (j *jsiiProxy_VirtualMachineCdromOutputReference)SetInternalValue(val *VirtualMachineCdrom) {
+func (j *jsiiProxy_VirtualMachineCdromOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

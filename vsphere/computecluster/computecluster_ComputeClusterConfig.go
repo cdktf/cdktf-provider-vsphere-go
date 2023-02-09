@@ -286,13 +286,49 @@ type ComputeClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#tags ComputeCluster#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
+	// Whether the vSAN compression service is enabled for the cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_compression_enabled ComputeCluster#vsan_compression_enabled}
+	VsanCompressionEnabled interface{} `field:"optional" json:"vsanCompressionEnabled" yaml:"vsanCompressionEnabled"`
+	// Whether the vSAN deduplication service is enabled for the cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_dedup_enabled ComputeCluster#vsan_dedup_enabled}
+	VsanDedupEnabled interface{} `field:"optional" json:"vsanDedupEnabled" yaml:"vsanDedupEnabled"`
 	// vsan_disk_group block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_disk_group ComputeCluster#vsan_disk_group}
 	VsanDiskGroup interface{} `field:"optional" json:"vsanDiskGroup" yaml:"vsanDiskGroup"`
-	// Whether the VSAN service is enabled for the cluster.
+	// Whether the vSAN data-in-transit encryption is enabled for the cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_dit_encryption_enabled ComputeCluster#vsan_dit_encryption_enabled}
+	VsanDitEncryptionEnabled interface{} `field:"optional" json:"vsanDitEncryptionEnabled" yaml:"vsanDitEncryptionEnabled"`
+	// When vsan_dit_encryption_enabled is enabled, sets the rekey interval of data-in-transit encryption (in minutes).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_dit_rekey_interval ComputeCluster#vsan_dit_rekey_interval}
+	VsanDitRekeyInterval *float64 `field:"optional" json:"vsanDitRekeyInterval" yaml:"vsanDitRekeyInterval"`
+	// Whether the vSAN service is enabled for the cluster.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_enabled ComputeCluster#vsan_enabled}
 	VsanEnabled interface{} `field:"optional" json:"vsanEnabled" yaml:"vsanEnabled"`
+	// Whether the vSAN network diagnostic mode is enabled for the cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_network_diagnostic_mode_enabled ComputeCluster#vsan_network_diagnostic_mode_enabled}
+	VsanNetworkDiagnosticModeEnabled interface{} `field:"optional" json:"vsanNetworkDiagnosticModeEnabled" yaml:"vsanNetworkDiagnosticModeEnabled"`
+	// Whether the vSAN performance service is enabled for the cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_performance_enabled ComputeCluster#vsan_performance_enabled}
+	VsanPerformanceEnabled interface{} `field:"optional" json:"vsanPerformanceEnabled" yaml:"vsanPerformanceEnabled"`
+	// The managed object IDs of the vSAN datastore to be mounted on the cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_remote_datastore_ids ComputeCluster#vsan_remote_datastore_ids}
+	VsanRemoteDatastoreIds *[]*string `field:"optional" json:"vsanRemoteDatastoreIds" yaml:"vsanRemoteDatastoreIds"`
+	// Whether the vSAN unmap service is enabled for the cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_unmap_enabled ComputeCluster#vsan_unmap_enabled}
+	VsanUnmapEnabled interface{} `field:"optional" json:"vsanUnmapEnabled" yaml:"vsanUnmapEnabled"`
+	// Whether the vSAN verbose mode is enabled for the cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_verbose_mode_enabled ComputeCluster#vsan_verbose_mode_enabled}
+	VsanVerboseModeEnabled interface{} `field:"optional" json:"vsanVerboseModeEnabled" yaml:"vsanVerboseModeEnabled"`
 }
 

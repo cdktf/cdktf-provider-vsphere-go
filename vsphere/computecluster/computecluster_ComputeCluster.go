@@ -224,11 +224,38 @@ type ComputeCluster interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VsanCompressionEnabled() interface{}
+	SetVsanCompressionEnabled(val interface{})
+	VsanCompressionEnabledInput() interface{}
+	VsanDedupEnabled() interface{}
+	SetVsanDedupEnabled(val interface{})
+	VsanDedupEnabledInput() interface{}
 	VsanDiskGroup() ComputeClusterVsanDiskGroupList
 	VsanDiskGroupInput() interface{}
+	VsanDitEncryptionEnabled() interface{}
+	SetVsanDitEncryptionEnabled(val interface{})
+	VsanDitEncryptionEnabledInput() interface{}
+	VsanDitRekeyInterval() *float64
+	SetVsanDitRekeyInterval(val *float64)
+	VsanDitRekeyIntervalInput() *float64
 	VsanEnabled() interface{}
 	SetVsanEnabled(val interface{})
 	VsanEnabledInput() interface{}
+	VsanNetworkDiagnosticModeEnabled() interface{}
+	SetVsanNetworkDiagnosticModeEnabled(val interface{})
+	VsanNetworkDiagnosticModeEnabledInput() interface{}
+	VsanPerformanceEnabled() interface{}
+	SetVsanPerformanceEnabled(val interface{})
+	VsanPerformanceEnabledInput() interface{}
+	VsanRemoteDatastoreIds() *[]*string
+	SetVsanRemoteDatastoreIds(val *[]*string)
+	VsanRemoteDatastoreIdsInput() *[]*string
+	VsanUnmapEnabled() interface{}
+	SetVsanUnmapEnabled(val interface{})
+	VsanUnmapEnabledInput() interface{}
+	VsanVerboseModeEnabled() interface{}
+	SetVsanVerboseModeEnabled(val interface{})
+	VsanVerboseModeEnabledInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -311,8 +338,17 @@ type ComputeCluster interface {
 	ResetProactiveHaProviderIds()
 	ResetProactiveHaSevereRemediation()
 	ResetTags()
+	ResetVsanCompressionEnabled()
+	ResetVsanDedupEnabled()
 	ResetVsanDiskGroup()
+	ResetVsanDitEncryptionEnabled()
+	ResetVsanDitRekeyInterval()
 	ResetVsanEnabled()
+	ResetVsanNetworkDiagnosticModeEnabled()
+	ResetVsanPerformanceEnabled()
+	ResetVsanRemoteDatastoreIds()
+	ResetVsanUnmapEnabled()
+	ResetVsanVerboseModeEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -1598,6 +1634,46 @@ func (j *jsiiProxy_ComputeCluster) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeCluster) VsanCompressionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanCompressionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanCompressionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanCompressionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanDedupEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanDedupEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanDedupEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanDedupEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeCluster) VsanDiskGroup() ComputeClusterVsanDiskGroupList {
 	var returns ComputeClusterVsanDiskGroupList
 	_jsii_.Get(
@@ -1618,6 +1694,46 @@ func (j *jsiiProxy_ComputeCluster) VsanDiskGroupInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeCluster) VsanDitEncryptionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanDitEncryptionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanDitEncryptionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanDitEncryptionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanDitRekeyInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"vsanDitRekeyInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanDitRekeyIntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"vsanDitRekeyIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeCluster) VsanEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1633,6 +1749,106 @@ func (j *jsiiProxy_ComputeCluster) VsanEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"vsanEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanNetworkDiagnosticModeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanNetworkDiagnosticModeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanNetworkDiagnosticModeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanNetworkDiagnosticModeEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanPerformanceEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanPerformanceEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanPerformanceEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanPerformanceEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanRemoteDatastoreIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vsanRemoteDatastoreIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanRemoteDatastoreIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"vsanRemoteDatastoreIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanUnmapEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanUnmapEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanUnmapEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanUnmapEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanVerboseModeEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanVerboseModeEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanVerboseModeEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanVerboseModeEnabledInput",
 		&returns,
 	)
 	return returns
@@ -2338,6 +2554,50 @@ func (j *jsiiProxy_ComputeCluster)SetTags(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_ComputeCluster)SetVsanCompressionEnabled(val interface{}) {
+	if err := j.validateSetVsanCompressionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vsanCompressionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeCluster)SetVsanDedupEnabled(val interface{}) {
+	if err := j.validateSetVsanDedupEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vsanDedupEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeCluster)SetVsanDitEncryptionEnabled(val interface{}) {
+	if err := j.validateSetVsanDitEncryptionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vsanDitEncryptionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeCluster)SetVsanDitRekeyInterval(val *float64) {
+	if err := j.validateSetVsanDitRekeyIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vsanDitRekeyInterval",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeCluster)SetVsanEnabled(val interface{}) {
 	if err := j.validateSetVsanEnabledParameters(val); err != nil {
 		panic(err)
@@ -2345,6 +2605,61 @@ func (j *jsiiProxy_ComputeCluster)SetVsanEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"vsanEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeCluster)SetVsanNetworkDiagnosticModeEnabled(val interface{}) {
+	if err := j.validateSetVsanNetworkDiagnosticModeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vsanNetworkDiagnosticModeEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeCluster)SetVsanPerformanceEnabled(val interface{}) {
+	if err := j.validateSetVsanPerformanceEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vsanPerformanceEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeCluster)SetVsanRemoteDatastoreIds(val *[]*string) {
+	if err := j.validateSetVsanRemoteDatastoreIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vsanRemoteDatastoreIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeCluster)SetVsanUnmapEnabled(val interface{}) {
+	if err := j.validateSetVsanUnmapEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vsanUnmapEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeCluster)SetVsanVerboseModeEnabled(val interface{}) {
+	if err := j.validateSetVsanVerboseModeEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vsanVerboseModeEnabled",
 		val,
 	)
 }
@@ -3058,6 +3373,22 @@ func (c *jsiiProxy_ComputeCluster) ResetTags() {
 	)
 }
 
+func (c *jsiiProxy_ComputeCluster) ResetVsanCompressionEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanCompressionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) ResetVsanDedupEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanDedupEnabled",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeCluster) ResetVsanDiskGroup() {
 	_jsii_.InvokeVoid(
 		c,
@@ -3066,10 +3397,66 @@ func (c *jsiiProxy_ComputeCluster) ResetVsanDiskGroup() {
 	)
 }
 
+func (c *jsiiProxy_ComputeCluster) ResetVsanDitEncryptionEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanDitEncryptionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) ResetVsanDitRekeyInterval() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanDitRekeyInterval",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeCluster) ResetVsanEnabled() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetVsanEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) ResetVsanNetworkDiagnosticModeEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanNetworkDiagnosticModeEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) ResetVsanPerformanceEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanPerformanceEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) ResetVsanRemoteDatastoreIds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanRemoteDatastoreIds",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) ResetVsanUnmapEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanUnmapEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) ResetVsanVerboseModeEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanVerboseModeEnabled",
 		nil, // no parameters
 	)
 }

@@ -67,6 +67,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "eptRviModeInput", GoGetter: "EptRviModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "extraConfig", GoGetter: "ExtraConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "extraConfigInput", GoGetter: "ExtraConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "extraConfigRebootRequired", GoGetter: "ExtraConfigRebootRequired"},
+			_jsii_.MemberProperty{JsiiProperty: "extraConfigRebootRequiredInput", GoGetter: "ExtraConfigRebootRequiredInput"},
 			_jsii_.MemberProperty{JsiiProperty: "firmware", GoGetter: "Firmware"},
 			_jsii_.MemberProperty{JsiiProperty: "firmwareInput", GoGetter: "FirmwareInput"},
 			_jsii_.MemberProperty{JsiiProperty: "folder", GoGetter: "Folder"},
@@ -175,6 +177,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableLogging", GoMethod: "ResetEnableLogging"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEptRviMode", GoMethod: "ResetEptRviMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExtraConfig", GoMethod: "ResetExtraConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExtraConfigRebootRequired", GoMethod: "ResetExtraConfigRebootRequired"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFirmware", GoMethod: "ResetFirmware"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFolder", GoMethod: "ResetFolder"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForcePowerOff", GoMethod: "ResetForcePowerOff"},
@@ -291,6 +294,27 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom",
 		reflect.TypeOf((*VirtualMachineCdrom)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList",
+		reflect.TypeOf((*VirtualMachineCdromList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VirtualMachineCdromList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference",

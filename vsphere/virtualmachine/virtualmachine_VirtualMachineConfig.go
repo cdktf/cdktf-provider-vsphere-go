@@ -50,7 +50,7 @@ type VirtualMachineConfig struct {
 	// cdrom block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#cdrom VirtualMachine#cdrom}
-	Cdrom *VirtualMachineCdrom `field:"optional" json:"cdrom" yaml:"cdrom"`
+	Cdrom interface{} `field:"optional" json:"cdrom" yaml:"cdrom"`
 	// clone block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#clone VirtualMachine#clone}
@@ -127,6 +127,10 @@ type VirtualMachineConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#extra_config VirtualMachine#extra_config}
 	ExtraConfig *map[string]*string `field:"optional" json:"extraConfig" yaml:"extraConfig"`
+	// Allow the virtual machine to be rebooted when a change to `extra_config` occurs.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#extra_config_reboot_required VirtualMachine#extra_config_reboot_required}
+	ExtraConfigRebootRequired interface{} `field:"optional" json:"extraConfigRebootRequired" yaml:"extraConfigRebootRequired"`
 	// The firmware interface to use on the virtual machine. Can be one of bios or efi.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#firmware VirtualMachine#firmware}

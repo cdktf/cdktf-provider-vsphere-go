@@ -52,7 +52,7 @@ func (v *jsiiProxy_VirtualMachine) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachine) validatePutCdromParameters(value *VirtualMachineCdrom) error {
+func (v *jsiiProxy_VirtualMachine) validatePutCdromParameters(value interface{}) error {
 	return nil
 }
 
@@ -173,6 +173,10 @@ func (j *jsiiProxy_VirtualMachine) validateSetEptRviModeParameters(val *string) 
 }
 
 func (j *jsiiProxy_VirtualMachine) validateSetExtraConfigParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VirtualMachine) validateSetExtraConfigRebootRequiredParameters(val interface{}) error {
 	return nil
 }
 

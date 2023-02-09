@@ -35,10 +35,6 @@ type HostVirtualSwitchConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#network_adapters HostVirtualSwitch#network_adapters}
 	NetworkAdapters *[]*string `field:"required" json:"networkAdapters" yaml:"networkAdapters"`
-	// List of standby network adapters used for failover.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#standby_nics HostVirtualSwitch#standby_nics}
-	StandbyNics *[]*string `field:"required" json:"standbyNics" yaml:"standbyNics"`
 	// Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#allow_forged_transmits HostVirtualSwitch#allow_forged_transmits}
@@ -108,6 +104,10 @@ type HostVirtualSwitchConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#shaping_peak_bandwidth HostVirtualSwitch#shaping_peak_bandwidth}
 	ShapingPeakBandwidth *float64 `field:"optional" json:"shapingPeakBandwidth" yaml:"shapingPeakBandwidth"`
+	// List of standby network adapters used for failover.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#standby_nics HostVirtualSwitch#standby_nics}
+	StandbyNics *[]*string `field:"optional" json:"standbyNics" yaml:"standbyNics"`
 	// The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, or failover_explicit.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#teaming_policy HostVirtualSwitch#teaming_policy}

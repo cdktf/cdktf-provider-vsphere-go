@@ -64,7 +64,7 @@ func (j *jsiiProxy_VirtualMachineCdromOutputReference) validateSetDatastoreIdPar
 	return nil
 }
 
-func (j *jsiiProxy_VirtualMachineCdromOutputReference) validateSetInternalValueParameters(val *VirtualMachineCdrom) error {
+func (j *jsiiProxy_VirtualMachineCdromOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_VirtualMachineCdromOutputReference) validateSetTerraformResou
 	return nil
 }
 
-func validateNewVirtualMachineCdromOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVirtualMachineCdromOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

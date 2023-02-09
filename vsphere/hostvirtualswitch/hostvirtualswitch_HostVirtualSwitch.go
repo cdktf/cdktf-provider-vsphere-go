@@ -168,6 +168,7 @@ type HostVirtualSwitch interface {
 	ResetShapingBurstSize()
 	ResetShapingEnabled()
 	ResetShapingPeakBandwidth()
+	ResetStandbyNics()
 	ResetTeamingPolicy()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -1519,6 +1520,14 @@ func (h *jsiiProxy_HostVirtualSwitch) ResetShapingPeakBandwidth() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetShapingPeakBandwidth",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HostVirtualSwitch) ResetStandbyNics() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetStandbyNics",
 		nil, // no parameters
 	)
 }

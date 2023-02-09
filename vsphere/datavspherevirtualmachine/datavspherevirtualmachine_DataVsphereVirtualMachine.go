@@ -81,6 +81,9 @@ type DataVsphereVirtualMachine interface {
 	ExtraConfig() *map[string]*string
 	SetExtraConfig(val *map[string]*string)
 	ExtraConfigInput() *map[string]*string
+	ExtraConfigRebootRequired() interface{}
+	SetExtraConfigRebootRequired(val interface{})
+	ExtraConfigRebootRequiredInput() interface{}
 	Firmware() *string
 	SetFirmware(val *string)
 	FirmwareInput() *string
@@ -258,6 +261,7 @@ type DataVsphereVirtualMachine interface {
 	ResetEnableLogging()
 	ResetEptRviMode()
 	ResetExtraConfig()
+	ResetExtraConfigRebootRequired()
 	ResetFirmware()
 	ResetGuestId()
 	ResetHardwareVersion()
@@ -735,6 +739,26 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) ExtraConfigInput() *map[string]*st
 	_jsii_.Get(
 		j,
 		"extraConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine) ExtraConfigRebootRequired() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extraConfigRebootRequired",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine) ExtraConfigRebootRequiredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"extraConfigRebootRequiredInput",
 		&returns,
 	)
 	return returns
@@ -1824,6 +1848,17 @@ func (j *jsiiProxy_DataVsphereVirtualMachine)SetExtraConfig(val *map[string]*str
 	)
 }
 
+func (j *jsiiProxy_DataVsphereVirtualMachine)SetExtraConfigRebootRequired(val interface{}) {
+	if err := j.validateSetExtraConfigRebootRequiredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extraConfigRebootRequired",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataVsphereVirtualMachine)SetFirmware(val *string) {
 	if err := j.validateSetFirmwareParameters(val); err != nil {
 		panic(err)
@@ -2631,6 +2666,14 @@ func (d *jsiiProxy_DataVsphereVirtualMachine) ResetExtraConfig() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetExtraConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVsphereVirtualMachine) ResetExtraConfigRebootRequired() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExtraConfigRebootRequired",
 		nil, // no parameters
 	)
 }

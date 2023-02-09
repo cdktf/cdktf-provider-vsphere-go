@@ -140,6 +140,10 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetExtraConfigParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetExtraConfigRebootRequiredParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetFirmwareParameters(val *string) error {
 	return nil
 }

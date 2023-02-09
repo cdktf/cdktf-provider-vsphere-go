@@ -85,6 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetShapingBurstSize", GoMethod: "ResetShapingBurstSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetShapingEnabled", GoMethod: "ResetShapingEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetShapingPeakBandwidth", GoMethod: "ResetShapingPeakBandwidth"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStandbyNics", GoMethod: "ResetStandbyNics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTeamingPolicy", GoMethod: "ResetTeamingPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "shapingAverageBandwidth", GoGetter: "ShapingAverageBandwidth"},
 			_jsii_.MemberProperty{JsiiProperty: "shapingAverageBandwidthInput", GoGetter: "ShapingAverageBandwidthInput"},
