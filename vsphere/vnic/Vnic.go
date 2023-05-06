@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic vsphere_vnic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/vnic vsphere_vnic}.
 type Vnic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -80,6 +80,9 @@ type Vnic interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Services() *[]*string
+	SetServices(val *[]*string)
+	ServicesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,6 +128,7 @@ type Vnic interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPortgroup()
+	ResetServices()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -470,6 +474,26 @@ func (j *jsiiProxy_Vnic) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Vnic) Services() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"services",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Vnic) ServicesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"servicesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Vnic) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -501,7 +525,7 @@ func (j *jsiiProxy_Vnic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic vsphere_vnic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/vnic vsphere_vnic} Resource.
 func NewVnic(scope constructs.Construct, id *string, config *VnicConfig) Vnic {
 	_init_.Initialize()
 
@@ -519,7 +543,7 @@ func NewVnic(scope constructs.Construct, id *string, config *VnicConfig) Vnic {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic vsphere_vnic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/vnic vsphere_vnic} Resource.
 func NewVnic_Override(v Vnic, scope constructs.Construct, id *string, config *VnicConfig) {
 	_init_.Initialize()
 
@@ -682,6 +706,17 @@ func (j *jsiiProxy_Vnic)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Vnic)SetServices(val *[]*string) {
+	if err := j.validateSetServicesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"services",
 		val,
 	)
 }
@@ -1050,6 +1085,14 @@ func (v *jsiiProxy_Vnic) ResetPortgroup() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPortgroup",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_Vnic) ResetServices() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetServices",
 		nil, // no parameters
 	)
 }

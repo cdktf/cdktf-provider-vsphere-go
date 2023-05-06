@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
 type VmfsDatastore interface {
 	cdktf.TerraformResource
 	Accessible() cdktf.IResolvable
@@ -528,7 +528,7 @@ func (j *jsiiProxy_VmfsDatastore) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
 func NewVmfsDatastore(scope constructs.Construct, id *string, config *VmfsDatastoreConfig) VmfsDatastore {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewVmfsDatastore(scope constructs.Construct, id *string, config *VmfsDatast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
 func NewVmfsDatastore_Override(v VmfsDatastore, scope constructs.Construct, id *string, config *VmfsDatastoreConfig) {
 	_init_.Initialize()
 

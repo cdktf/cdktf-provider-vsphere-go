@@ -575,6 +575,14 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetMemoryShareLevelParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetMoidParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

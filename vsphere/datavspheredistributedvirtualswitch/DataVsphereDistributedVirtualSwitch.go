@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch}.
 type DataVsphereDistributedVirtualSwitch interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataVsphereDistributedVirtualSwitch) Uplinks() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch} Data Source.
 func NewDataVsphereDistributedVirtualSwitch(scope constructs.Construct, id *string, config *DataVsphereDistributedVirtualSwitchConfig) DataVsphereDistributedVirtualSwitch {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataVsphereDistributedVirtualSwitch(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch} Data Source.
 func NewDataVsphereDistributedVirtualSwitch_Override(d DataVsphereDistributedVirtualSwitch, scope constructs.Construct, id *string, config *DataVsphereDistributedVirtualSwitchConfig) {
 	_init_.Initialize()
 

@@ -120,6 +120,10 @@ func (j *jsiiProxy_Vnic) validateSetProvisionersParameters(val *[]interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Vnic) validateSetServicesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewVnicParameters(scope constructs.Construct, id *string, config *VnicConfig) error {
 	return nil
 }

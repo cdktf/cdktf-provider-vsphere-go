@@ -365,6 +365,14 @@ func (j *jsiiProxy_Vnic) validateSetProvisionersParameters(val *[]interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Vnic) validateSetServicesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewVnicParameters(scope constructs.Construct, id *string, config *VnicConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

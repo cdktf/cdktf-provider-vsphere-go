@@ -204,6 +204,10 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetMemoryShareLevelParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetMoidParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetNameParameters(val *string) error {
 	return nil
 }

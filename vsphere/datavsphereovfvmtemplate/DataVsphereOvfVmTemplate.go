@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template vsphere_ovf_vm_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/ovf_vm_template vsphere_ovf_vm_template}.
 type DataVsphereOvfVmTemplate interface {
 	cdktf.TerraformDataSource
 	AllowUnverifiedSslCert() interface{}
@@ -778,7 +778,7 @@ func (j *jsiiProxy_DataVsphereOvfVmTemplate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template vsphere_ovf_vm_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/ovf_vm_template vsphere_ovf_vm_template} Data Source.
 func NewDataVsphereOvfVmTemplate(scope constructs.Construct, id *string, config *DataVsphereOvfVmTemplateConfig) DataVsphereOvfVmTemplate {
 	_init_.Initialize()
 
@@ -796,7 +796,7 @@ func NewDataVsphereOvfVmTemplate(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template vsphere_ovf_vm_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/ovf_vm_template vsphere_ovf_vm_template} Data Source.
 func NewDataVsphereOvfVmTemplate_Override(d DataVsphereOvfVmTemplate, scope constructs.Construct, id *string, config *DataVsphereOvfVmTemplateConfig) {
 	_init_.Initialize()
 

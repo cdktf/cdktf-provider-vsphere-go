@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/virtual_machine vsphere_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/virtual_machine vsphere_virtual_machine}.
 type DataVsphereVirtualMachine interface {
 	cdktf.TerraformDataSource
 	AlternateGuestName() *string
@@ -136,6 +136,9 @@ type DataVsphereVirtualMachine interface {
 	MemoryShareLevel() *string
 	SetMemoryShareLevel(val *string)
 	MemoryShareLevelInput() *string
+	Moid() *string
+	SetMoid(val *string)
+	MoidInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -275,6 +278,7 @@ type DataVsphereVirtualMachine interface {
 	ResetMemoryReservation()
 	ResetMemoryShareCount()
 	ResetMemoryShareLevel()
+	ResetMoid()
 	ResetName()
 	ResetNestedHvEnabled()
 	ResetNumCoresPerSocket()
@@ -1074,6 +1078,26 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) MemoryShareLevelInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataVsphereVirtualMachine) Moid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"moid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine) MoidInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"moidInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVsphereVirtualMachine) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1605,7 +1629,7 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) VvtdEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
 func NewDataVsphereVirtualMachine(scope constructs.Construct, id *string, config *DataVsphereVirtualMachineConfig) DataVsphereVirtualMachine {
 	_init_.Initialize()
 
@@ -1623,7 +1647,7 @@ func NewDataVsphereVirtualMachine(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
 func NewDataVsphereVirtualMachine_Override(d DataVsphereVirtualMachine, scope constructs.Construct, id *string, config *DataVsphereVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -2020,6 +2044,17 @@ func (j *jsiiProxy_DataVsphereVirtualMachine)SetMemoryShareLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"memoryShareLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine)SetMoid(val *string) {
+	if err := j.validateSetMoidParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"moid",
 		val,
 	)
 }
@@ -2781,6 +2816,14 @@ func (d *jsiiProxy_DataVsphereVirtualMachine) ResetMemoryShareLevel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMemoryShareLevel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVsphereVirtualMachine) ResetMoid() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMoid",
 		nil, // no parameters
 	)
 }
