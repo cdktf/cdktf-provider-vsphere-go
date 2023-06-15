@@ -2,9 +2,9 @@ package distributedportgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/distributedportgroup/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/distributedportgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
