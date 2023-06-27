@@ -2,14 +2,14 @@ package licenseresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/licenseresource/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/licenseresource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license vsphere_license}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/license vsphere_license}.
 type LicenseResource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_LicenseResource) Used() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license vsphere_license} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/license vsphere_license} Resource.
 func NewLicenseResource(scope constructs.Construct, id *string, config *LicenseResourceConfig) LicenseResource {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewLicenseResource(scope constructs.Construct, id *string, config *LicenseR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license vsphere_license} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/license vsphere_license} Resource.
 func NewLicenseResource_Override(l LicenseResource, scope constructs.Construct, id *string, config *LicenseResourceConfig) {
 	_init_.Initialize()
 

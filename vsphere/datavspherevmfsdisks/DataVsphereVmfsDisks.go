@@ -2,14 +2,14 @@ package datavspherevmfsdisks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/datavspherevmfsdisks/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspherevmfsdisks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/vmfs_disks vsphere_vmfs_disks}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vmfs_disks vsphere_vmfs_disks}.
 type DataVsphereVmfsDisks interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataVsphereVmfsDisks) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/vmfs_disks vsphere_vmfs_disks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vmfs_disks vsphere_vmfs_disks} Data Source.
 func NewDataVsphereVmfsDisks(scope constructs.Construct, id *string, config *DataVsphereVmfsDisksConfig) DataVsphereVmfsDisks {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataVsphereVmfsDisks(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/vmfs_disks vsphere_vmfs_disks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vmfs_disks vsphere_vmfs_disks} Data Source.
 func NewDataVsphereVmfsDisks_Override(d DataVsphereVmfsDisks, scope constructs.Construct, id *string, config *DataVsphereVmfsDisksConfig) {
 	_init_.Initialize()
 

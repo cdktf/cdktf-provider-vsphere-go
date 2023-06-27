@@ -2,14 +2,14 @@ package contentlibraryitem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/contentlibraryitem/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/contentlibraryitem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/content_library_item vsphere_content_library_item}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library_item vsphere_content_library_item}.
 type ContentLibraryItem interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_ContentLibraryItem) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/content_library_item vsphere_content_library_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library_item vsphere_content_library_item} Resource.
 func NewContentLibraryItem(scope constructs.Construct, id *string, config *ContentLibraryItemConfig) ContentLibraryItem {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewContentLibraryItem(scope constructs.Construct, id *string, config *Conte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/content_library_item vsphere_content_library_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library_item vsphere_content_library_item} Resource.
 func NewContentLibraryItem_Override(c ContentLibraryItem, scope constructs.Construct, id *string, config *ContentLibraryItemConfig) {
 	_init_.Initialize()
 

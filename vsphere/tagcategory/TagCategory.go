@@ -2,14 +2,14 @@ package tagcategory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/tagcategory/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/tagcategory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/tag_category vsphere_tag_category}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category vsphere_tag_category}.
 type TagCategory interface {
 	cdktf.TerraformResource
 	AssociableTypes() *[]*string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_TagCategory) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/tag_category vsphere_tag_category} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category vsphere_tag_category} Resource.
 func NewTagCategory(scope constructs.Construct, id *string, config *TagCategoryConfig) TagCategory {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewTagCategory(scope constructs.Construct, id *string, config *TagCategoryC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/tag_category vsphere_tag_category} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category vsphere_tag_category} Resource.
 func NewTagCategory_Override(t TagCategory, scope constructs.Construct, id *string, config *TagCategoryConfig) {
 	_init_.Initialize()
 

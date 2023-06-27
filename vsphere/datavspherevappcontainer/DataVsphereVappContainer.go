@@ -2,14 +2,14 @@ package datavspherevappcontainer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/datavspherevappcontainer/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspherevappcontainer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/vapp_container vsphere_vapp_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vapp_container vsphere_vapp_container}.
 type DataVsphereVappContainer interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataVsphereVappContainer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/vapp_container vsphere_vapp_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vapp_container vsphere_vapp_container} Data Source.
 func NewDataVsphereVappContainer(scope constructs.Construct, id *string, config *DataVsphereVappContainerConfig) DataVsphereVappContainer {
 	_init_.Initialize()
 
@@ -322,7 +322,7 @@ func NewDataVsphereVappContainer(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/vapp_container vsphere_vapp_container} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vapp_container vsphere_vapp_container} Data Source.
 func NewDataVsphereVappContainer_Override(d DataVsphereVappContainer, scope constructs.Construct, id *string, config *DataVsphereVappContainerConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package storagedrsvmoverride
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/storagedrsvmoverride/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/storagedrsvmoverride/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override}.
 type StorageDrsVmOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_StorageDrsVmOverride) VirtualMachineIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override} Resource.
 func NewStorageDrsVmOverride(scope constructs.Construct, id *string, config *StorageDrsVmOverrideConfig) StorageDrsVmOverride {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewStorageDrsVmOverride(scope constructs.Construct, id *string, config *Sto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override} Resource.
 func NewStorageDrsVmOverride_Override(s StorageDrsVmOverride, scope constructs.Construct, id *string, config *StorageDrsVmOverrideConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package datavspherehost
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/datavspherehost/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspherehost/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host vsphere_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host vsphere_host}.
 type DataVsphereHost interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataVsphereHost) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host vsphere_host} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host vsphere_host} Data Source.
 func NewDataVsphereHost(scope constructs.Construct, id *string, config *DataVsphereHostConfig) DataVsphereHost {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataVsphereHost(scope constructs.Construct, id *string, config *DataVsph
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host vsphere_host} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host vsphere_host} Data Source.
 func NewDataVsphereHost_Override(d DataVsphereHost, scope constructs.Construct, id *string, config *DataVsphereHostConfig) {
 	_init_.Initialize()
 

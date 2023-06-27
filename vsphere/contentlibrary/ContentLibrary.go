@@ -2,14 +2,14 @@ package contentlibrary
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/contentlibrary/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/contentlibrary/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/content_library vsphere_content_library}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library vsphere_content_library}.
 type ContentLibrary interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ContentLibrary) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/content_library vsphere_content_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library vsphere_content_library} Resource.
 func NewContentLibrary(scope constructs.Construct, id *string, config *ContentLibraryConfig) ContentLibrary {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewContentLibrary(scope constructs.Construct, id *string, config *ContentLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/content_library vsphere_content_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library vsphere_content_library} Resource.
 func NewContentLibrary_Override(c ContentLibrary, scope constructs.Construct, id *string, config *ContentLibraryConfig) {
 	_init_.Initialize()
 

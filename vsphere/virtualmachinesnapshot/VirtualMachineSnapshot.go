@@ -2,14 +2,14 @@ package virtualmachinesnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/virtualmachinesnapshot/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/virtualmachinesnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot}.
 type VirtualMachineSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -449,7 +449,7 @@ func (j *jsiiProxy_VirtualMachineSnapshot) VirtualMachineUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot} Resource.
 func NewVirtualMachineSnapshot(scope constructs.Construct, id *string, config *VirtualMachineSnapshotConfig) VirtualMachineSnapshot {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewVirtualMachineSnapshot(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot} Resource.
 func NewVirtualMachineSnapshot_Override(v VirtualMachineSnapshot, scope constructs.Construct, id *string, config *VirtualMachineSnapshotConfig) {
 	_init_.Initialize()
 

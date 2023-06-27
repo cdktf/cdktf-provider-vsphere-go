@@ -2,14 +2,14 @@ package customattribute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/customattribute/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/customattribute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/custom_attribute vsphere_custom_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute vsphere_custom_attribute}.
 type CustomAttribute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_CustomAttribute) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/custom_attribute vsphere_custom_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute vsphere_custom_attribute} Resource.
 func NewCustomAttribute(scope constructs.Construct, id *string, config *CustomAttributeConfig) CustomAttribute {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewCustomAttribute(scope constructs.Construct, id *string, config *CustomAt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/custom_attribute vsphere_custom_attribute} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute vsphere_custom_attribute} Resource.
 func NewCustomAttribute_Override(c CustomAttribute, scope constructs.Construct, id *string, config *CustomAttributeConfig) {
 	_init_.Initialize()
 

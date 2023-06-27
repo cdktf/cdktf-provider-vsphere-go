@@ -2,14 +2,14 @@ package hostportgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/hostportgroup/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/hostportgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_port_group vsphere_host_port_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group vsphere_host_port_group}.
 type HostPortGroup interface {
 	cdktf.TerraformResource
 	ActiveNics() *[]*string
@@ -724,7 +724,7 @@ func (j *jsiiProxy_HostPortGroup) VlanIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_port_group vsphere_host_port_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group vsphere_host_port_group} Resource.
 func NewHostPortGroup(scope constructs.Construct, id *string, config *HostPortGroupConfig) HostPortGroup {
 	_init_.Initialize()
 
@@ -742,7 +742,7 @@ func NewHostPortGroup(scope constructs.Construct, id *string, config *HostPortGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_port_group vsphere_host_port_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group vsphere_host_port_group} Resource.
 func NewHostPortGroup_Override(h HostPortGroup, scope constructs.Construct, id *string, config *HostPortGroupConfig) {
 	_init_.Initialize()
 

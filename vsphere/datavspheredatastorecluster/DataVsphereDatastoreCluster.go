@@ -2,14 +2,14 @@ package datavspheredatastorecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/datavspheredatastorecluster/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspheredatastorecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/datastore_cluster vsphere_datastore_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore_cluster vsphere_datastore_cluster}.
 type DataVsphereDatastoreCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataVsphereDatastoreCluster) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/datastore_cluster vsphere_datastore_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore_cluster vsphere_datastore_cluster} Data Source.
 func NewDataVsphereDatastoreCluster(scope constructs.Construct, id *string, config *DataVsphereDatastoreClusterConfig) DataVsphereDatastoreCluster {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataVsphereDatastoreCluster(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/datastore_cluster vsphere_datastore_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore_cluster vsphere_datastore_cluster} Data Source.
 func NewDataVsphereDatastoreCluster_Override(d DataVsphereDatastoreCluster, scope constructs.Construct, id *string, config *DataVsphereDatastoreClusterConfig) {
 	_init_.Initialize()
 

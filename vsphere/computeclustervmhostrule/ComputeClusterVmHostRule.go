@@ -2,14 +2,14 @@ package computeclustervmhostrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/computeclustervmhostrule/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/computeclustervmhostrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/compute_cluster_vm_host_rule vsphere_compute_cluster_vm_host_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule vsphere_compute_cluster_vm_host_rule}.
 type ComputeClusterVmHostRule interface {
 	cdktf.TerraformResource
 	AffinityHostGroupName() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_ComputeClusterVmHostRule) VmGroupNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/compute_cluster_vm_host_rule vsphere_compute_cluster_vm_host_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule vsphere_compute_cluster_vm_host_rule} Resource.
 func NewComputeClusterVmHostRule(scope constructs.Construct, id *string, config *ComputeClusterVmHostRuleConfig) ComputeClusterVmHostRule {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewComputeClusterVmHostRule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/compute_cluster_vm_host_rule vsphere_compute_cluster_vm_host_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule vsphere_compute_cluster_vm_host_rule} Resource.
 func NewComputeClusterVmHostRule_Override(c ComputeClusterVmHostRule, scope constructs.Construct, id *string, config *ComputeClusterVmHostRuleConfig) {
 	_init_.Initialize()
 
