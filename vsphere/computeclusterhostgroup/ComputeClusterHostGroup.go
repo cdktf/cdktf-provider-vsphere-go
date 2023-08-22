@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group}.
 type ComputeClusterHostGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ComputeClusterHostGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group} Resource.
 func NewComputeClusterHostGroup(scope constructs.Construct, id *string, config *ComputeClusterHostGroupConfig) ComputeClusterHostGroup {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewComputeClusterHostGroup(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group} Resource.
 func NewComputeClusterHostGroup_Override(c ComputeClusterHostGroup, scope constructs.Construct, id *string, config *ComputeClusterHostGroupConfig) {
 	_init_.Initialize()
 

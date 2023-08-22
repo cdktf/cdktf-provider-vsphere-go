@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch vsphere_host_virtual_switch}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/host_virtual_switch vsphere_host_virtual_switch}.
 type HostVirtualSwitch interface {
 	cdktf.TerraformResource
 	ActiveNics() *[]*string
@@ -786,7 +786,7 @@ func (j *jsiiProxy_HostVirtualSwitch) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch vsphere_host_virtual_switch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/host_virtual_switch vsphere_host_virtual_switch} Resource.
 func NewHostVirtualSwitch(scope constructs.Construct, id *string, config *HostVirtualSwitchConfig) HostVirtualSwitch {
 	_init_.Initialize()
 
@@ -804,7 +804,7 @@ func NewHostVirtualSwitch(scope constructs.Construct, id *string, config *HostVi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch vsphere_host_virtual_switch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/host_virtual_switch vsphere_host_virtual_switch} Resource.
 func NewHostVirtualSwitch_Override(h HostVirtualSwitch, scope constructs.Construct, id *string, config *HostVirtualSwitchConfig) {
 	_init_.Initialize()
 

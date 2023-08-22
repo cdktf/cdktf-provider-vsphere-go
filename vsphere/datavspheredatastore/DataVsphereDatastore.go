@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore vsphere_datastore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/datastore vsphere_datastore}.
 type DataVsphereDatastore interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataVsphereDatastore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore vsphere_datastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/datastore vsphere_datastore} Data Source.
 func NewDataVsphereDatastore(scope constructs.Construct, id *string, config *DataVsphereDatastoreConfig) DataVsphereDatastore {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataVsphereDatastore(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore vsphere_datastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/datastore vsphere_datastore} Data Source.
 func NewDataVsphereDatastore_Override(d DataVsphereDatastore, scope constructs.Construct, id *string, config *DataVsphereDatastoreConfig) {
 	_init_.Initialize()
 

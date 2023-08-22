@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vnic vsphere_vnic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic vsphere_vnic}.
 type Vnic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -525,7 +525,7 @@ func (j *jsiiProxy_Vnic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vnic vsphere_vnic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic vsphere_vnic} Resource.
 func NewVnic(scope constructs.Construct, id *string, config *VnicConfig) Vnic {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewVnic(scope constructs.Construct, id *string, config *VnicConfig) Vnic {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vnic vsphere_vnic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic vsphere_vnic} Resource.
 func NewVnic_Override(v Vnic, scope constructs.Construct, id *string, config *VnicConfig) {
 	_init_.Initialize()
 

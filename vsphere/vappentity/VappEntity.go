@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity vsphere_vapp_entity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity vsphere_vapp_entity}.
 type VappEntity interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -524,7 +524,7 @@ func (j *jsiiProxy_VappEntity) WaitForGuestInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity vsphere_vapp_entity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity vsphere_vapp_entity} Resource.
 func NewVappEntity(scope constructs.Construct, id *string, config *VappEntityConfig) VappEntity {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewVappEntity(scope constructs.Construct, id *string, config *VappEntityCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity vsphere_vapp_entity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity vsphere_vapp_entity} Resource.
 func NewVappEntity_Override(v VappEntity, scope constructs.Construct, id *string, config *VappEntityConfig) {
 	_init_.Initialize()
 

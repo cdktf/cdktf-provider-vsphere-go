@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/storage_policy vsphere_storage_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/storage_policy vsphere_storage_policy}.
 type DataVsphereStoragePolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -281,7 +281,7 @@ func (j *jsiiProxy_DataVsphereStoragePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/storage_policy vsphere_storage_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/storage_policy vsphere_storage_policy} Data Source.
 func NewDataVsphereStoragePolicy(scope constructs.Construct, id *string, config *DataVsphereStoragePolicyConfig) DataVsphereStoragePolicy {
 	_init_.Initialize()
 
@@ -299,7 +299,7 @@ func NewDataVsphereStoragePolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/storage_policy vsphere_storage_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/storage_policy vsphere_storage_policy} Data Source.
 func NewDataVsphereStoragePolicy_Override(d DataVsphereStoragePolicy, scope constructs.Construct, id *string, config *DataVsphereStoragePolicyConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/tag vsphere_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/tag vsphere_tag}.
 type DataVsphereTag interface {
 	cdktf.TerraformDataSource
 	CategoryId() *string
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataVsphereTag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/tag vsphere_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/tag vsphere_tag} Data Source.
 func NewDataVsphereTag(scope constructs.Construct, id *string, config *DataVsphereTagConfig) DataVsphereTag {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataVsphereTag(scope constructs.Construct, id *string, config *DataVsphe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/tag vsphere_tag} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/tag vsphere_tag} Data Source.
 func NewDataVsphereTag_Override(d DataVsphereTag, scope constructs.Construct, id *string, config *DataVsphereTagConfig) {
 	_init_.Initialize()
 

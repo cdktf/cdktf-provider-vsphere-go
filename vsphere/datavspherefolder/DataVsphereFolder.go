@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/folder vsphere_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/folder vsphere_folder}.
 type DataVsphereFolder interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -281,7 +281,7 @@ func (j *jsiiProxy_DataVsphereFolder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/folder vsphere_folder} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/folder vsphere_folder} Data Source.
 func NewDataVsphereFolder(scope constructs.Construct, id *string, config *DataVsphereFolderConfig) DataVsphereFolder {
 	_init_.Initialize()
 
@@ -299,7 +299,7 @@ func NewDataVsphereFolder(scope constructs.Construct, id *string, config *DataVs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/folder vsphere_folder} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/folder vsphere_folder} Data Source.
 func NewDataVsphereFolder_Override(d DataVsphereFolder, scope constructs.Construct, id *string, config *DataVsphereFolderConfig) {
 	_init_.Initialize()
 

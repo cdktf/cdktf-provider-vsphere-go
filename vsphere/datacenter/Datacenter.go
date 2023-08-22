@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datacenter vsphere_datacenter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/datacenter vsphere_datacenter}.
 type Datacenter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_Datacenter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datacenter vsphere_datacenter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/datacenter vsphere_datacenter} Resource.
 func NewDatacenter(scope constructs.Construct, id *string, config *DatacenterConfig) Datacenter {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewDatacenter(scope constructs.Construct, id *string, config *DatacenterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datacenter vsphere_datacenter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/datacenter vsphere_datacenter} Resource.
 func NewDatacenter_Override(d Datacenter, scope constructs.Construct, id *string, config *DatacenterConfig) {
 	_init_.Initialize()
 
