@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datavspherevirtualmachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspherevirtualmachine/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherevirtualmachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
