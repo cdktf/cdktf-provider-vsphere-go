@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/distributed_port_group vsphere_distributed_port_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/distributed_port_group vsphere_distributed_port_group}.
 type DistributedPortGroup interface {
 	cdktf.TerraformResource
 	ActiveUplinks() *[]*string
@@ -1413,7 +1413,7 @@ func (j *jsiiProxy_DistributedPortGroup) VlanRangeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/distributed_port_group vsphere_distributed_port_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/distributed_port_group vsphere_distributed_port_group} Resource.
 func NewDistributedPortGroup(scope constructs.Construct, id *string, config *DistributedPortGroupConfig) DistributedPortGroup {
 	_init_.Initialize()
 
@@ -1431,7 +1431,7 @@ func NewDistributedPortGroup(scope constructs.Construct, id *string, config *Dis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/distributed_port_group vsphere_distributed_port_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/distributed_port_group vsphere_distributed_port_group} Resource.
 func NewDistributedPortGroup_Override(d DistributedPortGroup, scope constructs.Construct, id *string, config *DistributedPortGroupConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/resource_pool vsphere_resource_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/resource_pool vsphere_resource_pool}.
 type ResourcePool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -647,7 +647,7 @@ func (j *jsiiProxy_ResourcePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/resource_pool vsphere_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/resource_pool vsphere_resource_pool} Resource.
 func NewResourcePool(scope constructs.Construct, id *string, config *ResourcePoolConfig) ResourcePool {
 	_init_.Initialize()
 
@@ -665,7 +665,7 @@ func NewResourcePool(scope constructs.Construct, id *string, config *ResourcePoo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/resource_pool vsphere_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/resource_pool vsphere_resource_pool} Resource.
 func NewResourcePool_Override(r ResourcePool, scope constructs.Construct, id *string, config *ResourcePoolConfig) {
 	_init_.Initialize()
 

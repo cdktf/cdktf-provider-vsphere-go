@@ -22,7 +22,7 @@ type DataVsphereLicenseConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/license#license_key DataVsphereLicense#license_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/license#license_key DataVsphereLicense#license_key}.
 	LicenseKey *string `field:"required" json:"licenseKey" yaml:"licenseKey"`
 }
 
