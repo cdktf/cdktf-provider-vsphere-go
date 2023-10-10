@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/nas_datastore vsphere_nas_datastore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore vsphere_nas_datastore}.
 type NasDatastore interface {
 	cdktf.TerraformResource
 	Accessible() cdktf.IResolvable
@@ -637,7 +637,7 @@ func (j *jsiiProxy_NasDatastore) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/nas_datastore vsphere_nas_datastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore vsphere_nas_datastore} Resource.
 func NewNasDatastore(scope constructs.Construct, id *string, config *NasDatastoreConfig) NasDatastore {
 	_init_.Initialize()
 
@@ -655,7 +655,7 @@ func NewNasDatastore(scope constructs.Construct, id *string, config *NasDatastor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/nas_datastore vsphere_nas_datastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore vsphere_nas_datastore} Resource.
 func NewNasDatastore_Override(n NasDatastore, scope constructs.Construct, id *string, config *NasDatastoreConfig) {
 	_init_.Initialize()
 

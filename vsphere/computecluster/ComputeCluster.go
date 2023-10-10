@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/compute_cluster vsphere_compute_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/compute_cluster vsphere_compute_cluster}.
 type ComputeCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -1858,7 +1858,7 @@ func (j *jsiiProxy_ComputeCluster) VsanVerboseModeEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
 func NewComputeCluster(scope constructs.Construct, id *string, config *ComputeClusterConfig) ComputeCluster {
 	_init_.Initialize()
 
@@ -1876,7 +1876,7 @@ func NewComputeCluster(scope constructs.Construct, id *string, config *ComputeCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
 func NewComputeCluster_Override(c ComputeCluster, scope constructs.Construct, id *string, config *ComputeClusterConfig) {
 	_init_.Initialize()
 

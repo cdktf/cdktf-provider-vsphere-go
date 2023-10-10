@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/compute_cluster vsphere_compute_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/compute_cluster vsphere_compute_cluster}.
 type DataVsphereComputeCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataVsphereComputeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/compute_cluster vsphere_compute_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/compute_cluster vsphere_compute_cluster} Data Source.
 func NewDataVsphereComputeCluster(scope constructs.Construct, id *string, config *DataVsphereComputeClusterConfig) DataVsphereComputeCluster {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataVsphereComputeCluster(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/compute_cluster vsphere_compute_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/compute_cluster vsphere_compute_cluster} Data Source.
 func NewDataVsphereComputeCluster_Override(d DataVsphereComputeCluster, scope constructs.Construct, id *string, config *DataVsphereComputeClusterConfig) {
 	_init_.Initialize()
 

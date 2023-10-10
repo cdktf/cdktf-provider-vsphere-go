@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override}.
 type StorageDrsVmOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -407,7 +407,7 @@ func (j *jsiiProxy_StorageDrsVmOverride) VirtualMachineIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override} Resource.
 func NewStorageDrsVmOverride(scope constructs.Construct, id *string, config *StorageDrsVmOverrideConfig) StorageDrsVmOverride {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewStorageDrsVmOverride(scope constructs.Construct, id *string, config *Sto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override} Resource.
 func NewStorageDrsVmOverride_Override(s StorageDrsVmOverride, scope constructs.Construct, id *string, config *StorageDrsVmOverrideConfig) {
 	_init_.Initialize()
 

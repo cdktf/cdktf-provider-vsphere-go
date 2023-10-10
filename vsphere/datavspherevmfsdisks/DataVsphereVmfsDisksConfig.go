@@ -24,20 +24,20 @@ type DataVsphereVmfsDisksConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The managed object ID of the host to search for disks on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/vmfs_disks#host_system_id DataVsphereVmfsDisks#host_system_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/vmfs_disks#host_system_id DataVsphereVmfsDisks#host_system_id}
 	HostSystemId *string `field:"required" json:"hostSystemId" yaml:"hostSystemId"`
 	// A regular expression to filter the disks against. Only disks with canonical names that match will be included.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/vmfs_disks#filter DataVsphereVmfsDisks#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/vmfs_disks#filter DataVsphereVmfsDisks#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Rescan the system for disks before querying. This may lengthen the time it takes to gather information.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/vmfs_disks#rescan DataVsphereVmfsDisks#rescan}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/vmfs_disks#rescan DataVsphereVmfsDisks#rescan}
 	Rescan interface{} `field:"optional" json:"rescan" yaml:"rescan"`
 }
 
