@@ -7,6 +7,10 @@ package dpmhostoverride
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DpmHostOverride) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DpmHostOverride) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DpmHostOverride) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (d *jsiiProxy_DpmHostOverride) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DpmHostOverride) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DpmHostOverride) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DpmHostOverride) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDpmHostOverride_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

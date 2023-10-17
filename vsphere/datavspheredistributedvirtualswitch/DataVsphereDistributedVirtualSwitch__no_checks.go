@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVsphereDistributedVirtualSwitch) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataVsphereDistributedVirtualSwitch_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVsphereDistributedVirtualSwitch_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -5,10 +5,10 @@ package distributedvirtualswitch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/distributedvirtualswitch/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/distributedvirtualswitch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -344,6 +344,9 @@ type DistributedVirtualSwitch interface {
 	VsanShareLevel() *string
 	SetVsanShareLevel(val *string)
 	VsanShareLevelInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -365,7 +368,12 @@ type DistributedVirtualSwitch interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -3663,6 +3671,25 @@ func (j *jsiiProxy_DistributedVirtualSwitch)SetVsanShareLevel(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a DistributedVirtualSwitch resource upon running "cdktf plan <stack-name>".
+func DistributedVirtualSwitch_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDistributedVirtualSwitch_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -3745,6 +3772,17 @@ func DistributedVirtualSwitch_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DistributedVirtualSwitch) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DistributedVirtualSwitch) AddOverride(path *string, value interface{}) {
@@ -3902,6 +3940,17 @@ func (d *jsiiProxy_DistributedVirtualSwitch) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (d *jsiiProxy_DistributedVirtualSwitch) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DistributedVirtualSwitch) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -3916,6 +3965,17 @@ func (d *jsiiProxy_DistributedVirtualSwitch) InterpolationForAttribute(terraform
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DistributedVirtualSwitch) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DistributedVirtualSwitch) OverrideLogicalId(newLogicalId *string) {

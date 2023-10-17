@@ -7,6 +7,10 @@ package resourcepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourcePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_ResourcePool) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (r *jsiiProxy_ResourcePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_ResourcePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcePool) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateResourcePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

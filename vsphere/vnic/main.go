@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-vsphere.vnic.Vnic",
 		reflect.TypeOf((*Vnic)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -40,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hostInput", GoGetter: "HostInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv4", GoGetter: "Ipv4"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv4Input", GoGetter: "Ipv4Input"},
@@ -48,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "mac", GoGetter: "Mac"},
 			_jsii_.MemberProperty{JsiiProperty: "macInput", GoGetter: "MacInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "mtu", GoGetter: "Mtu"},
 			_jsii_.MemberProperty{JsiiProperty: "mtuInput", GoGetter: "MtuInput"},
 			_jsii_.MemberProperty{JsiiProperty: "netstack", GoGetter: "Netstack"},

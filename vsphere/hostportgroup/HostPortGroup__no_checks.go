@@ -7,6 +7,10 @@ package hostportgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HostPortGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostPortGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (h *jsiiProxy_HostPortGroup) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (h *jsiiProxy_HostPortGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostPortGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (h *jsiiProxy_HostPortGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostPortGroup) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateHostPortGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

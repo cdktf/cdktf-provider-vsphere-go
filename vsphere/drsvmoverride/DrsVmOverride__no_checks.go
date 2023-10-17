@@ -7,6 +7,10 @@ package drsvmoverride
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DrsVmOverride) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DrsVmOverride) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DrsVmOverride) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DrsVmOverride) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DrsVmOverride) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DrsVmOverride) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DrsVmOverride) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDrsVmOverride_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

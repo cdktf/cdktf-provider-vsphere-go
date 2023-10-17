@@ -7,6 +7,10 @@ package datacenter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_Datacenter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Datacenter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_Datacenter) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (d *jsiiProxy_Datacenter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_Datacenter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_Datacenter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_Datacenter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDatacenter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

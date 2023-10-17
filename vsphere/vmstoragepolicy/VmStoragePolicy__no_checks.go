@@ -7,6 +7,10 @@ package vmstoragepolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmStoragePolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmStoragePolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VmStoragePolicy) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (v *jsiiProxy_VmStoragePolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmStoragePolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmStoragePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VmStoragePolicy) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (v *jsiiProxy_VmStoragePolicy) validatePutTagRulesParameters(value interface{}) error {
+	return nil
+}
+
+func validateVmStoragePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

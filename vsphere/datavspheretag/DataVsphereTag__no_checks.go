@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVsphereTag) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func validateDataVsphereTag_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVsphereTag_IsConstructParameters(x interface{}) error {
 	return nil
 }

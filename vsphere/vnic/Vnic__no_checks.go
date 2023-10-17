@@ -7,6 +7,10 @@ package vnic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_Vnic) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_Vnic) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_Vnic) validateGetStringMapAttributeParameters(terraformAttrib
 	return nil
 }
 
+func (v *jsiiProxy_Vnic) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_Vnic) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_Vnic) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_Vnic) validatePutIpv4Parameters(value *VnicIpv4) error {
 }
 
 func (v *jsiiProxy_Vnic) validatePutIpv6Parameters(value *VnicIpv6) error {
+	return nil
+}
+
+func validateVnic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

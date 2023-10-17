@@ -15,6 +15,10 @@ func (v *jsiiProxy_VsphereProvider) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func validateVsphereProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateVsphereProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

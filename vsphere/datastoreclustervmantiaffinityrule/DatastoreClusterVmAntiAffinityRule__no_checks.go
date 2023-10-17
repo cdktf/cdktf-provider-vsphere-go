@@ -7,6 +7,10 @@ package datastoreclustervmantiaffinityrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatastoreClusterVmAntiAffinityRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastoreClusterVmAntiAffinityRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DatastoreClusterVmAntiAffinityRule) validateGetStringMapAttri
 	return nil
 }
 
+func (d *jsiiProxy_DatastoreClusterVmAntiAffinityRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastoreClusterVmAntiAffinityRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DatastoreClusterVmAntiAffinityRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastoreClusterVmAntiAffinityRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDatastoreClusterVmAntiAffinityRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package vmfsdatastore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmfsDatastore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmfsDatastore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (v *jsiiProxy_VmfsDatastore) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (v *jsiiProxy_VmfsDatastore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmfsDatastore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VmfsDatastore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmfsDatastore) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVmfsDatastore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

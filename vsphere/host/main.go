@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-vsphere.host.Host",
 		reflect.TypeOf((*Host)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
@@ -48,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hostnameInput", GoGetter: "HostnameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "license", GoGetter: "License"},
 			_jsii_.MemberProperty{JsiiProperty: "licenseInput", GoGetter: "LicenseInput"},
@@ -56,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lockdownInput", GoGetter: "LockdownInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenance", GoGetter: "Maintenance"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceInput", GoGetter: "MaintenanceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},

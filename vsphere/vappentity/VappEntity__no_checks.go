@@ -7,6 +7,10 @@ package vappentity
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VappEntity) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VappEntity) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (v *jsiiProxy_VappEntity) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (v *jsiiProxy_VappEntity) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VappEntity) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VappEntity) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VappEntity) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVappEntity_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

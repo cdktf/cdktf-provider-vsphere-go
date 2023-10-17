@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeUplinks", GoGetter: "ActiveUplinks"},
 			_jsii_.MemberProperty{JsiiProperty: "activeUplinksInput", GoGetter: "ActiveUplinksInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowForgedTransmits", GoGetter: "AllowForgedTransmits"},
 			_jsii_.MemberProperty{JsiiProperty: "allowForgedTransmitsInput", GoGetter: "AllowForgedTransmitsInput"},
@@ -99,6 +100,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreOtherPvlanMappings", GoGetter: "IgnoreOtherPvlanMappings"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreOtherPvlanMappingsInput", GoGetter: "IgnoreOtherPvlanMappingsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressShapingAverageBandwidth", GoGetter: "IngressShapingAverageBandwidth"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressShapingAverageBandwidthInput", GoGetter: "IngressShapingAverageBandwidthInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressShapingBurstSize", GoGetter: "IngressShapingBurstSize"},
@@ -139,6 +141,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "managementShareLevelInput", GoGetter: "ManagementShareLevelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxMtu", GoGetter: "MaxMtu"},
 			_jsii_.MemberProperty{JsiiProperty: "maxMtuInput", GoGetter: "MaxMtuInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "multicastFilteringMode", GoGetter: "MulticastFilteringMode"},
 			_jsii_.MemberProperty{JsiiProperty: "multicastFilteringModeInput", GoGetter: "MulticastFilteringModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},

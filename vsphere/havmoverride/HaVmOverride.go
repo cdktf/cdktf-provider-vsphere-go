@@ -5,10 +5,10 @@ package havmoverride
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/havmoverride/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/havmoverride/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -109,6 +109,9 @@ type HaVmOverride interface {
 	VirtualMachineId() *string
 	SetVirtualMachineId(val *string)
 	VirtualMachineIdInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -130,7 +133,12 @@ type HaVmOverride interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -920,6 +928,25 @@ func (j *jsiiProxy_HaVmOverride)SetVirtualMachineId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a HaVmOverride resource upon running "cdktf plan <stack-name>".
+func HaVmOverride_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateHaVmOverride_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vsphere.haVmOverride.HaVmOverride",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -1002,6 +1029,17 @@ func HaVmOverride_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (h *jsiiProxy_HaVmOverride) AddMoveTarget(moveTarget *string) {
+	if err := h.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (h *jsiiProxy_HaVmOverride) AddOverride(path *string, value interface{}) {
@@ -1159,6 +1197,17 @@ func (h *jsiiProxy_HaVmOverride) GetStringMapAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (h *jsiiProxy_HaVmOverride) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := h.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (h *jsiiProxy_HaVmOverride) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1173,6 +1222,17 @@ func (h *jsiiProxy_HaVmOverride) InterpolationForAttribute(terraformAttribute *s
 	)
 
 	return returns
+}
+
+func (h *jsiiProxy_HaVmOverride) MoveTo(moveTarget *string, index interface{}) {
+	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (h *jsiiProxy_HaVmOverride) OverrideLogicalId(newLogicalId *string) {

@@ -7,6 +7,10 @@ package hostvirtualswitch
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HostVirtualSwitch) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostVirtualSwitch) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (h *jsiiProxy_HostVirtualSwitch) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (h *jsiiProxy_HostVirtualSwitch) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostVirtualSwitch) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (h *jsiiProxy_HostVirtualSwitch) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostVirtualSwitch) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateHostVirtualSwitch_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataVsphereVirtualMachine) validatePutVappParameters(value *D
 	return nil
 }
 
+func validateDataVsphereVirtualMachine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVsphereVirtualMachine_IsConstructParameters(x interface{}) error {
 	return nil
 }

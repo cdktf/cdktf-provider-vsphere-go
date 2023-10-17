@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVsphereHostPciDevice) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataVsphereHostPciDevice_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVsphereHostPciDevice_IsConstructParameters(x interface{}) error {
 	return nil
 }

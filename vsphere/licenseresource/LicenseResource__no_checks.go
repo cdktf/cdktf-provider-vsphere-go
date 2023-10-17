@@ -7,6 +7,10 @@ package licenseresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LicenseResource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LicenseResource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LicenseResource) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (l *jsiiProxy_LicenseResource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LicenseResource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LicenseResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LicenseResource) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLicenseResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

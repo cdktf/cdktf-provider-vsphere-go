@@ -7,6 +7,10 @@ package contentlibrary
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContentLibrary) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContentLibrary) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContentLibrary) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_ContentLibrary) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContentLibrary) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContentLibrary) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_ContentLibrary) validatePutPublicationParameters(value *Conte
 }
 
 func (c *jsiiProxy_ContentLibrary) validatePutSubscriptionParameters(value *ContentLibrarySubscription) error {
+	return nil
+}
+
+func validateContentLibrary_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

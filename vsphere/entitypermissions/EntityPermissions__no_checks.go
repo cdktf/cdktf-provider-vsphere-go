@@ -7,6 +7,10 @@ package entitypermissions
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EntityPermissions) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EntityPermissions) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EntityPermissions) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (e *jsiiProxy_EntityPermissions) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EntityPermissions) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EntityPermissions) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EntityPermissions) validateOverrideLogicalIdParameters(newLog
 }
 
 func (e *jsiiProxy_EntityPermissions) validatePutPermissionsParameters(value interface{}) error {
+	return nil
+}
+
+func validateEntityPermissions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

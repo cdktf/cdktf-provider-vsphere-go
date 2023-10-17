@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVsphereComputeClusterHostGroup) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataVsphereComputeClusterHostGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVsphereComputeClusterHostGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-vsphere.virtualMachine.VirtualMachine",
 		reflect.TypeOf((*VirtualMachine)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alternateGuestName", GoGetter: "AlternateGuestName"},
 			_jsii_.MemberProperty{JsiiProperty: "alternateGuestNameInput", GoGetter: "AlternateGuestNameInput"},
@@ -106,6 +107,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ignoredGuestIps", GoGetter: "IgnoredGuestIps"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoredGuestIpsInput", GoGetter: "IgnoredGuestIpsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "imported", GoGetter: "Imported"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "latencySensitivity", GoGetter: "LatencySensitivity"},
 			_jsii_.MemberProperty{JsiiProperty: "latencySensitivityInput", GoGetter: "LatencySensitivityInput"},
@@ -125,6 +127,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "migrateWaitTimeout", GoGetter: "MigrateWaitTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "migrateWaitTimeoutInput", GoGetter: "MigrateWaitTimeoutInput"},
 			_jsii_.MemberProperty{JsiiProperty: "moid", GoGetter: "Moid"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nestedHvEnabled", GoGetter: "NestedHvEnabled"},

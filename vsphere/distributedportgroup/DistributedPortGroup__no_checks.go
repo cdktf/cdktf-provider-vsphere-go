@@ -7,6 +7,10 @@ package distributedportgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DistributedPortGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DistributedPortGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DistributedPortGroup) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DistributedPortGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DistributedPortGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DistributedPortGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DistributedPortGroup) validateOverrideLogicalIdParameters(new
 }
 
 func (d *jsiiProxy_DistributedPortGroup) validatePutVlanRangeParameters(value interface{}) error {
+	return nil
+}
+
+func validateDistributedPortGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

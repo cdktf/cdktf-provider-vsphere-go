@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVsphereContentLibrary) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataVsphereContentLibrary_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVsphereContentLibrary_IsConstructParameters(x interface{}) error {
 	return nil
 }

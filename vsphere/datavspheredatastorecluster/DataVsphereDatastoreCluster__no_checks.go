@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVsphereDatastoreCluster) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataVsphereDatastoreCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVsphereDatastoreCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
