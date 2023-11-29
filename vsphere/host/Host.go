@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host vsphere_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host vsphere_host}.
 type Host interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -630,7 +630,7 @@ func (j *jsiiProxy_Host) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host vsphere_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host vsphere_host} Resource.
 func NewHost(scope constructs.Construct, id *string, config *HostConfig) Host {
 	_init_.Initialize()
 
@@ -648,7 +648,7 @@ func NewHost(scope constructs.Construct, id *string, config *HostConfig) Host {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host vsphere_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host vsphere_host} Resource.
 func NewHost_Override(h Host, scope constructs.Construct, id *string, config *HostConfig) {
 	_init_.Initialize()
 

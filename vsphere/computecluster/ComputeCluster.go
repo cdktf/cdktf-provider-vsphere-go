@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster vsphere_compute_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster vsphere_compute_cluster}.
 type ComputeCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -244,6 +244,11 @@ type ComputeCluster interface {
 	VsanEnabled() interface{}
 	SetVsanEnabled(val interface{})
 	VsanEnabledInput() interface{}
+	VsanEsaEnabled() interface{}
+	SetVsanEsaEnabled(val interface{})
+	VsanEsaEnabledInput() interface{}
+	VsanFaultDomains() ComputeClusterVsanFaultDomainsList
+	VsanFaultDomainsInput() interface{}
 	VsanNetworkDiagnosticModeEnabled() interface{}
 	SetVsanNetworkDiagnosticModeEnabled(val interface{})
 	VsanNetworkDiagnosticModeEnabledInput() interface{}
@@ -253,6 +258,8 @@ type ComputeCluster interface {
 	VsanRemoteDatastoreIds() *[]*string
 	SetVsanRemoteDatastoreIds(val *[]*string)
 	VsanRemoteDatastoreIdsInput() *[]*string
+	VsanStretchedCluster() ComputeClusterVsanStretchedClusterOutputReference
+	VsanStretchedClusterInput() *ComputeClusterVsanStretchedCluster
 	VsanUnmapEnabled() interface{}
 	SetVsanUnmapEnabled(val interface{})
 	VsanUnmapEnabledInput() interface{}
@@ -293,6 +300,8 @@ type ComputeCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutVsanDiskGroup(value interface{})
+	PutVsanFaultDomains(value interface{})
+	PutVsanStretchedCluster(value *ComputeClusterVsanStretchedCluster)
 	ResetCustomAttributes()
 	ResetDpmAutomationLevel()
 	ResetDpmEnabled()
@@ -355,9 +364,12 @@ type ComputeCluster interface {
 	ResetVsanDitEncryptionEnabled()
 	ResetVsanDitRekeyInterval()
 	ResetVsanEnabled()
+	ResetVsanEsaEnabled()
+	ResetVsanFaultDomains()
 	ResetVsanNetworkDiagnosticModeEnabled()
 	ResetVsanPerformanceEnabled()
 	ResetVsanRemoteDatastoreIds()
+	ResetVsanStretchedCluster()
 	ResetVsanUnmapEnabled()
 	ResetVsanVerboseModeEnabled()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1765,6 +1777,46 @@ func (j *jsiiProxy_ComputeCluster) VsanEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeCluster) VsanEsaEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanEsaEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanEsaEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanEsaEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanFaultDomains() ComputeClusterVsanFaultDomainsList {
+	var returns ComputeClusterVsanFaultDomainsList
+	_jsii_.Get(
+		j,
+		"vsanFaultDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanFaultDomainsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vsanFaultDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeCluster) VsanNetworkDiagnosticModeEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1825,6 +1877,26 @@ func (j *jsiiProxy_ComputeCluster) VsanRemoteDatastoreIdsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeCluster) VsanStretchedCluster() ComputeClusterVsanStretchedClusterOutputReference {
+	var returns ComputeClusterVsanStretchedClusterOutputReference
+	_jsii_.Get(
+		j,
+		"vsanStretchedCluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) VsanStretchedClusterInput() *ComputeClusterVsanStretchedCluster {
+	var returns *ComputeClusterVsanStretchedCluster
+	_jsii_.Get(
+		j,
+		"vsanStretchedClusterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeCluster) VsanUnmapEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1866,7 +1938,7 @@ func (j *jsiiProxy_ComputeCluster) VsanVerboseModeEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
 func NewComputeCluster(scope constructs.Construct, id *string, config *ComputeClusterConfig) ComputeCluster {
 	_init_.Initialize()
 
@@ -1884,7 +1956,7 @@ func NewComputeCluster(scope constructs.Construct, id *string, config *ComputeCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
 func NewComputeCluster_Override(c ComputeCluster, scope constructs.Construct, id *string, config *ComputeClusterConfig) {
 	_init_.Initialize()
 
@@ -2623,6 +2695,17 @@ func (j *jsiiProxy_ComputeCluster)SetVsanEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ComputeCluster)SetVsanEsaEnabled(val interface{}) {
+	if err := j.validateSetVsanEsaEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vsanEsaEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeCluster)SetVsanNetworkDiagnosticModeEnabled(val interface{}) {
 	if err := j.validateSetVsanNetworkDiagnosticModeEnabledParameters(val); err != nil {
 		panic(err)
@@ -3003,6 +3086,28 @@ func (c *jsiiProxy_ComputeCluster) PutVsanDiskGroup(value interface{}) {
 	_jsii_.InvokeVoid(
 		c,
 		"putVsanDiskGroup",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) PutVsanFaultDomains(value interface{}) {
+	if err := c.validatePutVsanFaultDomainsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putVsanFaultDomains",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) PutVsanStretchedCluster(value *ComputeClusterVsanStretchedCluster) {
+	if err := c.validatePutVsanStretchedClusterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putVsanStretchedCluster",
 		[]interface{}{value},
 	)
 }
@@ -3487,6 +3592,22 @@ func (c *jsiiProxy_ComputeCluster) ResetVsanEnabled() {
 	)
 }
 
+func (c *jsiiProxy_ComputeCluster) ResetVsanEsaEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanEsaEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) ResetVsanFaultDomains() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanFaultDomains",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeCluster) ResetVsanNetworkDiagnosticModeEnabled() {
 	_jsii_.InvokeVoid(
 		c,
@@ -3507,6 +3628,14 @@ func (c *jsiiProxy_ComputeCluster) ResetVsanRemoteDatastoreIds() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetVsanRemoteDatastoreIds",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) ResetVsanStretchedCluster() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVsanStretchedCluster",
 		nil, // no parameters
 	)
 }

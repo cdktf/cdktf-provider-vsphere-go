@@ -28,6 +28,8 @@ type VirtualMachineCloneOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomizationSpec() VirtualMachineCloneCustomizationSpecOutputReference
+	CustomizationSpecInput() *VirtualMachineCloneCustomizationSpec
 	Customize() VirtualMachineCloneCustomizeOutputReference
 	CustomizeInput() *VirtualMachineCloneCustomize
 	// Experimental.
@@ -81,7 +83,9 @@ type VirtualMachineCloneOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomizationSpec(value *VirtualMachineCloneCustomizationSpec)
 	PutCustomize(value *VirtualMachineCloneCustomize)
+	ResetCustomizationSpec()
 	ResetCustomize()
 	ResetLinkedClone()
 	ResetOvfNetworkMap()
@@ -127,6 +131,26 @@ func (j *jsiiProxy_VirtualMachineCloneOutputReference) CreationStack() *[]*strin
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachineCloneOutputReference) CustomizationSpec() VirtualMachineCloneCustomizationSpecOutputReference {
+	var returns VirtualMachineCloneCustomizationSpecOutputReference
+	_jsii_.Get(
+		j,
+		"customizationSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachineCloneOutputReference) CustomizationSpecInput() *VirtualMachineCloneCustomizationSpec {
+	var returns *VirtualMachineCloneCustomizationSpec
+	_jsii_.Get(
+		j,
+		"customizationSpecInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (v *jsiiProxy_VirtualMachineCloneOutputReference) InterpolationForAttribute
 	return returns
 }
 
+func (v *jsiiProxy_VirtualMachineCloneOutputReference) PutCustomizationSpec(value *VirtualMachineCloneCustomizationSpec) {
+	if err := v.validatePutCustomizationSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putCustomizationSpec",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VirtualMachineCloneOutputReference) PutCustomize(value *VirtualMachineCloneCustomize) {
 	if err := v.validatePutCustomizeParameters(value); err != nil {
 		panic(err)
@@ -624,6 +659,14 @@ func (v *jsiiProxy_VirtualMachineCloneOutputReference) PutCustomize(value *Virtu
 		v,
 		"putCustomize",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VirtualMachineCloneOutputReference) ResetCustomizationSpec() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetCustomizationSpec",
+		nil, // no parameters
 	)
 }
 

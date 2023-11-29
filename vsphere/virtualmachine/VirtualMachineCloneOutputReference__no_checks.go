@@ -47,6 +47,10 @@ func (v *jsiiProxy_VirtualMachineCloneOutputReference) validateInterpolationForA
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachineCloneOutputReference) validatePutCustomizationSpecParameters(value *VirtualMachineCloneCustomizationSpec) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineCloneOutputReference) validatePutCustomizeParameters(value *VirtualMachineCloneCustomize) error {
 	return nil
 }

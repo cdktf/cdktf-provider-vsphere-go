@@ -370,6 +370,47 @@ func init() {
 		reflect.TypeOf((*VirtualMachineClone)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec",
+		reflect.TypeOf((*VirtualMachineCloneCustomizationSpec)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference",
+		reflect.TypeOf((*VirtualMachineCloneCustomizationSpecOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "timeout", GoGetter: "Timeout"},
+			_jsii_.MemberProperty{JsiiProperty: "timeoutInput", GoGetter: "TimeoutInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VirtualMachineCloneCustomizationSpecOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize",
 		reflect.TypeOf((*VirtualMachineCloneCustomize)(nil)).Elem(),
 	)
@@ -641,6 +682,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "customizationSpec", GoGetter: "CustomizationSpec"},
+			_jsii_.MemberProperty{JsiiProperty: "customizationSpecInput", GoGetter: "CustomizationSpecInput"},
 			_jsii_.MemberProperty{JsiiProperty: "customize", GoGetter: "Customize"},
 			_jsii_.MemberProperty{JsiiProperty: "customizeInput", GoGetter: "CustomizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -662,7 +705,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ovfNetworkMapInput", GoGetter: "OvfNetworkMapInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ovfStorageMap", GoGetter: "OvfStorageMap"},
 			_jsii_.MemberProperty{JsiiProperty: "ovfStorageMapInput", GoGetter: "OvfStorageMapInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomizationSpec", GoMethod: "PutCustomizationSpec"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomize", GoMethod: "PutCustomize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomizationSpec", GoMethod: "ResetCustomizationSpec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomize", GoMethod: "ResetCustomize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinkedClone", GoMethod: "ResetLinkedClone"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOvfNetworkMap", GoMethod: "ResetOvfNetworkMap"},
@@ -864,6 +909,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networkIdInput", GoGetter: "NetworkIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ovfMapping", GoGetter: "OvfMapping"},
 			_jsii_.MemberProperty{JsiiProperty: "ovfMappingInput", GoGetter: "OvfMappingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "physicalFunction", GoGetter: "PhysicalFunction"},
+			_jsii_.MemberProperty{JsiiProperty: "physicalFunctionInput", GoGetter: "PhysicalFunctionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdapterType", GoMethod: "ResetAdapterType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBandwidthLimit", GoMethod: "ResetBandwidthLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBandwidthReservation", GoMethod: "ResetBandwidthReservation"},
@@ -871,6 +918,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBandwidthShareLevel", GoMethod: "ResetBandwidthShareLevel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMacAddress", GoMethod: "ResetMacAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOvfMapping", GoMethod: "ResetOvfMapping"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPhysicalFunction", GoMethod: "ResetPhysicalFunction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseStaticMac", GoMethod: "ResetUseStaticMac"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

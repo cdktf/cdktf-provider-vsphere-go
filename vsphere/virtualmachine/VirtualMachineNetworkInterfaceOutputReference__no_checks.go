@@ -95,6 +95,10 @@ func (j *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference) validateSetOvf
 	return nil
 }
 
+func (j *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference) validateSetPhysicalFunctionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

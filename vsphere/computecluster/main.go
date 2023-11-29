@@ -150,6 +150,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putVsanDiskGroup", GoMethod: "PutVsanDiskGroup"},
+			_jsii_.MemberMethod{JsiiMethod: "putVsanFaultDomains", GoMethod: "PutVsanFaultDomains"},
+			_jsii_.MemberMethod{JsiiMethod: "putVsanStretchedCluster", GoMethod: "PutVsanStretchedCluster"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomAttributes", GoMethod: "ResetCustomAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDpmAutomationLevel", GoMethod: "ResetDpmAutomationLevel"},
@@ -211,9 +213,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetVsanDitEncryptionEnabled", GoMethod: "ResetVsanDitEncryptionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVsanDitRekeyInterval", GoMethod: "ResetVsanDitRekeyInterval"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVsanEnabled", GoMethod: "ResetVsanEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVsanEsaEnabled", GoMethod: "ResetVsanEsaEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVsanFaultDomains", GoMethod: "ResetVsanFaultDomains"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVsanNetworkDiagnosticModeEnabled", GoMethod: "ResetVsanNetworkDiagnosticModeEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVsanPerformanceEnabled", GoMethod: "ResetVsanPerformanceEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVsanRemoteDatastoreIds", GoMethod: "ResetVsanRemoteDatastoreIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVsanStretchedCluster", GoMethod: "ResetVsanStretchedCluster"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVsanUnmapEnabled", GoMethod: "ResetVsanUnmapEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVsanVerboseModeEnabled", GoMethod: "ResetVsanVerboseModeEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "resourcePoolId", GoGetter: "ResourcePoolId"},
@@ -238,12 +243,18 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vsanDitRekeyIntervalInput", GoGetter: "VsanDitRekeyIntervalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanEnabled", GoGetter: "VsanEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanEnabledInput", GoGetter: "VsanEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vsanEsaEnabled", GoGetter: "VsanEsaEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "vsanEsaEnabledInput", GoGetter: "VsanEsaEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vsanFaultDomains", GoGetter: "VsanFaultDomains"},
+			_jsii_.MemberProperty{JsiiProperty: "vsanFaultDomainsInput", GoGetter: "VsanFaultDomainsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanNetworkDiagnosticModeEnabled", GoGetter: "VsanNetworkDiagnosticModeEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanNetworkDiagnosticModeEnabledInput", GoGetter: "VsanNetworkDiagnosticModeEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanPerformanceEnabled", GoGetter: "VsanPerformanceEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanPerformanceEnabledInput", GoGetter: "VsanPerformanceEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanRemoteDatastoreIds", GoGetter: "VsanRemoteDatastoreIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanRemoteDatastoreIdsInput", GoGetter: "VsanRemoteDatastoreIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vsanStretchedCluster", GoGetter: "VsanStretchedCluster"},
+			_jsii_.MemberProperty{JsiiProperty: "vsanStretchedClusterInput", GoGetter: "VsanStretchedClusterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanUnmapEnabled", GoGetter: "VsanUnmapEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanUnmapEnabledInput", GoGetter: "VsanUnmapEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vsanVerboseModeEnabled", GoGetter: "VsanVerboseModeEnabled"},
@@ -318,6 +329,176 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeClusterVsanDiskGroupOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains",
+		reflect.TypeOf((*ComputeClusterVsanFaultDomains)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain",
+		reflect.TypeOf((*ComputeClusterVsanFaultDomainsFaultDomain)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList",
+		reflect.TypeOf((*ComputeClusterVsanFaultDomainsFaultDomainList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeClusterVsanFaultDomainsFaultDomainList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference",
+		reflect.TypeOf((*ComputeClusterVsanFaultDomainsFaultDomainOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hostIds", GoGetter: "HostIds"},
+			_jsii_.MemberProperty{JsiiProperty: "hostIdsInput", GoGetter: "HostIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeClusterVsanFaultDomainsFaultDomainOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList",
+		reflect.TypeOf((*ComputeClusterVsanFaultDomainsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeClusterVsanFaultDomainsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference",
+		reflect.TypeOf((*ComputeClusterVsanFaultDomainsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "faultDomain", GoGetter: "FaultDomain"},
+			_jsii_.MemberProperty{JsiiProperty: "faultDomainInput", GoGetter: "FaultDomainInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putFaultDomain", GoMethod: "PutFaultDomain"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFaultDomain", GoMethod: "ResetFaultDomain"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeClusterVsanFaultDomainsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedCluster",
+		reflect.TypeOf((*ComputeClusterVsanStretchedCluster)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedClusterOutputReference",
+		reflect.TypeOf((*ComputeClusterVsanStretchedClusterOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "preferredFaultDomainHostIds", GoGetter: "PreferredFaultDomainHostIds"},
+			_jsii_.MemberProperty{JsiiProperty: "preferredFaultDomainHostIdsInput", GoGetter: "PreferredFaultDomainHostIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "preferredFaultDomainName", GoGetter: "PreferredFaultDomainName"},
+			_jsii_.MemberProperty{JsiiProperty: "preferredFaultDomainNameInput", GoGetter: "PreferredFaultDomainNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreferredFaultDomainName", GoMethod: "ResetPreferredFaultDomainName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecondaryFaultDomainName", GoMethod: "ResetSecondaryFaultDomainName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "secondaryFaultDomainHostIds", GoGetter: "SecondaryFaultDomainHostIds"},
+			_jsii_.MemberProperty{JsiiProperty: "secondaryFaultDomainHostIdsInput", GoGetter: "SecondaryFaultDomainHostIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "secondaryFaultDomainName", GoGetter: "SecondaryFaultDomainName"},
+			_jsii_.MemberProperty{JsiiProperty: "secondaryFaultDomainNameInput", GoGetter: "SecondaryFaultDomainNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "witnessNode", GoGetter: "WitnessNode"},
+			_jsii_.MemberProperty{JsiiProperty: "witnessNodeInput", GoGetter: "WitnessNodeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeClusterVsanStretchedClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

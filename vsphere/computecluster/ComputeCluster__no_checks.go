@@ -71,6 +71,14 @@ func (c *jsiiProxy_ComputeCluster) validatePutVsanDiskGroupParameters(value inte
 	return nil
 }
 
+func (c *jsiiProxy_ComputeCluster) validatePutVsanFaultDomainsParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeCluster) validatePutVsanStretchedClusterParameters(value *ComputeClusterVsanStretchedCluster) error {
+	return nil
+}
+
 func validateComputeCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -340,6 +348,10 @@ func (j *jsiiProxy_ComputeCluster) validateSetVsanDitRekeyIntervalParameters(val
 }
 
 func (j *jsiiProxy_ComputeCluster) validateSetVsanEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeCluster) validateSetVsanEsaEnabledParameters(val interface{}) error {
 	return nil
 }
 

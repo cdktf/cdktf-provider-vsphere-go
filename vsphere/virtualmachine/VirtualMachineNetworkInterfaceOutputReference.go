@@ -58,6 +58,9 @@ type VirtualMachineNetworkInterfaceOutputReference interface {
 	OvfMapping() *string
 	SetOvfMapping(val *string)
 	OvfMappingInput() *string
+	PhysicalFunction() *string
+	SetPhysicalFunction(val *string)
+	PhysicalFunctionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -100,6 +103,7 @@ type VirtualMachineNetworkInterfaceOutputReference interface {
 	ResetBandwidthShareLevel()
 	ResetMacAddress()
 	ResetOvfMapping()
+	ResetPhysicalFunction()
 	ResetUseStaticMac()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -346,6 +350,26 @@ func (j *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference) OvfMappingInpu
 	return returns
 }
 
+func (j *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference) PhysicalFunction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"physicalFunction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference) PhysicalFunctionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"physicalFunctionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -531,6 +555,17 @@ func (j *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference)SetOvfMapping(v
 	_jsii_.Set(
 		j,
 		"ovfMapping",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference)SetPhysicalFunction(val *string) {
+	if err := j.validateSetPhysicalFunctionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"physicalFunction",
 		val,
 	)
 }
@@ -806,6 +841,14 @@ func (v *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference) ResetOvfMappin
 	_jsii_.InvokeVoid(
 		v,
 		"resetOvfMapping",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualMachineNetworkInterfaceOutputReference) ResetPhysicalFunction() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPhysicalFunction",
 		nil, // no parameters
 	)
 }
