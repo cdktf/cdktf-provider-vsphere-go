@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/vnic vsphere_vnic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/vnic vsphere_vnic}.
 type Vnic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -116,12 +116,22 @@ type Vnic interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -536,7 +546,7 @@ func (j *jsiiProxy_Vnic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/vnic vsphere_vnic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/vnic vsphere_vnic} Resource.
 func NewVnic(scope constructs.Construct, id *string, config *VnicConfig) Vnic {
 	_init_.Initialize()
 
@@ -554,7 +564,7 @@ func NewVnic(scope constructs.Construct, id *string, config *VnicConfig) Vnic {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/vnic vsphere_vnic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/vnic vsphere_vnic} Resource.
 func NewVnic_Override(v Vnic, scope constructs.Construct, id *string, config *VnicConfig) {
 	_init_.Initialize()
 
@@ -1001,6 +1011,19 @@ func (v *jsiiProxy_Vnic) GetStringMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
+func (v *jsiiProxy_Vnic) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_Vnic) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1028,6 +1051,17 @@ func (v *jsiiProxy_Vnic) InterpolationForAttribute(terraformAttribute *string) c
 	return returns
 }
 
+func (v *jsiiProxy_Vnic) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_Vnic) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1036,6 +1070,17 @@ func (v *jsiiProxy_Vnic) MoveTo(moveTarget *string, index interface{}) {
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_Vnic) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

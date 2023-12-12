@@ -59,7 +59,15 @@ func (h *jsiiProxy_HostVirtualSwitch) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (h *jsiiProxy_HostVirtualSwitch) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HostVirtualSwitch) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HostVirtualSwitch) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

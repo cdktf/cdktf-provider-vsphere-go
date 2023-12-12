@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/drs_vm_override vsphere_drs_vm_override}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/drs_vm_override vsphere_drs_vm_override}.
 type DrsVmOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -100,12 +100,22 @@ type DrsVmOverride interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -391,7 +401,7 @@ func (j *jsiiProxy_DrsVmOverride) VirtualMachineIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/drs_vm_override vsphere_drs_vm_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/drs_vm_override vsphere_drs_vm_override} Resource.
 func NewDrsVmOverride(scope constructs.Construct, id *string, config *DrsVmOverrideConfig) DrsVmOverride {
 	_init_.Initialize()
 
@@ -409,7 +419,7 @@ func NewDrsVmOverride(scope constructs.Construct, id *string, config *DrsVmOverr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/drs_vm_override vsphere_drs_vm_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/drs_vm_override vsphere_drs_vm_override} Resource.
 func NewDrsVmOverride_Override(d DrsVmOverride, scope constructs.Construct, id *string, config *DrsVmOverrideConfig) {
 	_init_.Initialize()
 
@@ -812,6 +822,19 @@ func (d *jsiiProxy_DrsVmOverride) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (d *jsiiProxy_DrsVmOverride) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DrsVmOverride) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -839,6 +862,17 @@ func (d *jsiiProxy_DrsVmOverride) InterpolationForAttribute(terraformAttribute *
 	return returns
 }
 
+func (d *jsiiProxy_DrsVmOverride) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DrsVmOverride) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -847,6 +881,17 @@ func (d *jsiiProxy_DrsVmOverride) MoveTo(moveTarget *string, index interface{}) 
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DrsVmOverride) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

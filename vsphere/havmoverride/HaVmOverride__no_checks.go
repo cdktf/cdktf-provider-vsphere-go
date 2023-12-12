@@ -59,7 +59,15 @@ func (h *jsiiProxy_HaVmOverride) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (h *jsiiProxy_HaVmOverride) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HaVmOverride) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HaVmOverride) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

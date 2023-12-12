@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule vsphere_compute_cluster_vm_affinity_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/compute_cluster_vm_affinity_rule vsphere_compute_cluster_vm_affinity_rule}.
 type ComputeClusterVmAffinityRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -103,12 +103,22 @@ type ComputeClusterVmAffinityRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -414,7 +424,7 @@ func (j *jsiiProxy_ComputeClusterVmAffinityRule) VirtualMachineIdsInput() *[]*st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule vsphere_compute_cluster_vm_affinity_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/compute_cluster_vm_affinity_rule vsphere_compute_cluster_vm_affinity_rule} Resource.
 func NewComputeClusterVmAffinityRule(scope constructs.Construct, id *string, config *ComputeClusterVmAffinityRuleConfig) ComputeClusterVmAffinityRule {
 	_init_.Initialize()
 
@@ -432,7 +442,7 @@ func NewComputeClusterVmAffinityRule(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule vsphere_compute_cluster_vm_affinity_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/compute_cluster_vm_affinity_rule vsphere_compute_cluster_vm_affinity_rule} Resource.
 func NewComputeClusterVmAffinityRule_Override(c ComputeClusterVmAffinityRule, scope constructs.Construct, id *string, config *ComputeClusterVmAffinityRuleConfig) {
 	_init_.Initialize()
 
@@ -846,6 +856,19 @@ func (c *jsiiProxy_ComputeClusterVmAffinityRule) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (c *jsiiProxy_ComputeClusterVmAffinityRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_ComputeClusterVmAffinityRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -873,6 +896,17 @@ func (c *jsiiProxy_ComputeClusterVmAffinityRule) InterpolationForAttribute(terra
 	return returns
 }
 
+func (c *jsiiProxy_ComputeClusterVmAffinityRule) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_ComputeClusterVmAffinityRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -881,6 +915,17 @@ func (c *jsiiProxy_ComputeClusterVmAffinityRule) MoveTo(moveTarget *string, inde
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_ComputeClusterVmAffinityRule) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

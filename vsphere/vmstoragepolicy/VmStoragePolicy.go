@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/vm_storage_policy vsphere_vm_storage_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/vm_storage_policy vsphere_vm_storage_policy}.
 type VmStoragePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -96,12 +96,22 @@ type VmStoragePolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -367,7 +377,7 @@ func (j *jsiiProxy_VmStoragePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/vm_storage_policy vsphere_vm_storage_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/vm_storage_policy vsphere_vm_storage_policy} Resource.
 func NewVmStoragePolicy(scope constructs.Construct, id *string, config *VmStoragePolicyConfig) VmStoragePolicy {
 	_init_.Initialize()
 
@@ -385,7 +395,7 @@ func NewVmStoragePolicy(scope constructs.Construct, id *string, config *VmStorag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/vm_storage_policy vsphere_vm_storage_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/vm_storage_policy vsphere_vm_storage_policy} Resource.
 func NewVmStoragePolicy_Override(v VmStoragePolicy, scope constructs.Construct, id *string, config *VmStoragePolicyConfig) {
 	_init_.Initialize()
 
@@ -766,6 +776,19 @@ func (v *jsiiProxy_VmStoragePolicy) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (v *jsiiProxy_VmStoragePolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VmStoragePolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -793,6 +816,17 @@ func (v *jsiiProxy_VmStoragePolicy) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (v *jsiiProxy_VmStoragePolicy) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VmStoragePolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -801,6 +835,17 @@ func (v *jsiiProxy_VmStoragePolicy) MoveTo(moveTarget *string, index interface{}
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VmStoragePolicy) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

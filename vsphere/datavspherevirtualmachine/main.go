@@ -341,6 +341,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "macAddress", GoGetter: "MacAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "networkId", GoGetter: "NetworkId"},
+			_jsii_.MemberProperty{JsiiProperty: "physicalFunction", GoGetter: "PhysicalFunction"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

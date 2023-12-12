@@ -59,7 +59,15 @@ func (d *jsiiProxy_DrsVmOverride) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DrsVmOverride) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DrsVmOverride) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DrsVmOverride) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

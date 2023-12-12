@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization vsphere_guest_os_customization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization vsphere_guest_os_customization}.
 type GuestOsCustomization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -101,12 +101,22 @@ type GuestOsCustomization interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -412,7 +422,7 @@ func (j *jsiiProxy_GuestOsCustomization) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization vsphere_guest_os_customization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization vsphere_guest_os_customization} Resource.
 func NewGuestOsCustomization(scope constructs.Construct, id *string, config *GuestOsCustomizationConfig) GuestOsCustomization {
 	_init_.Initialize()
 
@@ -430,7 +440,7 @@ func NewGuestOsCustomization(scope constructs.Construct, id *string, config *Gue
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization vsphere_guest_os_customization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization vsphere_guest_os_customization} Resource.
 func NewGuestOsCustomization_Override(g GuestOsCustomization, scope constructs.Construct, id *string, config *GuestOsCustomizationConfig) {
 	_init_.Initialize()
 
@@ -822,6 +832,19 @@ func (g *jsiiProxy_GuestOsCustomization) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (g *jsiiProxy_GuestOsCustomization) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GuestOsCustomization) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -849,6 +872,17 @@ func (g *jsiiProxy_GuestOsCustomization) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (g *jsiiProxy_GuestOsCustomization) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GuestOsCustomization) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -857,6 +891,17 @@ func (g *jsiiProxy_GuestOsCustomization) MoveTo(moveTarget *string, index interf
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GuestOsCustomization) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

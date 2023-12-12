@@ -59,7 +59,15 @@ func (d *jsiiProxy_DistributedPortGroup) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DistributedPortGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DistributedPortGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DistributedPortGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

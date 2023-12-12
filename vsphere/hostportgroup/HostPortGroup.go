@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group vsphere_host_port_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/host_port_group vsphere_host_port_group}.
 type HostPortGroup interface {
 	cdktf.TerraformResource
 	ActiveNics() *[]*string
@@ -142,12 +142,22 @@ type HostPortGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -735,7 +745,7 @@ func (j *jsiiProxy_HostPortGroup) VlanIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group vsphere_host_port_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/host_port_group vsphere_host_port_group} Resource.
 func NewHostPortGroup(scope constructs.Construct, id *string, config *HostPortGroupConfig) HostPortGroup {
 	_init_.Initialize()
 
@@ -753,7 +763,7 @@ func NewHostPortGroup(scope constructs.Construct, id *string, config *HostPortGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group vsphere_host_port_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/host_port_group vsphere_host_port_group} Resource.
 func NewHostPortGroup_Override(h HostPortGroup, scope constructs.Construct, id *string, config *HostPortGroupConfig) {
 	_init_.Initialize()
 
@@ -1299,6 +1309,19 @@ func (h *jsiiProxy_HostPortGroup) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (h *jsiiProxy_HostPortGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (h *jsiiProxy_HostPortGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := h.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1326,6 +1349,17 @@ func (h *jsiiProxy_HostPortGroup) InterpolationForAttribute(terraformAttribute *
 	return returns
 }
 
+func (h *jsiiProxy_HostPortGroup) MoveFromId(id *string) {
+	if err := h.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (h *jsiiProxy_HostPortGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1334,6 +1368,17 @@ func (h *jsiiProxy_HostPortGroup) MoveTo(moveTarget *string, index interface{}) 
 		h,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (h *jsiiProxy_HostPortGroup) MoveToId(id *string) {
+	if err := h.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

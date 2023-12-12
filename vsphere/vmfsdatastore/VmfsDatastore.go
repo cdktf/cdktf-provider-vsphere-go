@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
 type VmfsDatastore interface {
 	cdktf.TerraformResource
 	Accessible() cdktf.IResolvable
@@ -116,12 +116,22 @@ type VmfsDatastore interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -539,7 +549,7 @@ func (j *jsiiProxy_VmfsDatastore) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
 func NewVmfsDatastore(scope constructs.Construct, id *string, config *VmfsDatastoreConfig) VmfsDatastore {
 	_init_.Initialize()
 
@@ -557,7 +567,7 @@ func NewVmfsDatastore(scope constructs.Construct, id *string, config *VmfsDatast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
 func NewVmfsDatastore_Override(v VmfsDatastore, scope constructs.Construct, id *string, config *VmfsDatastoreConfig) {
 	_init_.Initialize()
 
@@ -993,6 +1003,19 @@ func (v *jsiiProxy_VmfsDatastore) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (v *jsiiProxy_VmfsDatastore) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VmfsDatastore) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1020,6 +1043,17 @@ func (v *jsiiProxy_VmfsDatastore) InterpolationForAttribute(terraformAttribute *
 	return returns
 }
 
+func (v *jsiiProxy_VmfsDatastore) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VmfsDatastore) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1028,6 +1062,17 @@ func (v *jsiiProxy_VmfsDatastore) MoveTo(moveTarget *string, index interface{}) 
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VmfsDatastore) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

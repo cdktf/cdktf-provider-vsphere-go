@@ -39,6 +39,7 @@ type DataVsphereVirtualMachineNetworkInterfacesOutputReference interface {
 	SetInternalValue(val *DataVsphereVirtualMachineNetworkInterfaces)
 	MacAddress() *string
 	NetworkId() *string
+	PhysicalFunction() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -201,6 +202,16 @@ func (j *jsiiProxy_DataVsphereVirtualMachineNetworkInterfacesOutputReference) Ne
 	_jsii_.Get(
 		j,
 		"networkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachineNetworkInterfacesOutputReference) PhysicalFunction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"physicalFunction",
 		&returns,
 	)
 	return returns

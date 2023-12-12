@@ -24,21 +24,21 @@ type DpmHostOverrideConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The managed object ID of the cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/dpm_host_override#compute_cluster_id DpmHostOverride#compute_cluster_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#compute_cluster_id DpmHostOverride#compute_cluster_id}
 	ComputeClusterId *string `field:"required" json:"computeClusterId" yaml:"computeClusterId"`
 	// The managed object ID of the host.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/dpm_host_override#host_system_id DpmHostOverride#host_system_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#host_system_id DpmHostOverride#host_system_id}
 	HostSystemId *string `field:"required" json:"hostSystemId" yaml:"hostSystemId"`
 	// The automation level for power operations on this host. Can be one of manual or automated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/dpm_host_override#dpm_automation_level DpmHostOverride#dpm_automation_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#dpm_automation_level DpmHostOverride#dpm_automation_level}
 	DpmAutomationLevel *string `field:"optional" json:"dpmAutomationLevel" yaml:"dpmAutomationLevel"`
 	// Enable DPM for this host.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/dpm_host_override#dpm_enabled DpmHostOverride#dpm_enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#dpm_enabled DpmHostOverride#dpm_enabled}
 	DpmEnabled interface{} `field:"optional" json:"dpmEnabled" yaml:"dpmEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/dpm_host_override#id DpmHostOverride#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#id DpmHostOverride#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

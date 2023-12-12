@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item vsphere_content_library_item}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/content_library_item vsphere_content_library_item}.
 type ContentLibraryItem interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type ContentLibraryItem interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -439,7 +449,7 @@ func (j *jsiiProxy_ContentLibraryItem) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item vsphere_content_library_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/content_library_item vsphere_content_library_item} Resource.
 func NewContentLibraryItem(scope constructs.Construct, id *string, config *ContentLibraryItemConfig) ContentLibraryItem {
 	_init_.Initialize()
 
@@ -457,7 +467,7 @@ func NewContentLibraryItem(scope constructs.Construct, id *string, config *Conte
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item vsphere_content_library_item} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/content_library_item vsphere_content_library_item} Resource.
 func NewContentLibraryItem_Override(c ContentLibraryItem, scope constructs.Construct, id *string, config *ContentLibraryItemConfig) {
 	_init_.Initialize()
 
@@ -882,6 +892,19 @@ func (c *jsiiProxy_ContentLibraryItem) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (c *jsiiProxy_ContentLibraryItem) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_ContentLibraryItem) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -909,6 +932,17 @@ func (c *jsiiProxy_ContentLibraryItem) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (c *jsiiProxy_ContentLibraryItem) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_ContentLibraryItem) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -917,6 +951,17 @@ func (c *jsiiProxy_ContentLibraryItem) MoveTo(moveTarget *string, index interfac
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_ContentLibraryItem) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

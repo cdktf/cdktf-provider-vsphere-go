@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeClusterVmGroup) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_ComputeClusterVmGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeClusterVmGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeClusterVmGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

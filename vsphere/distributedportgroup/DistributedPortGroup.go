@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/distributed_port_group vsphere_distributed_port_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/distributed_port_group vsphere_distributed_port_group}.
 type DistributedPortGroup interface {
 	cdktf.TerraformResource
 	ActiveUplinks() *[]*string
@@ -227,12 +227,22 @@ type DistributedPortGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -1421,7 +1431,7 @@ func (j *jsiiProxy_DistributedPortGroup) VlanRangeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/distributed_port_group vsphere_distributed_port_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/distributed_port_group vsphere_distributed_port_group} Resource.
 func NewDistributedPortGroup(scope constructs.Construct, id *string, config *DistributedPortGroupConfig) DistributedPortGroup {
 	_init_.Initialize()
 
@@ -1439,7 +1449,7 @@ func NewDistributedPortGroup(scope constructs.Construct, id *string, config *Dis
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/distributed_port_group vsphere_distributed_port_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/distributed_port_group vsphere_distributed_port_group} Resource.
 func NewDistributedPortGroup_Override(d DistributedPortGroup, scope constructs.Construct, id *string, config *DistributedPortGroupConfig) {
 	_init_.Initialize()
 
@@ -2293,6 +2303,19 @@ func (d *jsiiProxy_DistributedPortGroup) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (d *jsiiProxy_DistributedPortGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DistributedPortGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -2320,6 +2343,17 @@ func (d *jsiiProxy_DistributedPortGroup) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (d *jsiiProxy_DistributedPortGroup) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DistributedPortGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -2328,6 +2362,17 @@ func (d *jsiiProxy_DistributedPortGroup) MoveTo(moveTarget *string, index interf
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DistributedPortGroup) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

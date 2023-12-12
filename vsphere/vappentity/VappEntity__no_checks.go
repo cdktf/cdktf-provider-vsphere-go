@@ -59,7 +59,15 @@ func (v *jsiiProxy_VappEntity) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (v *jsiiProxy_VappEntity) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VappEntity) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VappEntity) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
