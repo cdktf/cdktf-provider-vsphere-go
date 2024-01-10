@@ -7,6 +7,10 @@ package distributedvirtualswitch
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DistributedVirtualSwitchPvlanMappingList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DistributedVirtualSwitchPvlanMappingList) validateGetParameters(index *float64) error {
 	return nil
 }

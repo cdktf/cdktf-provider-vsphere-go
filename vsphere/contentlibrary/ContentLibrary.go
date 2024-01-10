@@ -5,10 +5,10 @@ package contentlibrary
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/contentlibrary/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/contentlibrary/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -130,6 +130,9 @@ type ContentLibrary interface {
 	ResetPublication()
 	ResetSubscription()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -987,6 +990,32 @@ func (c *jsiiProxy_ContentLibrary) SynthesizeAttributes() *map[string]interface{
 	_jsii_.Invoke(
 		c,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContentLibrary) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ContentLibrary) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

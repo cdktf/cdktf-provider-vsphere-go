@@ -7,6 +7,10 @@ package virtualmachine
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualMachineDiskList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualMachineDiskList) validateGetParameters(index *float64) error {
 	return nil
 }

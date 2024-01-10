@@ -5,10 +5,10 @@ package hostvirtualswitch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/hostvirtualswitch/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/hostvirtualswitch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -192,6 +192,9 @@ type HostVirtualSwitch interface {
 	ResetStandbyNics()
 	ResetTeamingPolicy()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1657,6 +1660,32 @@ func (h *jsiiProxy_HostVirtualSwitch) SynthesizeAttributes() *map[string]interfa
 	_jsii_.Invoke(
 		h,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HostVirtualSwitch) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		h,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (h *jsiiProxy_HostVirtualSwitch) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		h,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

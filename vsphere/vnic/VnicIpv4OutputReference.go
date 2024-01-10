@@ -5,9 +5,9 @@ package vnic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vnic/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vnic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
