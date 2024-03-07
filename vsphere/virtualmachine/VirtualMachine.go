@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/virtual_machine vsphere_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/virtual_machine vsphere_virtual_machine}.
 type VirtualMachine interface {
 	cdktf.TerraformResource
 	AlternateGuestName() *string
@@ -164,6 +164,9 @@ type VirtualMachine interface {
 	MemoryReservation() *float64
 	SetMemoryReservation(val *float64)
 	MemoryReservationInput() *float64
+	MemoryReservationLockedToMax() interface{}
+	SetMemoryReservationLockedToMax(val interface{})
+	MemoryReservationLockedToMaxInput() interface{}
 	MemoryShareCount() *float64
 	SetMemoryShareCount(val *float64)
 	MemoryShareCountInput() *float64
@@ -380,6 +383,7 @@ type VirtualMachine interface {
 	ResetMemoryHotAddEnabled()
 	ResetMemoryLimit()
 	ResetMemoryReservation()
+	ResetMemoryReservationLockedToMax()
 	ResetMemoryShareCount()
 	ResetMemoryShareLevel()
 	ResetMigrateWaitTimeout()
@@ -1364,6 +1368,26 @@ func (j *jsiiProxy_VirtualMachine) MemoryReservationInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualMachine) MemoryReservationLockedToMax() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"memoryReservationLockedToMax",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachine) MemoryReservationLockedToMaxInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"memoryReservationLockedToMaxInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualMachine) MemoryShareCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -2205,7 +2229,7 @@ func (j *jsiiProxy_VirtualMachine) WaitForGuestNetTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
 func NewVirtualMachine(scope constructs.Construct, id *string, config *VirtualMachineConfig) VirtualMachine {
 	_init_.Initialize()
 
@@ -2223,7 +2247,7 @@ func NewVirtualMachine(scope constructs.Construct, id *string, config *VirtualMa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
 func NewVirtualMachine_Override(v VirtualMachine, scope constructs.Construct, id *string, config *VirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -2686,6 +2710,17 @@ func (j *jsiiProxy_VirtualMachine)SetMemoryReservation(val *float64) {
 	_jsii_.Set(
 		j,
 		"memoryReservation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualMachine)SetMemoryReservationLockedToMax(val interface{}) {
+	if err := j.validateSetMemoryReservationLockedToMaxParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memoryReservationLockedToMax",
 		val,
 	)
 }
@@ -3796,6 +3831,14 @@ func (v *jsiiProxy_VirtualMachine) ResetMemoryReservation() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetMemoryReservation",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualMachine) ResetMemoryReservationLockedToMax() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetMemoryReservationLockedToMax",
 		nil, // no parameters
 	)
 }

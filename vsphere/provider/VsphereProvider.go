@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs vsphere}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs vsphere}.
 type VsphereProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -496,7 +496,7 @@ func (j *jsiiProxy_VsphereProvider) VsphereServerInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs vsphere} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs vsphere} Resource.
 func NewVsphereProvider(scope constructs.Construct, id *string, config *VsphereProviderConfig) VsphereProvider {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewVsphereProvider(scope constructs.Construct, id *string, config *VsphereP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs vsphere} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs vsphere} Resource.
 func NewVsphereProvider_Override(v VsphereProvider, scope constructs.Construct, id *string, config *VsphereProviderConfig) {
 	_init_.Initialize()
 

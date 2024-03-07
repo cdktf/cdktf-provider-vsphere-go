@@ -275,6 +275,10 @@ func (j *jsiiProxy_VirtualMachine) validateSetMemoryReservationParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_VirtualMachine) validateSetMemoryReservationLockedToMaxParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachine) validateSetMemoryShareCountParameters(val *float64) error {
 	return nil
 }

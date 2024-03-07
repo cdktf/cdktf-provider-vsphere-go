@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization vsphere_guest_os_customization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/guest_os_customization vsphere_guest_os_customization}.
 type GuestOsCustomization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_GuestOsCustomization) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization vsphere_guest_os_customization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/guest_os_customization vsphere_guest_os_customization} Resource.
 func NewGuestOsCustomization(scope constructs.Construct, id *string, config *GuestOsCustomizationConfig) GuestOsCustomization {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewGuestOsCustomization(scope constructs.Construct, id *string, config *Gue
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization vsphere_guest_os_customization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/guest_os_customization vsphere_guest_os_customization} Resource.
 func NewGuestOsCustomization_Override(g GuestOsCustomization, scope constructs.Construct, id *string, config *GuestOsCustomizationConfig) {
 	_init_.Initialize()
 

@@ -24,18 +24,22 @@ type DataVsphereDatastoreConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name or path of the datastore.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#name DataVsphereDatastore#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#name DataVsphereDatastore#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The managed object ID of the datacenter the datastore is in.
 	//
 	// This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
 	DatacenterId *string `field:"optional" json:"datacenterId" yaml:"datacenterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#id DataVsphereDatastore#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#id DataVsphereDatastore#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The usage stats of the datastore, include total capacity and free space in bytes.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#stats DataVsphereDatastore#stats}
+	Stats *map[string]*string `field:"optional" json:"stats" yaml:"stats"`
 }
 

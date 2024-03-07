@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore vsphere_datastore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore vsphere_datastore}.
 type DataVsphereDatastore interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -56,6 +56,9 @@ type DataVsphereDatastore interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Stats() *map[string]*string
+	SetStats(val *map[string]*string)
+	StatsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -92,6 +95,7 @@ type DataVsphereDatastore interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStats()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -281,6 +285,26 @@ func (j *jsiiProxy_DataVsphereDatastore) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataVsphereDatastore) Stats() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"stats",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereDatastore) StatsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"statsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVsphereDatastore) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -312,7 +336,7 @@ func (j *jsiiProxy_DataVsphereDatastore) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore vsphere_datastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore vsphere_datastore} Data Source.
 func NewDataVsphereDatastore(scope constructs.Construct, id *string, config *DataVsphereDatastoreConfig) DataVsphereDatastore {
 	_init_.Initialize()
 
@@ -330,7 +354,7 @@ func NewDataVsphereDatastore(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore vsphere_datastore} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore vsphere_datastore} Data Source.
 func NewDataVsphereDatastore_Override(d DataVsphereDatastore, scope constructs.Construct, id *string, config *DataVsphereDatastoreConfig) {
 	_init_.Initialize()
 
@@ -416,6 +440,17 @@ func (j *jsiiProxy_DataVsphereDatastore)SetProvider(val cdktf.TerraformProvider)
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVsphereDatastore)SetStats(val *map[string]*string) {
+	if err := j.validateSetStatsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stats",
 		val,
 	)
 }
@@ -725,6 +760,14 @@ func (d *jsiiProxy_DataVsphereDatastore) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVsphereDatastore) ResetStats() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStats",
 		nil, // no parameters
 	)
 }

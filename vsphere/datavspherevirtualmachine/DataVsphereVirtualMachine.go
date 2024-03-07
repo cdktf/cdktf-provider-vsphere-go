@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/virtual_machine vsphere_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/virtual_machine vsphere_virtual_machine}.
 type DataVsphereVirtualMachine interface {
 	cdktf.TerraformDataSource
 	AlternateGuestName() *string
@@ -90,6 +90,9 @@ type DataVsphereVirtualMachine interface {
 	Firmware() *string
 	SetFirmware(val *string)
 	FirmwareInput() *string
+	Folder() *string
+	SetFolder(val *string)
+	FolderInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -133,6 +136,9 @@ type DataVsphereVirtualMachine interface {
 	MemoryReservation() *float64
 	SetMemoryReservation(val *float64)
 	MemoryReservationInput() *float64
+	MemoryReservationLockedToMax() interface{}
+	SetMemoryReservationLockedToMax(val interface{})
+	MemoryReservationLockedToMaxInput() interface{}
 	MemoryShareCount() *float64
 	SetMemoryShareCount(val *float64)
 	MemoryShareCountInput() *float64
@@ -269,6 +275,7 @@ type DataVsphereVirtualMachine interface {
 	ResetExtraConfig()
 	ResetExtraConfigRebootRequired()
 	ResetFirmware()
+	ResetFolder()
 	ResetGuestId()
 	ResetHardwareVersion()
 	ResetHvMode()
@@ -279,6 +286,7 @@ type DataVsphereVirtualMachine interface {
 	ResetMemoryHotAddEnabled()
 	ResetMemoryLimit()
 	ResetMemoryReservation()
+	ResetMemoryReservationLockedToMax()
 	ResetMemoryShareCount()
 	ResetMemoryShareLevel()
 	ResetMoid()
@@ -795,6 +803,26 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) FirmwareInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataVsphereVirtualMachine) Folder() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"folder",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine) FolderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"folderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVsphereVirtualMachine) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -1040,6 +1068,26 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) MemoryReservationInput() *float64 
 	_jsii_.Get(
 		j,
 		"memoryReservationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine) MemoryReservationLockedToMax() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"memoryReservationLockedToMax",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine) MemoryReservationLockedToMaxInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"memoryReservationLockedToMaxInput",
 		&returns,
 	)
 	return returns
@@ -1636,7 +1684,7 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) VvtdEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
 func NewDataVsphereVirtualMachine(scope constructs.Construct, id *string, config *DataVsphereVirtualMachineConfig) DataVsphereVirtualMachine {
 	_init_.Initialize()
 
@@ -1654,7 +1702,7 @@ func NewDataVsphereVirtualMachine(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
 func NewDataVsphereVirtualMachine_Override(d DataVsphereVirtualMachine, scope constructs.Construct, id *string, config *DataVsphereVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -1904,6 +1952,17 @@ func (j *jsiiProxy_DataVsphereVirtualMachine)SetFirmware(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataVsphereVirtualMachine)SetFolder(val *string) {
+	if err := j.validateSetFolderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"folder",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataVsphereVirtualMachine)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -2029,6 +2088,17 @@ func (j *jsiiProxy_DataVsphereVirtualMachine)SetMemoryReservation(val *float64) 
 	_jsii_.Set(
 		j,
 		"memoryReservation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine)SetMemoryReservationLockedToMax(val interface{}) {
+	if err := j.validateSetMemoryReservationLockedToMaxParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"memoryReservationLockedToMax",
 		val,
 	)
 }
@@ -2750,6 +2820,14 @@ func (d *jsiiProxy_DataVsphereVirtualMachine) ResetFirmware() {
 	)
 }
 
+func (d *jsiiProxy_DataVsphereVirtualMachine) ResetFolder() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFolder",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataVsphereVirtualMachine) ResetGuestId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -2826,6 +2904,14 @@ func (d *jsiiProxy_DataVsphereVirtualMachine) ResetMemoryReservation() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMemoryReservation",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVsphereVirtualMachine) ResetMemoryReservationLockedToMax() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMemoryReservationLockedToMax",
 		nil, // no parameters
 	)
 }

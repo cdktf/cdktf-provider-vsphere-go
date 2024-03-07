@@ -1,12 +1,15 @@
-# CDKTF Go bindings for hashicorp/vsphere provider version 2.6.1
+# CDKTF Go bindings for hashicorp/vsphere provider version 2.7.0
 
-This repo builds and publishes the [Terraform vsphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform vsphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-vsphere-go`](https://github.com/cdktf/cdktf-provider-vsphere-go) package.
 
-`go get github.com/cdktf/cdktf-provider-vsphere-go/vsphere`
+`go get github.com/cdktf/cdktf-provider-vsphere-go/vsphere/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-vsphere-go/blob/main/vsphere/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform vsphere provider version 1
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform vsphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1)
+* [Terraform vsphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

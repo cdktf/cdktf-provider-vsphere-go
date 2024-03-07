@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/license vsphere_license}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/license vsphere_license}.
 type DataVsphereLicense interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataVsphereLicense) Used() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/license vsphere_license} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/license vsphere_license} Data Source.
 func NewDataVsphereLicense(scope constructs.Construct, id *string, config *DataVsphereLicenseConfig) DataVsphereLicense {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataVsphereLicense(scope constructs.Construct, id *string, config *DataV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/license vsphere_license} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/license vsphere_license} Data Source.
 func NewDataVsphereLicense_Override(d DataVsphereLicense, scope constructs.Construct, id *string, config *DataVsphereLicenseConfig) {
 	_init_.Initialize()
 

@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataVsphereDatastore) validateSetNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataVsphereDatastore) validateSetStatsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataVsphereDatastoreParameters(scope constructs.Construct, id *string, config *DataVsphereDatastoreConfig) error {
 	return nil
 }

@@ -159,6 +159,10 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetFirmwareParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetFolderParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetGuestIdParameters(val *string) error {
 	return nil
 }
@@ -200,6 +204,10 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetMemoryLimitParameters(v
 }
 
 func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetMemoryReservationParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine) validateSetMemoryReservationLockedToMaxParameters(val interface{}) error {
 	return nil
 }
 
