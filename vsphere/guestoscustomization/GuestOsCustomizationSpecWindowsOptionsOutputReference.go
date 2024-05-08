@@ -46,6 +46,9 @@ type GuestOsCustomizationSpecWindowsOptionsOutputReference interface {
 	DomainAdminUser() *string
 	SetDomainAdminUser(val *string)
 	DomainAdminUserInput() *string
+	DomainOu() *string
+	SetDomainOu(val *string)
+	DomainOuInput() *string
 	// Experimental.
 	Fqn() *string
 	FullName() *string
@@ -108,6 +111,7 @@ type GuestOsCustomizationSpecWindowsOptionsOutputReference interface {
 	ResetAutoLogonCount()
 	ResetDomainAdminPassword()
 	ResetDomainAdminUser()
+	ResetDomainOu()
 	ResetFullName()
 	ResetJoinDomain()
 	ResetOrganizationName()
@@ -275,6 +279,26 @@ func (j *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference) Domain
 	_jsii_.Get(
 		j,
 		"domainAdminUserInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference) DomainOu() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainOu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference) DomainOuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainOuInput",
 		&returns,
 	)
 	return returns
@@ -572,6 +596,17 @@ func (j *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference)SetDoma
 	_jsii_.Set(
 		j,
 		"domainAdminUser",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference)SetDomainOu(val *string) {
+	if err := j.validateSetDomainOuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainOu",
 		val,
 	)
 }
@@ -908,6 +943,14 @@ func (g *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		g,
 		"resetDomainAdminUser",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference) ResetDomainOu() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDomainOu",
 		nil, // no parameters
 	)
 }

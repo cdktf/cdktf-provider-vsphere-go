@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster vsphere_compute_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster vsphere_compute_cluster}.
 type ComputeCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -174,6 +174,8 @@ type ComputeCluster interface {
 	HostClusterExitTimeout() *float64
 	SetHostClusterExitTimeout(val *float64)
 	HostClusterExitTimeoutInput() *float64
+	HostImage() ComputeClusterHostImageOutputReference
+	HostImageInput() *ComputeClusterHostImage
 	HostManaged() interface{}
 	SetHostManaged(val interface{})
 	HostManagedInput() interface{}
@@ -309,6 +311,7 @@ type ComputeCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutHostImage(value *ComputeClusterHostImage)
 	PutVsanDiskGroup(value interface{})
 	PutVsanFaultDomains(value interface{})
 	PutVsanStretchedCluster(value *ComputeClusterVsanStretchedCluster)
@@ -356,6 +359,7 @@ type ComputeCluster interface {
 	ResetHaVmRestartPriority()
 	ResetHaVmRestartTimeout()
 	ResetHostClusterExitTimeout()
+	ResetHostImage()
 	ResetHostManaged()
 	ResetHostSystemIds()
 	ResetId()
@@ -1380,6 +1384,26 @@ func (j *jsiiProxy_ComputeCluster) HostClusterExitTimeoutInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeCluster) HostImage() ComputeClusterHostImageOutputReference {
+	var returns ComputeClusterHostImageOutputReference
+	_jsii_.Get(
+		j,
+		"hostImage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeCluster) HostImageInput() *ComputeClusterHostImage {
+	var returns *ComputeClusterHostImage
+	_jsii_.Get(
+		j,
+		"hostImageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeCluster) HostManaged() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1951,7 +1975,7 @@ func (j *jsiiProxy_ComputeCluster) VsanVerboseModeEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
 func NewComputeCluster(scope constructs.Construct, id *string, config *ComputeClusterConfig) ComputeCluster {
 	_init_.Initialize()
 
@@ -1969,7 +1993,7 @@ func NewComputeCluster(scope constructs.Construct, id *string, config *ComputeCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster vsphere_compute_cluster} Resource.
 func NewComputeCluster_Override(c ComputeCluster, scope constructs.Construct, id *string, config *ComputeClusterConfig) {
 	_init_.Initialize()
 
@@ -3127,6 +3151,17 @@ func (c *jsiiProxy_ComputeCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ComputeCluster) PutHostImage(value *ComputeClusterHostImage) {
+	if err := c.validatePutHostImageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHostImage",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeCluster) PutVsanDiskGroup(value interface{}) {
 	if err := c.validatePutVsanDiskGroupParameters(value); err != nil {
 		panic(err)
@@ -3508,6 +3543,14 @@ func (c *jsiiProxy_ComputeCluster) ResetHostClusterExitTimeout() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetHostClusterExitTimeout",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeCluster) ResetHostImage() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHostImage",
 		nil, // no parameters
 	)
 }

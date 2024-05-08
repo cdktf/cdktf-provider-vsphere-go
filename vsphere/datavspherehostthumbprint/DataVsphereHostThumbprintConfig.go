@@ -24,20 +24,20 @@ type DataVsphereHostThumbprintConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The address of the ESXi to extract the thumbprint from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/host_thumbprint#address DataVsphereHostThumbprint#address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/host_thumbprint#address DataVsphereHostThumbprint#address}
 	Address *string `field:"required" json:"address" yaml:"address"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Boolean that can be set to true to disable SSL certificate verification.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/host_thumbprint#insecure DataVsphereHostThumbprint#insecure}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/host_thumbprint#insecure DataVsphereHostThumbprint#insecure}
 	Insecure interface{} `field:"optional" json:"insecure" yaml:"insecure"`
 	// The port to connect to on the ESXi host.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/host_thumbprint#port DataVsphereHostThumbprint#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/host_thumbprint#port DataVsphereHostThumbprint#port}
 	Port *string `field:"optional" json:"port" yaml:"port"`
 }
 

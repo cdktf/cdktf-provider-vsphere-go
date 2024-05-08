@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override vsphere_dpm_host_override}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/dpm_host_override vsphere_dpm_host_override}.
 type DpmHostOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DpmHostOverride) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override vsphere_dpm_host_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/dpm_host_override vsphere_dpm_host_override} Resource.
 func NewDpmHostOverride(scope constructs.Construct, id *string, config *DpmHostOverrideConfig) DpmHostOverride {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDpmHostOverride(scope constructs.Construct, id *string, config *DpmHostO
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override vsphere_dpm_host_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/dpm_host_override vsphere_dpm_host_override} Resource.
 func NewDpmHostOverride_Override(d DpmHostOverride, scope constructs.Construct, id *string, config *DpmHostOverrideConfig) {
 	_init_.Initialize()
 

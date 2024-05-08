@@ -124,6 +124,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "haVmRestartTimeoutInput", GoGetter: "HaVmRestartTimeoutInput"},
 			_jsii_.MemberProperty{JsiiProperty: "hostClusterExitTimeout", GoGetter: "HostClusterExitTimeout"},
 			_jsii_.MemberProperty{JsiiProperty: "hostClusterExitTimeoutInput", GoGetter: "HostClusterExitTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "hostImage", GoGetter: "HostImage"},
+			_jsii_.MemberProperty{JsiiProperty: "hostImageInput", GoGetter: "HostImageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "hostManaged", GoGetter: "HostManaged"},
 			_jsii_.MemberProperty{JsiiProperty: "hostManagedInput", GoGetter: "HostManagedInput"},
 			_jsii_.MemberProperty{JsiiProperty: "hostSystemIds", GoGetter: "HostSystemIds"},
@@ -152,6 +154,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "proactiveHaSevereRemediationInput", GoGetter: "ProactiveHaSevereRemediationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putHostImage", GoMethod: "PutHostImage"},
 			_jsii_.MemberMethod{JsiiMethod: "putVsanDiskGroup", GoMethod: "PutVsanDiskGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "putVsanFaultDomains", GoMethod: "PutVsanFaultDomains"},
 			_jsii_.MemberMethod{JsiiMethod: "putVsanStretchedCluster", GoMethod: "PutVsanStretchedCluster"},
@@ -200,6 +203,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetHaVmRestartPriority", GoMethod: "ResetHaVmRestartPriority"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHaVmRestartTimeout", GoMethod: "ResetHaVmRestartTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostClusterExitTimeout", GoMethod: "ResetHostClusterExitTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHostImage", GoMethod: "ResetHostImage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostManaged", GoMethod: "ResetHostManaged"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostSystemIds", GoMethod: "ResetHostSystemIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -274,6 +278,113 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig",
 		reflect.TypeOf((*ComputeClusterConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage",
+		reflect.TypeOf((*ComputeClusterHostImage)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent",
+		reflect.TypeOf((*ComputeClusterHostImageComponent)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList",
+		reflect.TypeOf((*ComputeClusterHostImageComponentList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeClusterHostImageComponentList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference",
+		reflect.TypeOf((*ComputeClusterHostImageComponentOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "key", GoGetter: "Key"},
+			_jsii_.MemberProperty{JsiiProperty: "keyInput", GoGetter: "KeyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKey", GoMethod: "ResetKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVersion", GoMethod: "ResetVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
+			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeClusterHostImageComponentOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference",
+		reflect.TypeOf((*ComputeClusterHostImageOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberProperty{JsiiProperty: "component", GoGetter: "Component"},
+			_jsii_.MemberProperty{JsiiProperty: "componentInput", GoGetter: "ComponentInput"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "esxVersion", GoGetter: "EsxVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "esxVersionInput", GoGetter: "EsxVersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putComponent", GoMethod: "PutComponent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComponent", GoMethod: "ResetComponent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEsxVersion", GoMethod: "ResetEsxVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeClusterHostImageOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup",

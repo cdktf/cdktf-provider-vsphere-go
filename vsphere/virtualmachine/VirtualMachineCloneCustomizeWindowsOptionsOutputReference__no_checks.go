@@ -83,6 +83,10 @@ func (j *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) validateSetDomainOuParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) validateSetFullNameParameters(val *string) error {
 	return nil
 }

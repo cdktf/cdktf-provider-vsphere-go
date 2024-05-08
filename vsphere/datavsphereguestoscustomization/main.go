@@ -295,6 +295,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "domainAdminPassword", GoGetter: "DomainAdminPassword"},
 			_jsii_.MemberProperty{JsiiProperty: "domainAdminUser", GoGetter: "DomainAdminUser"},
+			_jsii_.MemberProperty{JsiiProperty: "domainOu", GoGetter: "DomainOu"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},

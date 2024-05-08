@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/network vsphere_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/network vsphere_network}.
 type DataVsphereNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataVsphereNetwork) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/network vsphere_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/network vsphere_network} Data Source.
 func NewDataVsphereNetwork(scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) DataVsphereNetwork {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataVsphereNetwork(scope constructs.Construct, id *string, config *DataV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/network vsphere_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/network vsphere_network} Data Source.
 func NewDataVsphereNetwork_Override(d DataVsphereNetwork, scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) {
 	_init_.Initialize()
 

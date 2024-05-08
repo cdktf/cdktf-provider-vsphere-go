@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/host_pci_device vsphere_host_pci_device}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/host_pci_device vsphere_host_pci_device}.
 type DataVsphereHostPciDevice interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataVsphereHostPciDevice) VendorIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/host_pci_device vsphere_host_pci_device} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/host_pci_device vsphere_host_pci_device} Data Source.
 func NewDataVsphereHostPciDevice(scope constructs.Construct, id *string, config *DataVsphereHostPciDeviceConfig) DataVsphereHostPciDevice {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataVsphereHostPciDevice(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/host_pci_device vsphere_host_pci_device} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/host_pci_device vsphere_host_pci_device} Data Source.
 func NewDataVsphereHostPciDevice_Override(d DataVsphereHostPciDevice, scope constructs.Construct, id *string, config *DataVsphereHostPciDeviceConfig) {
 	_init_.Initialize()
 

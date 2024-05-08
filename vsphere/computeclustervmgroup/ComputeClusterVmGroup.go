@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster_vm_group vsphere_compute_cluster_vm_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster_vm_group vsphere_compute_cluster_vm_group}.
 type ComputeClusterVmGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ComputeClusterVmGroup) VirtualMachineIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster_vm_group vsphere_compute_cluster_vm_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster_vm_group vsphere_compute_cluster_vm_group} Resource.
 func NewComputeClusterVmGroup(scope constructs.Construct, id *string, config *ComputeClusterVmGroupConfig) ComputeClusterVmGroup {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewComputeClusterVmGroup(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster_vm_group vsphere_compute_cluster_vm_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster_vm_group vsphere_compute_cluster_vm_group} Resource.
 func NewComputeClusterVmGroup_Override(c ComputeClusterVmGroup, scope constructs.Construct, id *string, config *ComputeClusterVmGroupConfig) {
 	_init_.Initialize()
 

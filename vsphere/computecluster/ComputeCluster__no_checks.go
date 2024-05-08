@@ -75,6 +75,10 @@ func (c *jsiiProxy_ComputeCluster) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (c *jsiiProxy_ComputeCluster) validatePutHostImageParameters(value *ComputeClusterHostImage) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeCluster) validatePutVsanDiskGroupParameters(value interface{}) error {
 	return nil
 }

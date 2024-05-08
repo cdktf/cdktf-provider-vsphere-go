@@ -46,6 +46,9 @@ type VirtualMachineCloneCustomizeWindowsOptionsOutputReference interface {
 	DomainAdminUser() *string
 	SetDomainAdminUser(val *string)
 	DomainAdminUserInput() *string
+	DomainOu() *string
+	SetDomainOu(val *string)
+	DomainOuInput() *string
 	// Experimental.
 	Fqn() *string
 	FullName() *string
@@ -108,6 +111,7 @@ type VirtualMachineCloneCustomizeWindowsOptionsOutputReference interface {
 	ResetAutoLogonCount()
 	ResetDomainAdminPassword()
 	ResetDomainAdminUser()
+	ResetDomainOu()
 	ResetFullName()
 	ResetJoinDomain()
 	ResetOrganizationName()
@@ -275,6 +279,26 @@ func (j *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) Do
 	_jsii_.Get(
 		j,
 		"domainAdminUserInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) DomainOu() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainOu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) DomainOuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainOuInput",
 		&returns,
 	)
 	return returns
@@ -572,6 +596,17 @@ func (j *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference)Set
 	_jsii_.Set(
 		j,
 		"domainAdminUser",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference)SetDomainOu(val *string) {
+	if err := j.validateSetDomainOuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainOu",
 		val,
 	)
 }
@@ -908,6 +943,14 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) Re
 	_jsii_.InvokeVoid(
 		v,
 		"resetDomainAdminUser",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) ResetDomainOu() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDomainOu",
 		nil, // no parameters
 	)
 }

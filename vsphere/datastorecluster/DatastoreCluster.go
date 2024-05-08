@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datastore_cluster vsphere_datastore_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datastore_cluster vsphere_datastore_cluster}.
 type DatastoreCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -908,7 +908,7 @@ func (j *jsiiProxy_DatastoreCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datastore_cluster vsphere_datastore_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datastore_cluster vsphere_datastore_cluster} Resource.
 func NewDatastoreCluster(scope constructs.Construct, id *string, config *DatastoreClusterConfig) DatastoreCluster {
 	_init_.Initialize()
 
@@ -926,7 +926,7 @@ func NewDatastoreCluster(scope constructs.Construct, id *string, config *Datasto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datastore_cluster vsphere_datastore_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datastore_cluster vsphere_datastore_cluster} Resource.
 func NewDatastoreCluster_Override(d DatastoreCluster, scope constructs.Construct, id *string, config *DatastoreClusterConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group}.
 type DataVsphereComputeClusterHostGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataVsphereComputeClusterHostGroup) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group} Data Source.
 func NewDataVsphereComputeClusterHostGroup(scope constructs.Construct, id *string, config *DataVsphereComputeClusterHostGroupConfig) DataVsphereComputeClusterHostGroup {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataVsphereComputeClusterHostGroup(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group} Data Source.
 func NewDataVsphereComputeClusterHostGroup_Override(d DataVsphereComputeClusterHostGroup, scope constructs.Construct, id *string, config *DataVsphereComputeClusterHostGroupConfig) {
 	_init_.Initialize()
 

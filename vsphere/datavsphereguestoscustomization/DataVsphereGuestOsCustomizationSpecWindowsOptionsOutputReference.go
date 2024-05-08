@@ -34,6 +34,7 @@ type DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference interface 
 	CreationStack() *[]*string
 	DomainAdminPassword() *string
 	DomainAdminUser() *string
+	DomainOu() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataVsphereGuestOsCustomizationSpecWindowsOptions
@@ -174,6 +175,16 @@ func (j *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputRefere
 	_jsii_.Get(
 		j,
 		"domainAdminUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference) DomainOu() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainOu",
 		&returns,
 	)
 	return returns
