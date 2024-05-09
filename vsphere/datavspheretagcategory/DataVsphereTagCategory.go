@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/tag_category vsphere_tag_category}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/tag_category vsphere_tag_category}.
 type DataVsphereTagCategory interface {
 	cdktf.TerraformDataSource
 	AssociableTypes() *[]*string
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataVsphereTagCategory) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/tag_category vsphere_tag_category} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/tag_category vsphere_tag_category} Data Source.
 func NewDataVsphereTagCategory(scope constructs.Construct, id *string, config *DataVsphereTagCategoryConfig) DataVsphereTagCategory {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataVsphereTagCategory(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/tag_category vsphere_tag_category} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/tag_category vsphere_tag_category} Data Source.
 func NewDataVsphereTagCategory_Override(d DataVsphereTagCategory, scope constructs.Construct, id *string, config *DataVsphereTagCategoryConfig) {
 	_init_.Initialize()
 
