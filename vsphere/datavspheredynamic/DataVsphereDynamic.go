@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/dynamic vsphere_dynamic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/dynamic vsphere_dynamic}.
 type DataVsphereDynamic interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DataVsphereDynamic) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/dynamic vsphere_dynamic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/dynamic vsphere_dynamic} Data Source.
 func NewDataVsphereDynamic(scope constructs.Construct, id *string, config *DataVsphereDynamicConfig) DataVsphereDynamic {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewDataVsphereDynamic(scope constructs.Construct, id *string, config *DataV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/dynamic vsphere_dynamic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/dynamic vsphere_dynamic} Data Source.
 func NewDataVsphereDynamic_Override(d DataVsphereDynamic, scope constructs.Construct, id *string, config *DataVsphereDynamicConfig) {
 	_init_.Initialize()
 

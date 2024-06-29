@@ -26,16 +26,16 @@ type DataVsphereResourcePoolConfig struct {
 	//
 	// This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/resource_pool#datacenter_id DataVsphereResourcePool#datacenter_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/resource_pool#datacenter_id DataVsphereResourcePool#datacenter_id}
 	DatacenterId *string `field:"optional" json:"datacenterId" yaml:"datacenterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/resource_pool#id DataVsphereResourcePool#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/resource_pool#id DataVsphereResourcePool#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name or path of the resource pool.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/resource_pool#name DataVsphereResourcePool#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/resource_pool#name DataVsphereResourcePool#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

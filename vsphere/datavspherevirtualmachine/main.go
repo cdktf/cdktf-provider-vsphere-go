@@ -87,6 +87,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ideControllerScanCount", GoGetter: "IdeControllerScanCount"},
 			_jsii_.MemberProperty{JsiiProperty: "ideControllerScanCountInput", GoGetter: "IdeControllerScanCountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceUuid", GoGetter: "InstanceUuid"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "latencySensitivity", GoGetter: "LatencySensitivity"},
 			_jsii_.MemberProperty{JsiiProperty: "latencySensitivityInput", GoGetter: "LatencySensitivityInput"},

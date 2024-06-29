@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/offline_software_depot vsphere_offline_software_depot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/offline_software_depot vsphere_offline_software_depot}.
 type OfflineSoftwareDepot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_OfflineSoftwareDepot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/offline_software_depot vsphere_offline_software_depot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/offline_software_depot vsphere_offline_software_depot} Resource.
 func NewOfflineSoftwareDepot(scope constructs.Construct, id *string, config *OfflineSoftwareDepotConfig) OfflineSoftwareDepot {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewOfflineSoftwareDepot(scope constructs.Construct, id *string, config *Off
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/offline_software_depot vsphere_offline_software_depot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/offline_software_depot vsphere_offline_software_depot} Resource.
 func NewOfflineSoftwareDepot_Override(o OfflineSoftwareDepot, scope constructs.Construct, id *string, config *OfflineSoftwareDepotConfig) {
 	_init_.Initialize()
 

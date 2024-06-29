@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/virtual_machine vsphere_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/virtual_machine vsphere_virtual_machine}.
 type DataVsphereVirtualMachine interface {
 	cdktf.TerraformDataSource
 	AlternateGuestName() *string
@@ -117,6 +117,7 @@ type DataVsphereVirtualMachine interface {
 	SetIdeControllerScanCount(val *float64)
 	IdeControllerScanCountInput() *float64
 	IdInput() *string
+	InstanceUuid() *string
 	LatencySensitivity() *string
 	SetLatencySensitivity(val *string)
 	LatencySensitivityInput() *string
@@ -963,6 +964,16 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataVsphereVirtualMachine) InstanceUuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceUuid",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVsphereVirtualMachine) LatencySensitivity() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1684,7 +1695,7 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) VvtdEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
 func NewDataVsphereVirtualMachine(scope constructs.Construct, id *string, config *DataVsphereVirtualMachineConfig) DataVsphereVirtualMachine {
 	_init_.Initialize()
 
@@ -1702,7 +1713,7 @@ func NewDataVsphereVirtualMachine(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
 func NewDataVsphereVirtualMachine_Override(d DataVsphereVirtualMachine, scope constructs.Construct, id *string, config *DataVsphereVirtualMachineConfig) {
 	_init_.Initialize()
 

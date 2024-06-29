@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/host_vgpu_profile vsphere_host_vgpu_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/host_vgpu_profile vsphere_host_vgpu_profile}.
 type DataVsphereHostVgpuProfile interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataVsphereHostVgpuProfile) VgpuProfiles() DataVsphereHostVgp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/host_vgpu_profile vsphere_host_vgpu_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/host_vgpu_profile vsphere_host_vgpu_profile} Data Source.
 func NewDataVsphereHostVgpuProfile(scope constructs.Construct, id *string, config *DataVsphereHostVgpuProfileConfig) DataVsphereHostVgpuProfile {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataVsphereHostVgpuProfile(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/host_vgpu_profile vsphere_host_vgpu_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/host_vgpu_profile vsphere_host_vgpu_profile} Data Source.
 func NewDataVsphereHostVgpuProfile_Override(d DataVsphereHostVgpuProfile, scope constructs.Construct, id *string, config *DataVsphereHostVgpuProfileConfig) {
 	_init_.Initialize()
 
