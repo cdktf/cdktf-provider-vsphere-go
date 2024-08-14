@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot}.
 type VirtualMachineSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_VirtualMachineSnapshot) VirtualMachineUuidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot} Resource.
 func NewVirtualMachineSnapshot(scope constructs.Construct, id *string, config *VirtualMachineSnapshotConfig) VirtualMachineSnapshot {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewVirtualMachineSnapshot(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_snapshot vsphere_virtual_machine_snapshot} Resource.
 func NewVirtualMachineSnapshot_Override(v VirtualMachineSnapshot, scope constructs.Construct, id *string, config *VirtualMachineSnapshotConfig) {
 	_init_.Initialize()
 

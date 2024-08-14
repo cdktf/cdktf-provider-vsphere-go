@@ -24,28 +24,28 @@ type FolderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The path of the folder and any parents, relative to the datacenter and folder type being defined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#path Folder#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/folder#path Folder#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
 	// The type of the folder.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#type Folder#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/folder#type Folder#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// A list of custom attributes to set on this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#custom_attributes Folder#custom_attributes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/folder#custom_attributes Folder#custom_attributes}
 	CustomAttributes *map[string]*string `field:"optional" json:"customAttributes" yaml:"customAttributes"`
 	// The ID of the datacenter. Can be ignored if creating a datacenter folder, otherwise required.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#datacenter_id Folder#datacenter_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/folder#datacenter_id Folder#datacenter_id}
 	DatacenterId *string `field:"optional" json:"datacenterId" yaml:"datacenterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#id Folder#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/folder#id Folder#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// A list of tag IDs to apply to this object.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#tags Folder#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/folder#tags Folder#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

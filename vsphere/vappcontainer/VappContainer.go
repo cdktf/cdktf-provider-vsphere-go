@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/vapp_container vsphere_vapp_container}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/vapp_container vsphere_vapp_container}.
 type VappContainer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -668,7 +668,7 @@ func (j *jsiiProxy_VappContainer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/vapp_container vsphere_vapp_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/vapp_container vsphere_vapp_container} Resource.
 func NewVappContainer(scope constructs.Construct, id *string, config *VappContainerConfig) VappContainer {
 	_init_.Initialize()
 
@@ -686,7 +686,7 @@ func NewVappContainer(scope constructs.Construct, id *string, config *VappContai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/vapp_container vsphere_vapp_container} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/vapp_container vsphere_vapp_container} Resource.
 func NewVappContainer_Override(v VappContainer, scope constructs.Construct, id *string, config *VappContainerConfig) {
 	_init_.Initialize()
 
