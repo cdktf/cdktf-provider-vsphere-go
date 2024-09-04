@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host vsphere_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host vsphere_host}.
 type Host interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -91,6 +91,8 @@ type Host interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Services() HostServicesList
+	ServicesInput() interface{}
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -149,6 +151,7 @@ type Host interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutServices(value interface{})
 	ResetCluster()
 	ResetClusterManaged()
 	ResetConnected()
@@ -162,6 +165,7 @@ type Host interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetServices()
 	ResetTags()
 	ResetThumbprint()
 	SynthesizeAttributes() *map[string]interface{}
@@ -552,6 +556,26 @@ func (j *jsiiProxy_Host) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Host) Services() HostServicesList {
+	var returns HostServicesList
+	_jsii_.Get(
+		j,
+		"services",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Host) ServicesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"servicesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Host) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -643,7 +667,7 @@ func (j *jsiiProxy_Host) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host vsphere_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host vsphere_host} Resource.
 func NewHost(scope constructs.Construct, id *string, config *HostConfig) Host {
 	_init_.Initialize()
 
@@ -661,7 +685,7 @@ func NewHost(scope constructs.Construct, id *string, config *HostConfig) Host {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host vsphere_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host vsphere_host} Resource.
 func NewHost_Override(h Host, scope constructs.Construct, id *string, config *HostConfig) {
 	_init_.Initialize()
 
@@ -1258,6 +1282,17 @@ func (h *jsiiProxy_Host) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (h *jsiiProxy_Host) PutServices(value interface{}) {
+	if err := h.validatePutServicesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putServices",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_Host) ResetCluster() {
 	_jsii_.InvokeVoid(
 		h,
@@ -1342,6 +1377,14 @@ func (h *jsiiProxy_Host) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_Host) ResetServices() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetServices",
 		nil, // no parameters
 	)
 }

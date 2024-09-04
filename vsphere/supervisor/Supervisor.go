@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/supervisor vsphere_supervisor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/supervisor vsphere_supervisor}.
 type Supervisor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -656,7 +656,7 @@ func (j *jsiiProxy_Supervisor) WorkerDnsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/supervisor vsphere_supervisor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/supervisor vsphere_supervisor} Resource.
 func NewSupervisor(scope constructs.Construct, id *string, config *SupervisorConfig) Supervisor {
 	_init_.Initialize()
 
@@ -674,7 +674,7 @@ func NewSupervisor(scope constructs.Construct, id *string, config *SupervisorCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/supervisor vsphere_supervisor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/supervisor vsphere_supervisor} Resource.
 func NewSupervisor_Override(s Supervisor, scope constructs.Construct, id *string, config *SupervisorConfig) {
 	_init_.Initialize()
 

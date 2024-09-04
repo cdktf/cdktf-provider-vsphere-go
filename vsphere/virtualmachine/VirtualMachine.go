@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine vsphere_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine vsphere_virtual_machine}.
 type VirtualMachine interface {
 	cdktf.TerraformResource
 	AlternateGuestName() *string
@@ -2229,7 +2229,7 @@ func (j *jsiiProxy_VirtualMachine) WaitForGuestNetTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
 func NewVirtualMachine(scope constructs.Construct, id *string, config *VirtualMachineConfig) VirtualMachine {
 	_init_.Initialize()
 
@@ -2247,7 +2247,7 @@ func NewVirtualMachine(scope constructs.Construct, id *string, config *VirtualMa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
 func NewVirtualMachine_Override(v VirtualMachine, scope constructs.Construct, id *string, config *VirtualMachineConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ type DataVsphereVirtualMachineVapp struct {
 	//
 	// Allows customization of VMs cloned from OVF templates which have customizable vApp properties.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/virtual_machine#properties DataVsphereVirtualMachine#properties}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/virtual_machine#properties DataVsphereVirtualMachine#properties}
 	Properties *map[string]*string `field:"optional" json:"properties" yaml:"properties"`
 }
 

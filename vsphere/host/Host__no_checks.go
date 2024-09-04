@@ -75,6 +75,10 @@ func (h *jsiiProxy_Host) validateOverrideLogicalIdParameters(newLogicalId *strin
 	return nil
 }
 
+func (h *jsiiProxy_Host) validatePutServicesParameters(value interface{}) error {
+	return nil
+}
+
 func validateHost_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
