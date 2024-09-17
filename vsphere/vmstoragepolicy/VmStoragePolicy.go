@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vm_storage_policy vsphere_vm_storage_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vm_storage_policy vsphere_vm_storage_policy}.
 type VmStoragePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_VmStoragePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vm_storage_policy vsphere_vm_storage_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vm_storage_policy vsphere_vm_storage_policy} Resource.
 func NewVmStoragePolicy(scope constructs.Construct, id *string, config *VmStoragePolicyConfig) VmStoragePolicy {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewVmStoragePolicy(scope constructs.Construct, id *string, config *VmStorag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vm_storage_policy vsphere_vm_storage_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vm_storage_policy vsphere_vm_storage_policy} Resource.
 func NewVmStoragePolicy_Override(v VmStoragePolicy, scope constructs.Construct, id *string, config *VmStoragePolicyConfig) {
 	_init_.Initialize()
 

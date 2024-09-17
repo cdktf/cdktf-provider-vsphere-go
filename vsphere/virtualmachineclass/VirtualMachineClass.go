@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/virtual_machine_class vsphere_virtual_machine_class}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_machine_class vsphere_virtual_machine_class}.
 type VirtualMachineClass interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_VirtualMachineClass) VgpuDevicesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/virtual_machine_class vsphere_virtual_machine_class} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_machine_class vsphere_virtual_machine_class} Resource.
 func NewVirtualMachineClass(scope constructs.Construct, id *string, config *VirtualMachineClassConfig) VirtualMachineClass {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewVirtualMachineClass(scope constructs.Construct, id *string, config *Virt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/virtual_machine_class vsphere_virtual_machine_class} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_machine_class vsphere_virtual_machine_class} Resource.
 func NewVirtualMachineClass_Override(v VirtualMachineClass, scope constructs.Construct, id *string, config *VirtualMachineClassConfig) {
 	_init_.Initialize()
 

@@ -24,17 +24,17 @@ type EntityPermissionsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The managed object id or uuid of the entity.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/entity_permissions#entity_id EntityPermissions#entity_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/entity_permissions#entity_id EntityPermissions#entity_id}
 	EntityId *string `field:"required" json:"entityId" yaml:"entityId"`
 	// The entity managed object type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/entity_permissions#entity_type EntityPermissions#entity_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/entity_permissions#entity_type EntityPermissions#entity_type}
 	EntityType *string `field:"required" json:"entityType" yaml:"entityType"`
 	// permissions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/entity_permissions#permissions EntityPermissions#permissions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/entity_permissions#permissions EntityPermissions#permissions}
 	Permissions interface{} `field:"required" json:"permissions" yaml:"permissions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/entity_permissions#id EntityPermissions#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/entity_permissions#id EntityPermissions#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

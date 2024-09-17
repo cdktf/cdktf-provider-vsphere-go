@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/compute_cluster_vm_anti_affinity_rule vsphere_compute_cluster_vm_anti_affinity_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/compute_cluster_vm_anti_affinity_rule vsphere_compute_cluster_vm_anti_affinity_rule}.
 type ComputeClusterVmAntiAffinityRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_ComputeClusterVmAntiAffinityRule) VirtualMachineIdsInput() *[
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/compute_cluster_vm_anti_affinity_rule vsphere_compute_cluster_vm_anti_affinity_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/compute_cluster_vm_anti_affinity_rule vsphere_compute_cluster_vm_anti_affinity_rule} Resource.
 func NewComputeClusterVmAntiAffinityRule(scope constructs.Construct, id *string, config *ComputeClusterVmAntiAffinityRuleConfig) ComputeClusterVmAntiAffinityRule {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewComputeClusterVmAntiAffinityRule(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/compute_cluster_vm_anti_affinity_rule vsphere_compute_cluster_vm_anti_affinity_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/compute_cluster_vm_anti_affinity_rule vsphere_compute_cluster_vm_anti_affinity_rule} Resource.
 func NewComputeClusterVmAntiAffinityRule_Override(c ComputeClusterVmAntiAffinityRule, scope constructs.Construct, id *string, config *ComputeClusterVmAntiAffinityRuleConfig) {
 	_init_.Initialize()
 
