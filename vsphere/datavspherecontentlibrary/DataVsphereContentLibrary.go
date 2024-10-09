@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/content_library vsphere_content_library}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/content_library vsphere_content_library}.
 type DataVsphereContentLibrary interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataVsphereContentLibrary) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/content_library vsphere_content_library} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/content_library vsphere_content_library} Data Source.
 func NewDataVsphereContentLibrary(scope constructs.Construct, id *string, config *DataVsphereContentLibraryConfig) DataVsphereContentLibrary {
 	_init_.Initialize()
 
@@ -306,7 +306,7 @@ func NewDataVsphereContentLibrary(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/content_library vsphere_content_library} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/content_library vsphere_content_library} Data Source.
 func NewDataVsphereContentLibrary_Override(d DataVsphereContentLibrary, scope constructs.Construct, id *string, config *DataVsphereContentLibraryConfig) {
 	_init_.Initialize()
 

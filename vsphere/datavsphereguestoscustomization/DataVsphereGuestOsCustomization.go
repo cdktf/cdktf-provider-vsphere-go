@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/guest_os_customization vsphere_guest_os_customization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/guest_os_customization vsphere_guest_os_customization}.
 type DataVsphereGuestOsCustomization interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataVsphereGuestOsCustomization) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/guest_os_customization vsphere_guest_os_customization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/guest_os_customization vsphere_guest_os_customization} Data Source.
 func NewDataVsphereGuestOsCustomization(scope constructs.Construct, id *string, config *DataVsphereGuestOsCustomizationConfig) DataVsphereGuestOsCustomization {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataVsphereGuestOsCustomization(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/guest_os_customization vsphere_guest_os_customization} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/guest_os_customization vsphere_guest_os_customization} Data Source.
 func NewDataVsphereGuestOsCustomization_Override(d DataVsphereGuestOsCustomization, scope constructs.Construct, id *string, config *DataVsphereGuestOsCustomizationConfig) {
 	_init_.Initialize()
 

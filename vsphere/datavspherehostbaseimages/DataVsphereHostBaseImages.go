@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/host_base_images vsphere_host_base_images}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/host_base_images vsphere_host_base_images}.
 type DataVsphereHostBaseImages interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataVsphereHostBaseImages) Version() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/host_base_images vsphere_host_base_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/host_base_images vsphere_host_base_images} Data Source.
 func NewDataVsphereHostBaseImages(scope constructs.Construct, id *string, config *DataVsphereHostBaseImagesConfig) DataVsphereHostBaseImages {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataVsphereHostBaseImages(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/host_base_images vsphere_host_base_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/host_base_images vsphere_host_base_images} Data Source.
 func NewDataVsphereHostBaseImages_Override(d DataVsphereHostBaseImages, scope constructs.Construct, id *string, config *DataVsphereHostBaseImagesConfig) {
 	_init_.Initialize()
 

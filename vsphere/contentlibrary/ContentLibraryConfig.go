@@ -24,28 +24,28 @@ type ContentLibraryConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the content library.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/content_library#name ContentLibrary#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/content_library#name ContentLibrary#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The name of the content library.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/content_library#storage_backing ContentLibrary#storage_backing}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/content_library#storage_backing ContentLibrary#storage_backing}
 	StorageBacking *[]*string `field:"required" json:"storageBacking" yaml:"storageBacking"`
 	// Optional description of the content library.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/content_library#description ContentLibrary#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/content_library#description ContentLibrary#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/content_library#id ContentLibrary#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/content_library#id ContentLibrary#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// publication block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/content_library#publication ContentLibrary#publication}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/content_library#publication ContentLibrary#publication}
 	Publication *ContentLibraryPublication `field:"optional" json:"publication" yaml:"publication"`
 	// subscription block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/content_library#subscription ContentLibrary#subscription}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/content_library#subscription ContentLibrary#subscription}
 	Subscription *ContentLibrarySubscription `field:"optional" json:"subscription" yaml:"subscription"`
 }
 
