@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network vsphere_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network vsphere_network}.
 type DataVsphereNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -33,6 +33,8 @@ type DataVsphereNetwork interface {
 	DistributedVirtualSwitchUuid() *string
 	SetDistributedVirtualSwitchUuid(val *string)
 	DistributedVirtualSwitchUuidInput() *string
+	Filter() DataVsphereNetworkFilterList
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -91,8 +93,10 @@ type DataVsphereNetwork interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value interface{})
 	ResetDatacenterId()
 	ResetDistributedVirtualSwitchUuid()
+	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -191,6 +195,26 @@ func (j *jsiiProxy_DataVsphereNetwork) DistributedVirtualSwitchUuidInput() *stri
 	_jsii_.Get(
 		j,
 		"distributedVirtualSwitchUuidInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereNetwork) Filter() DataVsphereNetworkFilterList {
+	var returns DataVsphereNetworkFilterList
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereNetwork) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -347,7 +371,7 @@ func (j *jsiiProxy_DataVsphereNetwork) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network vsphere_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network vsphere_network} Data Source.
 func NewDataVsphereNetwork(scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) DataVsphereNetwork {
 	_init_.Initialize()
 
@@ -365,7 +389,7 @@ func NewDataVsphereNetwork(scope constructs.Construct, id *string, config *DataV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network vsphere_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network vsphere_network} Data Source.
 func NewDataVsphereNetwork_Override(d DataVsphereNetwork, scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) {
 	_init_.Initialize()
 
@@ -751,6 +775,17 @@ func (d *jsiiProxy_DataVsphereNetwork) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DataVsphereNetwork) PutFilter(value interface{}) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataVsphereNetwork) ResetDatacenterId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -763,6 +798,14 @@ func (d *jsiiProxy_DataVsphereNetwork) ResetDistributedVirtualSwitchUuid() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDistributedVirtualSwitchUuid",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVsphereNetwork) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
 		nil, // no parameters
 	)
 }

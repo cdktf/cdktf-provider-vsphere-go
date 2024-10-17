@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_machine vsphere_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/virtual_machine vsphere_virtual_machine}.
 type VirtualMachine interface {
 	cdktf.TerraformResource
 	AlternateGuestName() *string
@@ -282,6 +282,8 @@ type VirtualMachine interface {
 	VbsEnabledInput() interface{}
 	VmwareToolsStatus() *string
 	VmxPath() *string
+	Vtpm() VirtualMachineVtpmOutputReference
+	VtpmInput() *VirtualMachineVtpm
 	VvtdEnabled() interface{}
 	SetVvtdEnabled(val interface{})
 	VvtdEnabledInput() interface{}
@@ -343,6 +345,7 @@ type VirtualMachine interface {
 	PutNetworkInterface(value interface{})
 	PutOvfDeploy(value *VirtualMachineOvfDeploy)
 	PutVapp(value *VirtualMachineVapp)
+	PutVtpm(value *VirtualMachineVtpm)
 	ResetAlternateGuestName()
 	ResetAnnotation()
 	ResetBootDelay()
@@ -416,6 +419,7 @@ type VirtualMachine interface {
 	ResetToolsUpgradePolicy()
 	ResetVapp()
 	ResetVbsEnabled()
+	ResetVtpm()
 	ResetVvtdEnabled()
 	ResetWaitForGuestIpTimeout()
 	ResetWaitForGuestNetRoutable()
@@ -2148,6 +2152,26 @@ func (j *jsiiProxy_VirtualMachine) VmxPath() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualMachine) Vtpm() VirtualMachineVtpmOutputReference {
+	var returns VirtualMachineVtpmOutputReference
+	_jsii_.Get(
+		j,
+		"vtpm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachine) VtpmInput() *VirtualMachineVtpm {
+	var returns *VirtualMachineVtpm
+	_jsii_.Get(
+		j,
+		"vtpmInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualMachine) VvtdEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -2229,7 +2253,7 @@ func (j *jsiiProxy_VirtualMachine) WaitForGuestNetTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
 func NewVirtualMachine(scope constructs.Construct, id *string, config *VirtualMachineConfig) VirtualMachine {
 	_init_.Initialize()
 
@@ -2247,7 +2271,7 @@ func NewVirtualMachine(scope constructs.Construct, id *string, config *VirtualMa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
 func NewVirtualMachine_Override(v VirtualMachine, scope constructs.Construct, id *string, config *VirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -3515,6 +3539,17 @@ func (v *jsiiProxy_VirtualMachine) PutVapp(value *VirtualMachineVapp) {
 	)
 }
 
+func (v *jsiiProxy_VirtualMachine) PutVtpm(value *VirtualMachineVtpm) {
+	if err := v.validatePutVtpmParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putVtpm",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VirtualMachine) ResetAlternateGuestName() {
 	_jsii_.InvokeVoid(
 		v,
@@ -4079,6 +4114,14 @@ func (v *jsiiProxy_VirtualMachine) ResetVbsEnabled() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetVbsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualMachine) ResetVtpm() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetVtpm",
 		nil, // no parameters
 	)
 }

@@ -24,13 +24,13 @@ type DataVsphereComputeClusterHostGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The managed object ID of the cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/compute_cluster_host_group#compute_cluster_id DataVsphereComputeClusterHostGroup#compute_cluster_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/compute_cluster_host_group#compute_cluster_id DataVsphereComputeClusterHostGroup#compute_cluster_id}
 	ComputeClusterId *string `field:"required" json:"computeClusterId" yaml:"computeClusterId"`
 	// The unique name of the host group in the cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/compute_cluster_host_group#name DataVsphereComputeClusterHostGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/compute_cluster_host_group#name DataVsphereComputeClusterHostGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/compute_cluster_host_group#id DataVsphereComputeClusterHostGroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/compute_cluster_host_group#id DataVsphereComputeClusterHostGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

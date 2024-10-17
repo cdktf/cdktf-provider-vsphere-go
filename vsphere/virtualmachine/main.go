@@ -160,6 +160,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkInterface", GoMethod: "PutNetworkInterface"},
 			_jsii_.MemberMethod{JsiiMethod: "putOvfDeploy", GoMethod: "PutOvfDeploy"},
 			_jsii_.MemberMethod{JsiiMethod: "putVapp", GoMethod: "PutVapp"},
+			_jsii_.MemberMethod{JsiiMethod: "putVtpm", GoMethod: "PutVtpm"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "rebootRequired", GoGetter: "RebootRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "replaceTrigger", GoGetter: "ReplaceTrigger"},
@@ -235,6 +236,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetToolsUpgradePolicy", GoMethod: "ResetToolsUpgradePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVapp", GoMethod: "ResetVapp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVbsEnabled", GoMethod: "ResetVbsEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVtpm", GoMethod: "ResetVtpm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVvtdEnabled", GoMethod: "ResetVvtdEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWaitForGuestIpTimeout", GoMethod: "ResetWaitForGuestIpTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWaitForGuestNetRoutable", GoMethod: "ResetWaitForGuestNetRoutable"},
@@ -290,6 +292,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vbsEnabledInput", GoGetter: "VbsEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vmwareToolsStatus", GoGetter: "VmwareToolsStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "vmxPath", GoGetter: "VmxPath"},
+			_jsii_.MemberProperty{JsiiProperty: "vtpm", GoGetter: "Vtpm"},
+			_jsii_.MemberProperty{JsiiProperty: "vtpmInput", GoGetter: "VtpmInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vvtdEnabled", GoGetter: "VvtdEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "vvtdEnabledInput", GoGetter: "VvtdEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForGuestIpTimeout", GoGetter: "WaitForGuestIpTimeout"},
@@ -1046,6 +1050,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VirtualMachineVappOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vsphere.virtualMachine.VirtualMachineVtpm",
+		reflect.TypeOf((*VirtualMachineVtpm)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vsphere.virtualMachine.VirtualMachineVtpmOutputReference",
+		reflect.TypeOf((*VirtualMachineVtpmOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVersion", GoMethod: "ResetVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
+			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VirtualMachineVtpmOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

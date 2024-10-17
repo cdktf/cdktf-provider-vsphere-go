@@ -99,6 +99,10 @@ func (v *jsiiProxy_VirtualMachine) validatePutVappParameters(value *VirtualMachi
 	return nil
 }
 
+func (v *jsiiProxy_VirtualMachine) validatePutVtpmParameters(value *VirtualMachineVtpm) error {
+	return nil
+}
+
 func validateVirtualMachine_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

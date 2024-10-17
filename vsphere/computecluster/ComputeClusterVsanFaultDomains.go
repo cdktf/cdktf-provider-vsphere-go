@@ -7,7 +7,7 @@ package computecluster
 type ComputeClusterVsanFaultDomains struct {
 	// fault_domain block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster#fault_domain ComputeCluster#fault_domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster#fault_domain ComputeCluster#fault_domain}
 	FaultDomain interface{} `field:"optional" json:"faultDomain" yaml:"faultDomain"`
 }
 

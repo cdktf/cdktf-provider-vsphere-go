@@ -20,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "datacenterId", GoGetter: "DatacenterId"},
 			_jsii_.MemberProperty{JsiiProperty: "datacenterIdInput", GoGetter: "DatacenterIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "datastores", GoGetter: "Datastores"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

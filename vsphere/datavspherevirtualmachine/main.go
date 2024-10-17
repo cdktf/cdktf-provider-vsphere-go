@@ -224,6 +224,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vappTransport", GoGetter: "VappTransport"},
 			_jsii_.MemberProperty{JsiiProperty: "vbsEnabled", GoGetter: "VbsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "vbsEnabledInput", GoGetter: "VbsEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vtpm", GoGetter: "Vtpm"},
 			_jsii_.MemberProperty{JsiiProperty: "vvtdEnabled", GoGetter: "VvtdEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "vvtdEnabledInput", GoGetter: "VvtdEnabledInput"},
 		},

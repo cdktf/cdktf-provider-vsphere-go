@@ -24,16 +24,16 @@ type DataVsphereHostConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The managed object ID of the datacenter to look for the host in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/host#datacenter_id DataVsphereHost#datacenter_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host#datacenter_id DataVsphereHost#datacenter_id}
 	DatacenterId *string `field:"required" json:"datacenterId" yaml:"datacenterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/host#id DataVsphereHost#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host#id DataVsphereHost#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name of the host. This can be a name or path.	If not provided, the default host is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/host#name DataVsphereHost#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host#name DataVsphereHost#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 
