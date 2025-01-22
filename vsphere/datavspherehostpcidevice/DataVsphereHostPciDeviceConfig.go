@@ -24,24 +24,24 @@ type DataVsphereHostPciDeviceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Managed Object ID of the host system.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_pci_device#host_id DataVsphereHostPciDevice#host_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_pci_device#host_id DataVsphereHostPciDevice#host_id}
 	HostId *string `field:"required" json:"hostId" yaml:"hostId"`
 	// The hexadecimal value of the PCI device's class ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_pci_device#class_id DataVsphereHostPciDevice#class_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_pci_device#class_id DataVsphereHostPciDevice#class_id}
 	ClassId *string `field:"optional" json:"classId" yaml:"classId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_pci_device#id DataVsphereHostPciDevice#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_pci_device#id DataVsphereHostPciDevice#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// A regular expression used to match the PCI device name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_pci_device#name_regex DataVsphereHostPciDevice#name_regex}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_pci_device#name_regex DataVsphereHostPciDevice#name_regex}
 	NameRegex *string `field:"optional" json:"nameRegex" yaml:"nameRegex"`
 	// The hexadecimal value of the PCI device's vendor ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_pci_device#vendor_id DataVsphereHostPciDevice#vendor_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_pci_device#vendor_id DataVsphereHostPciDevice#vendor_id}
 	VendorId *string `field:"optional" json:"vendorId" yaml:"vendorId"`
 }
 

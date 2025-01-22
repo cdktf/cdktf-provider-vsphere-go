@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/virtual_machine vsphere_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/virtual_machine vsphere_virtual_machine}.
 type DataVsphereVirtualMachine interface {
 	cdktf.TerraformDataSource
 	AlternateGuestName() *string
@@ -165,6 +165,9 @@ type DataVsphereVirtualMachine interface {
 	NumCpus() *float64
 	SetNumCpus(val *float64)
 	NumCpusInput() *float64
+	NvmeControllerScanCount() *float64
+	SetNvmeControllerScanCount(val *float64)
+	NvmeControllerScanCountInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -296,6 +299,7 @@ type DataVsphereVirtualMachine interface {
 	ResetNestedHvEnabled()
 	ResetNumCoresPerSocket()
 	ResetNumCpus()
+	ResetNvmeControllerScanCount()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -1275,6 +1279,26 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) NumCpusInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataVsphereVirtualMachine) NvmeControllerScanCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nvmeControllerScanCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine) NvmeControllerScanCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nvmeControllerScanCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVsphereVirtualMachine) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -1706,7 +1730,7 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) VvtdEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
 func NewDataVsphereVirtualMachine(scope constructs.Construct, id *string, config *DataVsphereVirtualMachineConfig) DataVsphereVirtualMachine {
 	_init_.Initialize()
 
@@ -1724,7 +1748,7 @@ func NewDataVsphereVirtualMachine(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
 func NewDataVsphereVirtualMachine_Override(d DataVsphereVirtualMachine, scope constructs.Construct, id *string, config *DataVsphereVirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -2198,6 +2222,17 @@ func (j *jsiiProxy_DataVsphereVirtualMachine)SetNumCpus(val *float64) {
 	_jsii_.Set(
 		j,
 		"numCpus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVsphereVirtualMachine)SetNvmeControllerScanCount(val *float64) {
+	if err := j.validateSetNvmeControllerScanCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nvmeControllerScanCount",
 		val,
 	)
 }
@@ -2990,6 +3025,14 @@ func (d *jsiiProxy_DataVsphereVirtualMachine) ResetNumCpus() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetNumCpus",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVsphereVirtualMachine) ResetNvmeControllerScanCount() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNvmeControllerScanCount",
 		nil, // no parameters
 	)
 }

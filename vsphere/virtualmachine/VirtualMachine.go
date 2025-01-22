@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/virtual_machine vsphere_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/virtual_machine vsphere_virtual_machine}.
 type VirtualMachine interface {
 	cdktf.TerraformResource
 	AlternateGuestName() *string
@@ -193,6 +193,9 @@ type VirtualMachine interface {
 	NumCpus() *float64
 	SetNumCpus(val *float64)
 	NumCpusInput() *float64
+	NvmeControllerCount() *float64
+	SetNvmeControllerCount(val *float64)
+	NvmeControllerCountInput() *float64
 	OvfDeploy() VirtualMachineOvfDeployOutputReference
 	OvfDeployInput() *VirtualMachineOvfDeploy
 	PciDeviceId() *[]*string
@@ -394,6 +397,7 @@ type VirtualMachine interface {
 	ResetNetworkInterface()
 	ResetNumCoresPerSocket()
 	ResetNumCpus()
+	ResetNvmeControllerCount()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -1572,6 +1576,26 @@ func (j *jsiiProxy_VirtualMachine) NumCpusInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_VirtualMachine) NvmeControllerCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nvmeControllerCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VirtualMachine) NvmeControllerCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nvmeControllerCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VirtualMachine) OvfDeploy() VirtualMachineOvfDeployOutputReference {
 	var returns VirtualMachineOvfDeployOutputReference
 	_jsii_.Get(
@@ -2253,7 +2277,7 @@ func (j *jsiiProxy_VirtualMachine) WaitForGuestNetTimeoutInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
 func NewVirtualMachine(scope constructs.Construct, id *string, config *VirtualMachineConfig) VirtualMachine {
 	_init_.Initialize()
 
@@ -2271,7 +2295,7 @@ func NewVirtualMachine(scope constructs.Construct, id *string, config *VirtualMa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/virtual_machine vsphere_virtual_machine} Resource.
 func NewVirtualMachine_Override(v VirtualMachine, scope constructs.Construct, id *string, config *VirtualMachineConfig) {
 	_init_.Initialize()
 
@@ -2822,6 +2846,17 @@ func (j *jsiiProxy_VirtualMachine)SetNumCpus(val *float64) {
 	_jsii_.Set(
 		j,
 		"numCpus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VirtualMachine)SetNvmeControllerCount(val *float64) {
+	if err := j.validateSetNvmeControllerCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nvmeControllerCount",
 		val,
 	)
 }
@@ -3930,6 +3965,14 @@ func (v *jsiiProxy_VirtualMachine) ResetNumCpus() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetNumCpus",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VirtualMachine) ResetNvmeControllerCount() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetNvmeControllerCount",
 		nil, // no parameters
 	)
 }

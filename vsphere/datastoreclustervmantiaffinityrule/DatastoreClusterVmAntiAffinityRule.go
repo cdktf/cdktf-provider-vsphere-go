@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/datastore_cluster_vm_anti_affinity_rule vsphere_datastore_cluster_vm_anti_affinity_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/datastore_cluster_vm_anti_affinity_rule vsphere_datastore_cluster_vm_anti_affinity_rule}.
 type DatastoreClusterVmAntiAffinityRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DatastoreClusterVmAntiAffinityRule) VirtualMachineIdsInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/datastore_cluster_vm_anti_affinity_rule vsphere_datastore_cluster_vm_anti_affinity_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/datastore_cluster_vm_anti_affinity_rule vsphere_datastore_cluster_vm_anti_affinity_rule} Resource.
 func NewDatastoreClusterVmAntiAffinityRule(scope constructs.Construct, id *string, config *DatastoreClusterVmAntiAffinityRuleConfig) DatastoreClusterVmAntiAffinityRule {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewDatastoreClusterVmAntiAffinityRule(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/datastore_cluster_vm_anti_affinity_rule vsphere_datastore_cluster_vm_anti_affinity_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/datastore_cluster_vm_anti_affinity_rule vsphere_datastore_cluster_vm_anti_affinity_rule} Resource.
 func NewDatastoreClusterVmAntiAffinityRule_Override(d DatastoreClusterVmAntiAffinityRule, scope constructs.Construct, id *string, config *DatastoreClusterVmAntiAffinityRuleConfig) {
 	_init_.Initialize()
 

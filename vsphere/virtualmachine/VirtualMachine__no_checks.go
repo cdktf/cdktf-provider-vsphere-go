@@ -311,6 +311,10 @@ func (j *jsiiProxy_VirtualMachine) validateSetNumCpusParameters(val *float64) er
 	return nil
 }
 
+func (j *jsiiProxy_VirtualMachine) validateSetNvmeControllerCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_VirtualMachine) validateSetPciDeviceIdParameters(val *[]*string) error {
 	return nil
 }
