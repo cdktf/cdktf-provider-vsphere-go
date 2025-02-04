@@ -151,6 +151,10 @@ func (j *jsiiProxy_Supervisor) validateSetMainDnsParameters(val *[]*string) erro
 	return nil
 }
 
+func (j *jsiiProxy_Supervisor) validateSetMainNtpParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Supervisor) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
@@ -168,6 +172,10 @@ func (j *jsiiProxy_Supervisor) validateSetStoragePolicyParameters(val *string) e
 }
 
 func (j *jsiiProxy_Supervisor) validateSetWorkerDnsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Supervisor) validateSetWorkerNtpParameters(val *[]*string) error {
 	return nil
 }
 

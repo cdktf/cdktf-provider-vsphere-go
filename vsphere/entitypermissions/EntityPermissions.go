@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/entity_permissions vsphere_entity_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/entity_permissions vsphere_entity_permissions}.
 type EntityPermissions interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_EntityPermissions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/entity_permissions vsphere_entity_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/entity_permissions vsphere_entity_permissions} Resource.
 func NewEntityPermissions(scope constructs.Construct, id *string, config *EntityPermissionsConfig) EntityPermissions {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewEntityPermissions(scope constructs.Construct, id *string, config *Entity
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/entity_permissions vsphere_entity_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/entity_permissions vsphere_entity_permissions} Resource.
 func NewEntityPermissions_Override(e EntityPermissions, scope constructs.Construct, id *string, config *EntityPermissionsConfig) {
 	_init_.Initialize()
 

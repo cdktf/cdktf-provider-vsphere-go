@@ -539,6 +539,14 @@ func (j *jsiiProxy_Supervisor) validateSetMainDnsParameters(val *[]*string) erro
 	return nil
 }
 
+func (j *jsiiProxy_Supervisor) validateSetMainNtpParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Supervisor) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
@@ -610,6 +618,14 @@ func (j *jsiiProxy_Supervisor) validateSetStoragePolicyParameters(val *string) e
 }
 
 func (j *jsiiProxy_Supervisor) validateSetWorkerDnsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Supervisor) validateSetWorkerNtpParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

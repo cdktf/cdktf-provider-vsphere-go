@@ -53,6 +53,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "mainDns", GoGetter: "MainDns"},
 			_jsii_.MemberProperty{JsiiProperty: "mainDnsInput", GoGetter: "MainDnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mainNtp", GoGetter: "MainNtp"},
+			_jsii_.MemberProperty{JsiiProperty: "mainNtpInput", GoGetter: "MainNtpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "managementNetwork", GoGetter: "ManagementNetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "managementNetworkInput", GoGetter: "ManagementNetworkInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -95,6 +97,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "workerDns", GoGetter: "WorkerDns"},
 			_jsii_.MemberProperty{JsiiProperty: "workerDnsInput", GoGetter: "WorkerDnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNtp", GoGetter: "WorkerNtp"},
+			_jsii_.MemberProperty{JsiiProperty: "workerNtpInput", GoGetter: "WorkerNtpInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Supervisor{}

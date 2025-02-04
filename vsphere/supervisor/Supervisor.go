@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor vsphere_supervisor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/supervisor vsphere_supervisor}.
 type Supervisor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type Supervisor interface {
 	MainDns() *[]*string
 	SetMainDns(val *[]*string)
 	MainDnsInput() *[]*string
+	MainNtp() *[]*string
+	SetMainNtp(val *[]*string)
+	MainNtpInput() *[]*string
 	ManagementNetwork() SupervisorManagementNetworkOutputReference
 	ManagementNetworkInput() *SupervisorManagementNetwork
 	Namespace() SupervisorNamespaceList
@@ -103,6 +106,9 @@ type Supervisor interface {
 	WorkerDns() *[]*string
 	SetWorkerDns(val *[]*string)
 	WorkerDnsInput() *[]*string
+	WorkerNtp() *[]*string
+	SetWorkerNtp(val *[]*string)
+	WorkerNtpInput() *[]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -425,6 +431,26 @@ func (j *jsiiProxy_Supervisor) MainDnsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Supervisor) MainNtp() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mainNtp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Supervisor) MainNtpInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mainNtpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Supervisor) ManagementNetwork() SupervisorManagementNetworkOutputReference {
 	var returns SupervisorManagementNetworkOutputReference
 	_jsii_.Get(
@@ -655,8 +681,28 @@ func (j *jsiiProxy_Supervisor) WorkerDnsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Supervisor) WorkerNtp() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"workerNtp",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor vsphere_supervisor} Resource.
+func (j *jsiiProxy_Supervisor) WorkerNtpInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"workerNtpInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/supervisor vsphere_supervisor} Resource.
 func NewSupervisor(scope constructs.Construct, id *string, config *SupervisorConfig) Supervisor {
 	_init_.Initialize()
 
@@ -674,7 +720,7 @@ func NewSupervisor(scope constructs.Construct, id *string, config *SupervisorCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor vsphere_supervisor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/supervisor vsphere_supervisor} Resource.
 func NewSupervisor_Override(s Supervisor, scope constructs.Construct, id *string, config *SupervisorConfig) {
 	_init_.Initialize()
 
@@ -800,6 +846,17 @@ func (j *jsiiProxy_Supervisor)SetMainDns(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Supervisor)SetMainNtp(val *[]*string) {
+	if err := j.validateSetMainNtpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mainNtp",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Supervisor)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -859,6 +916,17 @@ func (j *jsiiProxy_Supervisor)SetWorkerDns(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"workerDns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Supervisor)SetWorkerNtp(val *[]*string) {
+	if err := j.validateSetWorkerNtpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workerNtp",
 		val,
 	)
 }
