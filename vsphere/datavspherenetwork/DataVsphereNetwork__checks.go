@@ -282,6 +282,22 @@ func (j *jsiiProxy_DataVsphereNetwork) validateSetNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataVsphereNetwork) validateSetRetryIntervalParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataVsphereNetwork) validateSetRetryTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataVsphereNetworkParameters(scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

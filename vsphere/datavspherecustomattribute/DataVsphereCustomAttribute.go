@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/custom_attribute vsphere_custom_attribute}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/custom_attribute vsphere_custom_attribute}.
 type DataVsphereCustomAttribute interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataVsphereCustomAttribute) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/custom_attribute vsphere_custom_attribute} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/custom_attribute vsphere_custom_attribute} Data Source.
 func NewDataVsphereCustomAttribute(scope constructs.Construct, id *string, config *DataVsphereCustomAttributeConfig) DataVsphereCustomAttribute {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataVsphereCustomAttribute(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/custom_attribute vsphere_custom_attribute} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/custom_attribute vsphere_custom_attribute} Data Source.
 func NewDataVsphereCustomAttribute_Override(d DataVsphereCustomAttribute, scope constructs.Construct, id *string, config *DataVsphereCustomAttributeConfig) {
 	_init_.Initialize()
 

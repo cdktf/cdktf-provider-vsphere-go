@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network vsphere_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/network vsphere_network}.
 type DataVsphereNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -61,6 +61,12 @@ type DataVsphereNetwork interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RetryInterval() *float64
+	SetRetryInterval(val *float64)
+	RetryIntervalInput() *float64
+	RetryTimeout() *float64
+	SetRetryTimeout(val *float64)
+	RetryTimeoutInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -101,6 +107,8 @@ type DataVsphereNetwork interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRetryInterval()
+	ResetRetryTimeout()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -330,6 +338,46 @@ func (j *jsiiProxy_DataVsphereNetwork) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataVsphereNetwork) RetryInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retryInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereNetwork) RetryIntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retryIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereNetwork) RetryTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retryTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereNetwork) RetryTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retryTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVsphereNetwork) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -371,7 +419,7 @@ func (j *jsiiProxy_DataVsphereNetwork) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network vsphere_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/network vsphere_network} Data Source.
 func NewDataVsphereNetwork(scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) DataVsphereNetwork {
 	_init_.Initialize()
 
@@ -389,7 +437,7 @@ func NewDataVsphereNetwork(scope constructs.Construct, id *string, config *DataV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network vsphere_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/network vsphere_network} Data Source.
 func NewDataVsphereNetwork_Override(d DataVsphereNetwork, scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) {
 	_init_.Initialize()
 
@@ -486,6 +534,28 @@ func (j *jsiiProxy_DataVsphereNetwork)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVsphereNetwork)SetRetryInterval(val *float64) {
+	if err := j.validateSetRetryIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retryInterval",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVsphereNetwork)SetRetryTimeout(val *float64) {
+	if err := j.validateSetRetryTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retryTimeout",
 		val,
 	)
 }
@@ -822,6 +892,22 @@ func (d *jsiiProxy_DataVsphereNetwork) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVsphereNetwork) ResetRetryInterval() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetryInterval",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVsphereNetwork) ResetRetryTimeout() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRetryTimeout",
 		nil, // no parameters
 	)
 }

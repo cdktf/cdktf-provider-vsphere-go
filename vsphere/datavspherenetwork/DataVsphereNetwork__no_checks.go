@@ -99,6 +99,14 @@ func (j *jsiiProxy_DataVsphereNetwork) validateSetNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataVsphereNetwork) validateSetRetryIntervalParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVsphereNetwork) validateSetRetryTimeoutParameters(val *float64) error {
+	return nil
+}
+
 func validateNewDataVsphereNetworkParameters(scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) error {
 	return nil
 }
