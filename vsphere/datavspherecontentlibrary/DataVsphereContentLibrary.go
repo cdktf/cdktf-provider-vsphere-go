@@ -5,14 +5,14 @@ package datavspherecontentlibrary
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherecontentlibrary/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspherecontentlibrary/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/content_library vsphere_content_library}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/content_library vsphere_content_library}.
 type DataVsphereContentLibrary interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataVsphereContentLibrary) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/content_library vsphere_content_library} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/content_library vsphere_content_library} Data Source.
 func NewDataVsphereContentLibrary(scope constructs.Construct, id *string, config *DataVsphereContentLibraryConfig) DataVsphereContentLibrary {
 	_init_.Initialize()
 
@@ -306,7 +306,7 @@ func NewDataVsphereContentLibrary(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/content_library vsphere_content_library} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/content_library vsphere_content_library} Data Source.
 func NewDataVsphereContentLibrary_Override(d DataVsphereContentLibrary, scope constructs.Construct, id *string, config *DataVsphereContentLibraryConfig) {
 	_init_.Initialize()
 

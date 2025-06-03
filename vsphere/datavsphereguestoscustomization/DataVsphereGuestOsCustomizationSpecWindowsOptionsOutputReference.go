@@ -5,9 +5,9 @@ package datavsphereguestoscustomization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavsphereguestoscustomization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -37,9 +37,12 @@ type DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference interface 
 	DomainOu() *string
 	// Experimental.
 	Fqn() *string
+	FullName() *string
 	InternalValue() *DataVsphereGuestOsCustomizationSpecWindowsOptions
 	SetInternalValue(val *DataVsphereGuestOsCustomizationSpecWindowsOptions)
 	JoinDomain() *string
+	OrganizationName() *string
+	ProductKey() *string
 	RunOnceCommandList() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -200,6 +203,16 @@ func (j *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference) FullName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fullName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference) InternalValue() *DataVsphereGuestOsCustomizationSpecWindowsOptions {
 	var returns *DataVsphereGuestOsCustomizationSpecWindowsOptions
 	_jsii_.Get(
@@ -215,6 +228,26 @@ func (j *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputRefere
 	_jsii_.Get(
 		j,
 		"joinDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference) OrganizationName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"organizationName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference) ProductKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"productKey",
 		&returns,
 	)
 	return returns

@@ -22,24 +22,38 @@ type FileConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#datastore File#datastore}.
+	// The name of the datastore to which to upload the file.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#datastore File#datastore}
 	Datastore *string `field:"required" json:"datastore" yaml:"datastore"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#destination_file File#destination_file}.
+	// The path to where the file should be uploaded or copied to on the destination datastore.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#destination_file File#destination_file}
 	DestinationFile *string `field:"required" json:"destinationFile" yaml:"destinationFile"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#source_file File#source_file}.
+	// The path to the file being uploaded from or copied.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#source_file File#source_file}
 	SourceFile *string `field:"required" json:"sourceFile" yaml:"sourceFile"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#create_directories File#create_directories}.
+	// Specifies whether to create the parent directories of the destination file if they do not exist.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#create_directories File#create_directories}
 	CreateDirectories interface{} `field:"optional" json:"createDirectories" yaml:"createDirectories"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#datacenter File#datacenter}.
+	// The name of a datacenter to which the file will be uploaded.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#datacenter File#datacenter}
 	Datacenter *string `field:"optional" json:"datacenter" yaml:"datacenter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#id File#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#id File#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#source_datacenter File#source_datacenter}.
+	// The name of a datacenter from which the file will be copied.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#source_datacenter File#source_datacenter}
 	SourceDatacenter *string `field:"optional" json:"sourceDatacenter" yaml:"sourceDatacenter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#source_datastore File#source_datastore}.
+	// The name of the datastore from which file will be copied.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#source_datastore File#source_datastore}
 	SourceDatastore *string `field:"optional" json:"sourceDatastore" yaml:"sourceDatastore"`
 }
 

@@ -24,34 +24,34 @@ type DataVsphereNetworkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name or path of the network.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/network#name DataVsphereNetwork#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#name DataVsphereNetwork#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The managed object ID of the datacenter the network is in.
 	//
 	// This is required if the supplied path is not an absolute path containing a datacenter and there are multiple datacenters in your infrastructure.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/network#datacenter_id DataVsphereNetwork#datacenter_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#datacenter_id DataVsphereNetwork#datacenter_id}
 	DatacenterId *string `field:"optional" json:"datacenterId" yaml:"datacenterId"`
 	// Id of the distributed virtual switch of which the port group is a part of.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/network#distributed_virtual_switch_uuid DataVsphereNetwork#distributed_virtual_switch_uuid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#distributed_virtual_switch_uuid DataVsphereNetwork#distributed_virtual_switch_uuid}
 	DistributedVirtualSwitchUuid *string `field:"optional" json:"distributedVirtualSwitchUuid" yaml:"distributedVirtualSwitchUuid"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/network#filter DataVsphereNetwork#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#filter DataVsphereNetwork#filter}
 	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/network#id DataVsphereNetwork#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#id DataVsphereNetwork#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Retry interval (in milliseconds) when probing the network.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/network#retry_interval DataVsphereNetwork#retry_interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#retry_interval DataVsphereNetwork#retry_interval}
 	RetryInterval *float64 `field:"optional" json:"retryInterval" yaml:"retryInterval"`
 	// Timeout (in seconds) if network is not present yet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/network#retry_timeout DataVsphereNetwork#retry_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#retry_timeout DataVsphereNetwork#retry_timeout}
 	RetryTimeout *float64 `field:"optional" json:"retryTimeout" yaml:"retryTimeout"`
 }
 

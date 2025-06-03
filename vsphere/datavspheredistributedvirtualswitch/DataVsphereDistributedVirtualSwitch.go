@@ -5,14 +5,14 @@ package datavspheredistributedvirtualswitch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredistributedvirtualswitch/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspheredistributedvirtualswitch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch}.
 type DataVsphereDistributedVirtualSwitch interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataVsphereDistributedVirtualSwitch) Uplinks() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch} Data Source.
 func NewDataVsphereDistributedVirtualSwitch(scope constructs.Construct, id *string, config *DataVsphereDistributedVirtualSwitchConfig) DataVsphereDistributedVirtualSwitch {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataVsphereDistributedVirtualSwitch(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch} Data Source.
 func NewDataVsphereDistributedVirtualSwitch_Override(d DataVsphereDistributedVirtualSwitch, scope constructs.Construct, id *string, config *DataVsphereDistributedVirtualSwitchConfig) {
 	_init_.Initialize()
 

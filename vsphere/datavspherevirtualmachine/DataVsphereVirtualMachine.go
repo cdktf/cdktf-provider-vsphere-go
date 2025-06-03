@@ -5,14 +5,14 @@ package datavspherevirtualmachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevirtualmachine/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspherevirtualmachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/virtual_machine vsphere_virtual_machine}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/virtual_machine vsphere_virtual_machine}.
 type DataVsphereVirtualMachine interface {
 	cdktf.TerraformDataSource
 	AlternateGuestName() *string
@@ -1730,7 +1730,7 @@ func (j *jsiiProxy_DataVsphereVirtualMachine) VvtdEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
 func NewDataVsphereVirtualMachine(scope constructs.Construct, id *string, config *DataVsphereVirtualMachineConfig) DataVsphereVirtualMachine {
 	_init_.Initialize()
 
@@ -1748,7 +1748,7 @@ func NewDataVsphereVirtualMachine(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/virtual_machine vsphere_virtual_machine} Data Source.
 func NewDataVsphereVirtualMachine_Override(d DataVsphereVirtualMachine, scope constructs.Construct, id *string, config *DataVsphereVirtualMachineConfig) {
 	_init_.Initialize()
 

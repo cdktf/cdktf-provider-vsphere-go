@@ -5,14 +5,14 @@ package offlinesoftwaredepot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredepot/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/offlinesoftwaredepot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/offline_software_depot vsphere_offline_software_depot}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/offline_software_depot vsphere_offline_software_depot}.
 type OfflineSoftwareDepot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_OfflineSoftwareDepot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/offline_software_depot vsphere_offline_software_depot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/offline_software_depot vsphere_offline_software_depot} Resource.
 func NewOfflineSoftwareDepot(scope constructs.Construct, id *string, config *OfflineSoftwareDepotConfig) OfflineSoftwareDepot {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewOfflineSoftwareDepot(scope constructs.Construct, id *string, config *Off
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/offline_software_depot vsphere_offline_software_depot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/offline_software_depot vsphere_offline_software_depot} Resource.
 func NewOfflineSoftwareDepot_Override(o OfflineSoftwareDepot, scope constructs.Construct, id *string, config *OfflineSoftwareDepotConfig) {
 	_init_.Initialize()
 

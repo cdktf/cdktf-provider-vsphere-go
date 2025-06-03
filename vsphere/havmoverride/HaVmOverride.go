@@ -5,14 +5,14 @@ package havmoverride
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/havmoverride/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/havmoverride/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/ha_vm_override vsphere_ha_vm_override}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/ha_vm_override vsphere_ha_vm_override}.
 type HaVmOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -668,7 +668,7 @@ func (j *jsiiProxy_HaVmOverride) VirtualMachineIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/ha_vm_override vsphere_ha_vm_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/ha_vm_override vsphere_ha_vm_override} Resource.
 func NewHaVmOverride(scope constructs.Construct, id *string, config *HaVmOverrideConfig) HaVmOverride {
 	_init_.Initialize()
 
@@ -686,7 +686,7 @@ func NewHaVmOverride(scope constructs.Construct, id *string, config *HaVmOverrid
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/ha_vm_override vsphere_ha_vm_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/ha_vm_override vsphere_ha_vm_override} Resource.
 func NewHaVmOverride_Override(h HaVmOverride, scope constructs.Construct, id *string, config *HaVmOverrideConfig) {
 	_init_.Initialize()
 

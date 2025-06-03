@@ -5,14 +5,14 @@ package datavspherecontentlibraryitem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherecontentlibraryitem/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspherecontentlibraryitem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/content_library_item vsphere_content_library_item}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/content_library_item vsphere_content_library_item}.
 type DataVsphereContentLibraryItem interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_DataVsphereContentLibraryItem) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/content_library_item vsphere_content_library_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/content_library_item vsphere_content_library_item} Data Source.
 func NewDataVsphereContentLibraryItem(scope constructs.Construct, id *string, config *DataVsphereContentLibraryItemConfig) DataVsphereContentLibraryItem {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewDataVsphereContentLibraryItem(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/content_library_item vsphere_content_library_item} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/content_library_item vsphere_content_library_item} Data Source.
 func NewDataVsphereContentLibraryItem_Override(d DataVsphereContentLibraryItem, scope constructs.Construct, id *string, config *DataVsphereContentLibraryItemConfig) {
 	_init_.Initialize()
 

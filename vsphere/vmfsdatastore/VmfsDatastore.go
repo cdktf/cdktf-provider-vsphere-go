@@ -5,14 +5,14 @@ package vmfsdatastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vmfsdatastore/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/vmfsdatastore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
 type VmfsDatastore interface {
 	cdktf.TerraformResource
 	Accessible() cdktf.IResolvable
@@ -552,7 +552,7 @@ func (j *jsiiProxy_VmfsDatastore) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
 func NewVmfsDatastore(scope constructs.Construct, id *string, config *VmfsDatastoreConfig) VmfsDatastore {
 	_init_.Initialize()
 
@@ -570,7 +570,7 @@ func NewVmfsDatastore(scope constructs.Construct, id *string, config *VmfsDatast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore} Resource.
 func NewVmfsDatastore_Override(v VmfsDatastore, scope constructs.Construct, id *string, config *VmfsDatastoreConfig) {
 	_init_.Initialize()
 

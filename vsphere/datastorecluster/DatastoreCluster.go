@@ -5,14 +5,14 @@ package datastorecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datastorecluster/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datastorecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/datastore_cluster vsphere_datastore_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/datastore_cluster vsphere_datastore_cluster}.
 type DatastoreCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -908,7 +908,7 @@ func (j *jsiiProxy_DatastoreCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/datastore_cluster vsphere_datastore_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/datastore_cluster vsphere_datastore_cluster} Resource.
 func NewDatastoreCluster(scope constructs.Construct, id *string, config *DatastoreClusterConfig) DatastoreCluster {
 	_init_.Initialize()
 
@@ -926,7 +926,7 @@ func NewDatastoreCluster(scope constructs.Construct, id *string, config *Datasto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/datastore_cluster vsphere_datastore_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/datastore_cluster vsphere_datastore_cluster} Resource.
 func NewDatastoreCluster_Override(d DatastoreCluster, scope constructs.Construct, id *string, config *DatastoreClusterConfig) {
 	_init_.Initialize()
 

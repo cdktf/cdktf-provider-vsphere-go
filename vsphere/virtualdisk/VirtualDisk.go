@@ -5,14 +5,14 @@ package virtualdisk
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/virtualdisk/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/virtualdisk/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/virtual_disk vsphere_virtual_disk}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/virtual_disk vsphere_virtual_disk}.
 type VirtualDisk interface {
 	cdktf.TerraformResource
 	AdapterType() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_VirtualDisk) VmdkPathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/virtual_disk vsphere_virtual_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/virtual_disk vsphere_virtual_disk} Resource.
 func NewVirtualDisk(scope constructs.Construct, id *string, config *VirtualDiskConfig) VirtualDisk {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewVirtualDisk(scope constructs.Construct, id *string, config *VirtualDiskC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/virtual_disk vsphere_virtual_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/virtual_disk vsphere_virtual_disk} Resource.
 func NewVirtualDisk_Override(v VirtualDisk, scope constructs.Construct, id *string, config *VirtualDiskConfig) {
 	_init_.Initialize()
 

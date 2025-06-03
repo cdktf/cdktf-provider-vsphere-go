@@ -5,14 +5,14 @@ package datavspherecomputecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherecomputecluster/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspherecomputecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/compute_cluster vsphere_compute_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/compute_cluster vsphere_compute_cluster}.
 type DataVsphereComputeCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataVsphereComputeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/compute_cluster vsphere_compute_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/compute_cluster vsphere_compute_cluster} Data Source.
 func NewDataVsphereComputeCluster(scope constructs.Construct, id *string, config *DataVsphereComputeClusterConfig) DataVsphereComputeCluster {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataVsphereComputeCluster(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/data-sources/compute_cluster vsphere_compute_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/compute_cluster vsphere_compute_cluster} Data Source.
 func NewDataVsphereComputeCluster_Override(d DataVsphereComputeCluster, scope constructs.Construct, id *string, config *DataVsphereComputeClusterConfig) {
 	_init_.Initialize()
 

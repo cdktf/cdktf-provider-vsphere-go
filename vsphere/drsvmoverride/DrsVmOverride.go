@@ -5,14 +5,14 @@ package drsvmoverride
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/drsvmoverride/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/drsvmoverride/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/drs_vm_override vsphere_drs_vm_override}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/drs_vm_override vsphere_drs_vm_override}.
 type DrsVmOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DrsVmOverride) VirtualMachineIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/drs_vm_override vsphere_drs_vm_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/drs_vm_override vsphere_drs_vm_override} Resource.
 func NewDrsVmOverride(scope constructs.Construct, id *string, config *DrsVmOverrideConfig) DrsVmOverride {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDrsVmOverride(scope constructs.Construct, id *string, config *DrsVmOverr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/drs_vm_override vsphere_drs_vm_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/drs_vm_override vsphere_drs_vm_override} Resource.
 func NewDrsVmOverride_Override(d DrsVmOverride, scope constructs.Construct, id *string, config *DrsVmOverrideConfig) {
 	_init_.Initialize()
 

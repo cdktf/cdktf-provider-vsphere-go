@@ -5,14 +5,14 @@ package resourcepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/resourcepool/internal"
+	"github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/resourcepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/resource_pool vsphere_resource_pool}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/resource_pool vsphere_resource_pool}.
 type ResourcePool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -668,7 +668,7 @@ func (j *jsiiProxy_ResourcePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/resource_pool vsphere_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/resource_pool vsphere_resource_pool} Resource.
 func NewResourcePool(scope constructs.Construct, id *string, config *ResourcePoolConfig) ResourcePool {
 	_init_.Initialize()
 
@@ -686,7 +686,7 @@ func NewResourcePool(scope constructs.Construct, id *string, config *ResourcePoo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/resource_pool vsphere_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/resource_pool vsphere_resource_pool} Resource.
 func NewResourcePool_Override(r ResourcePool, scope constructs.Construct, id *string, config *ResourcePoolConfig) {
 	_init_.Initialize()
 

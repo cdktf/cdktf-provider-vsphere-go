@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9
+module github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10
 
 go 1.18
 
