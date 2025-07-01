@@ -24,16 +24,16 @@ type LicenseResourceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The license key value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/license#license_key LicenseResource#license_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/license#license_key LicenseResource#license_key}
 	LicenseKey *string `field:"required" json:"licenseKey" yaml:"licenseKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/license#id LicenseResource#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/license#id LicenseResource#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// A map of labels to be applied to the license key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/license#labels LicenseResource#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/license#labels LicenseResource#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 }
 

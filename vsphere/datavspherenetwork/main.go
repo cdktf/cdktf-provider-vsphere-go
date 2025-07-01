@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetryInterval", GoMethod: "ResetRetryInterval"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetryTimeout", GoMethod: "ResetRetryTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVpcId", GoMethod: "ResetVpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "retryInterval", GoGetter: "RetryInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "retryIntervalInput", GoGetter: "RetryIntervalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "retryTimeout", GoGetter: "RetryTimeout"},
@@ -69,6 +70,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVsphereNetwork{}

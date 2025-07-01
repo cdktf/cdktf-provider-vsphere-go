@@ -24,32 +24,32 @@ type VirtualMachineClassConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The number of CPUs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
 	Cpus *float64 `field:"required" json:"cpus" yaml:"cpus"`
 	// The amount of memory (in MB).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
 	Memory *float64 `field:"required" json:"memory" yaml:"memory"`
 	// The name of the virtual machine class.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The percentage of the available CPU capacity which will be reserved.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
 	CpuReservation *float64 `field:"optional" json:"cpuReservation" yaml:"cpuReservation"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/virtual_machine_class#id VirtualMachineClass#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#id VirtualMachineClass#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The percentage of the available memory capacity which will be reserved.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
 	MemoryReservation *float64 `field:"optional" json:"memoryReservation" yaml:"memoryReservation"`
 	// A comma-separated list of GPU devices.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
 	VgpuDevices *[]*string `field:"optional" json:"vgpuDevices" yaml:"vgpuDevices"`
 }
 

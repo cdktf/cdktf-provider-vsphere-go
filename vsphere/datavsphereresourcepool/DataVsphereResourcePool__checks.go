@@ -243,6 +243,14 @@ func (j *jsiiProxy_DataVsphereResourcePool) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataVsphereResourcePool) validateSetParentResourcePoolIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataVsphereResourcePoolParameters(scope constructs.Construct, id *string, config *DataVsphereResourcePoolConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

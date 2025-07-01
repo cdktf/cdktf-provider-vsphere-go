@@ -24,7 +24,7 @@ type DataVsphereLicenseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The license key value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/license#license_key DataVsphereLicense#license_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/license#license_key DataVsphereLicense#license_key}
 	LicenseKey *string `field:"required" json:"licenseKey" yaml:"licenseKey"`
 }
 

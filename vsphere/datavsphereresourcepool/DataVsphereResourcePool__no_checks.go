@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataVsphereResourcePool) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataVsphereResourcePool) validateSetParentResourcePoolIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataVsphereResourcePoolParameters(scope constructs.Construct, id *string, config *DataVsphereResourcePoolConfig) error {
 	return nil
 }

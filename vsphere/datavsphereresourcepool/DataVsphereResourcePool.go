@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool vsphere_resource_pool}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool vsphere_resource_pool}.
 type DataVsphereResourcePool interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -50,6 +50,9 @@ type DataVsphereResourcePool interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ParentResourcePoolId() *string
+	SetParentResourcePoolId(val *string)
+	ParentResourcePoolIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -93,6 +96,7 @@ type DataVsphereResourcePool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParentResourcePoolId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -262,6 +266,26 @@ func (j *jsiiProxy_DataVsphereResourcePool) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataVsphereResourcePool) ParentResourcePoolId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentResourcePoolId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVsphereResourcePool) ParentResourcePoolIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parentResourcePoolIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVsphereResourcePool) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -313,7 +337,7 @@ func (j *jsiiProxy_DataVsphereResourcePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool vsphere_resource_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool vsphere_resource_pool} Data Source.
 func NewDataVsphereResourcePool(scope constructs.Construct, id *string, config *DataVsphereResourcePoolConfig) DataVsphereResourcePool {
 	_init_.Initialize()
 
@@ -331,7 +355,7 @@ func NewDataVsphereResourcePool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool vsphere_resource_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool vsphere_resource_pool} Data Source.
 func NewDataVsphereResourcePool_Override(d DataVsphereResourcePool, scope constructs.Construct, id *string, config *DataVsphereResourcePoolConfig) {
 	_init_.Initialize()
 
@@ -409,6 +433,17 @@ func (j *jsiiProxy_DataVsphereResourcePool)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVsphereResourcePool)SetParentResourcePoolId(val *string) {
+	if err := j.validateSetParentResourcePoolIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parentResourcePoolId",
 		val,
 	)
 }
@@ -734,6 +769,14 @@ func (d *jsiiProxy_DataVsphereResourcePool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVsphereResourcePool) ResetParentResourcePoolId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetParentResourcePoolId",
 		nil, // no parameters
 	)
 }

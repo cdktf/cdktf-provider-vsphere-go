@@ -107,6 +107,10 @@ func (j *jsiiProxy_DataVsphereNetwork) validateSetRetryTimeoutParameters(val *fl
 	return nil
 }
 
+func (j *jsiiProxy_DataVsphereNetwork) validateSetVpcIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataVsphereNetworkParameters(scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_virtual_switch_pvlan_mapping vsphere_distributed_virtual_switch_pvlan_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_virtual_switch_pvlan_mapping vsphere_distributed_virtual_switch_pvlan_mapping}.
 type DistributedVirtualSwitchPvlanMappingA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DistributedVirtualSwitchPvlanMappingA) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_virtual_switch_pvlan_mapping vsphere_distributed_virtual_switch_pvlan_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_virtual_switch_pvlan_mapping vsphere_distributed_virtual_switch_pvlan_mapping} Resource.
 func NewDistributedVirtualSwitchPvlanMappingA(scope constructs.Construct, id *string, config *DistributedVirtualSwitchPvlanMappingAConfig) DistributedVirtualSwitchPvlanMappingA {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDistributedVirtualSwitchPvlanMappingA(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_virtual_switch_pvlan_mapping vsphere_distributed_virtual_switch_pvlan_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_virtual_switch_pvlan_mapping vsphere_distributed_virtual_switch_pvlan_mapping} Resource.
 func NewDistributedVirtualSwitchPvlanMappingA_Override(d DistributedVirtualSwitchPvlanMappingA, scope constructs.Construct, id *string, config *DistributedVirtualSwitchPvlanMappingAConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network vsphere_network}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network vsphere_network}.
 type DataVsphereNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -74,6 +74,9 @@ type DataVsphereNetwork interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
+	VpcId() *string
+	SetVpcId(val *string)
+	VpcIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -109,6 +112,7 @@ type DataVsphereNetwork interface {
 	ResetOverrideLogicalId()
 	ResetRetryInterval()
 	ResetRetryTimeout()
+	ResetVpcId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -418,8 +422,28 @@ func (j *jsiiProxy_DataVsphereNetwork) Type() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataVsphereNetwork) VpcId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network vsphere_network} Data Source.
+func (j *jsiiProxy_DataVsphereNetwork) VpcIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network vsphere_network} Data Source.
 func NewDataVsphereNetwork(scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) DataVsphereNetwork {
 	_init_.Initialize()
 
@@ -437,7 +461,7 @@ func NewDataVsphereNetwork(scope constructs.Construct, id *string, config *DataV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network vsphere_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network vsphere_network} Data Source.
 func NewDataVsphereNetwork_Override(d DataVsphereNetwork, scope constructs.Construct, id *string, config *DataVsphereNetworkConfig) {
 	_init_.Initialize()
 
@@ -556,6 +580,17 @@ func (j *jsiiProxy_DataVsphereNetwork)SetRetryTimeout(val *float64) {
 	_jsii_.Set(
 		j,
 		"retryTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVsphereNetwork)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vpcId",
 		val,
 	)
 }
@@ -908,6 +943,14 @@ func (d *jsiiProxy_DataVsphereNetwork) ResetRetryTimeout() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRetryTimeout",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVsphereNetwork) ResetVpcId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVpcId",
 		nil, // no parameters
 	)
 }
