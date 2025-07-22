@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_virtual_switch vsphere_distributed_virtual_switch}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/distributed_virtual_switch vsphere_distributed_virtual_switch}.
 type DistributedVirtualSwitch interface {
 	cdktf.TerraformResource
 	ActiveUplinks() *[]*string
@@ -2575,7 +2575,7 @@ func (j *jsiiProxy_DistributedVirtualSwitch) VsanShareLevelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_virtual_switch vsphere_distributed_virtual_switch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/distributed_virtual_switch vsphere_distributed_virtual_switch} Resource.
 func NewDistributedVirtualSwitch(scope constructs.Construct, id *string, config *DistributedVirtualSwitchConfig) DistributedVirtualSwitch {
 	_init_.Initialize()
 
@@ -2593,7 +2593,7 @@ func NewDistributedVirtualSwitch(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_virtual_switch vsphere_distributed_virtual_switch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/distributed_virtual_switch vsphere_distributed_virtual_switch} Resource.
 func NewDistributedVirtualSwitch_Override(d DistributedVirtualSwitch, scope constructs.Construct, id *string, config *DistributedVirtualSwitchConfig) {
 	_init_.Initialize()
 
