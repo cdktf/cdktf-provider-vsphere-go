@@ -24,15 +24,15 @@ type DataVsphereDistributedVirtualSwitchConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the distributed virtual switch. This can be a name or path.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/data-sources/distributed_virtual_switch#name DataVsphereDistributedVirtualSwitch#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/data-sources/distributed_virtual_switch#name DataVsphereDistributedVirtualSwitch#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The managed object ID of the datacenter the DVS is in.
 	//
 	// This is required if the supplied path is not an absolute path containing a datacenter and there are multiple datacenters in your infrastructure.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/data-sources/distributed_virtual_switch#datacenter_id DataVsphereDistributedVirtualSwitch#datacenter_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/data-sources/distributed_virtual_switch#datacenter_id DataVsphereDistributedVirtualSwitch#datacenter_id}
 	DatacenterId *string `field:"optional" json:"datacenterId" yaml:"datacenterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

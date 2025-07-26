@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/compute_cluster_vm_dependency_rule vsphere_compute_cluster_vm_dependency_rule}.
+// Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/compute_cluster_vm_dependency_rule vsphere_compute_cluster_vm_dependency_rule}.
 type ComputeClusterVmDependencyRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_ComputeClusterVmDependencyRule) VmGroupNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/compute_cluster_vm_dependency_rule vsphere_compute_cluster_vm_dependency_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/compute_cluster_vm_dependency_rule vsphere_compute_cluster_vm_dependency_rule} Resource.
 func NewComputeClusterVmDependencyRule(scope constructs.Construct, id *string, config *ComputeClusterVmDependencyRuleConfig) ComputeClusterVmDependencyRule {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewComputeClusterVmDependencyRule(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/compute_cluster_vm_dependency_rule vsphere_compute_cluster_vm_dependency_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/compute_cluster_vm_dependency_rule vsphere_compute_cluster_vm_dependency_rule} Resource.
 func NewComputeClusterVmDependencyRule_Override(c ComputeClusterVmDependencyRule, scope constructs.Construct, id *string, config *ComputeClusterVmDependencyRuleConfig) {
 	_init_.Initialize()
 
