@@ -43,11 +43,11 @@ func (v *jsiiProxy_VnicIpv6OutputReference) validateGetStringMapAttributeParamet
 	return nil
 }
 
-func (v *jsiiProxy_VnicIpv6OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VnicIpv6OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VnicIpv6OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VnicIpv6OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeClusterVsanDiskGroupList) validateGetParameters(index 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeClusterVsanDiskGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeClusterVsanDiskGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

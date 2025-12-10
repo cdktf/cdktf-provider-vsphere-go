@@ -43,11 +43,11 @@ func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

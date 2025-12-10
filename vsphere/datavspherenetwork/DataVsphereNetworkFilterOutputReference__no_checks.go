@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataVsphereNetworkFilterOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereNetworkFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataVsphereNetworkFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereNetworkFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVsphereNetworkFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

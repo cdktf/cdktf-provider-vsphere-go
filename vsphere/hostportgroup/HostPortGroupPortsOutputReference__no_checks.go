@@ -43,11 +43,11 @@ func (h *jsiiProxy_HostPortGroupPortsOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (h *jsiiProxy_HostPortGroupPortsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HostPortGroupPortsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HostPortGroupPortsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HostPortGroupPortsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

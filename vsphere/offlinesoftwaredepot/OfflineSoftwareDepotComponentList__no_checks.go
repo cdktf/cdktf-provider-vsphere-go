@@ -15,7 +15,7 @@ func (o *jsiiProxy_OfflineSoftwareDepotComponentList) validateGetParameters(inde
 	return nil
 }
 
-func (o *jsiiProxy_OfflineSoftwareDepotComponentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OfflineSoftwareDepotComponentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

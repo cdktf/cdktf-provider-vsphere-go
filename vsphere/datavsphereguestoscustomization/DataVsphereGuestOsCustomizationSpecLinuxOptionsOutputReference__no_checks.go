@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecLinuxOptionsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecLinuxOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecLinuxOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecLinuxOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecLinuxOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

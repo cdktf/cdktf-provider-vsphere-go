@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

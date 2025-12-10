@@ -41,7 +41,7 @@ type VirtualMachineCloneCustomizeNetworkInterfaceList interface {
 	Get(index *float64) VirtualMachineCloneCustomizeNetworkInterfaceOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceList) Get(index *
 	return returns
 }
 
-func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceList) Resolve(_co
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EntityPermissionsPermissionsList) validateGetParameters(index
 	return nil
 }
 
-func (e *jsiiProxy_EntityPermissionsPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EntityPermissionsPermissionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

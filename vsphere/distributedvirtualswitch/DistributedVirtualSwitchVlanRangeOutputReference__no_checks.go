@@ -43,11 +43,11 @@ func (d *jsiiProxy_DistributedVirtualSwitchVlanRangeOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DistributedVirtualSwitchVlanRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DistributedVirtualSwitchVlanRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DistributedVirtualSwitchVlanRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DistributedVirtualSwitchVlanRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

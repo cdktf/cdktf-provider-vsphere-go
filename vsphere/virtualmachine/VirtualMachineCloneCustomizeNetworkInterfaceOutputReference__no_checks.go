@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceOutputReference) 
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineCdromList) validateGetParameters(index *float64
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineCdromList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineCdromList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeClusterVsanFaultDomainsOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeClusterVsanFaultDomainsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeClusterVsanFaultDomainsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeClusterVsanFaultDomainsOutputReference) validatePutFau
 	return nil
 }
 
-func (c *jsiiProxy_ComputeClusterVsanFaultDomainsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeClusterVsanFaultDomainsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

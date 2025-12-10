@@ -43,7 +43,7 @@ func (h *jsiiProxy_HostServicesOutputReference) validateGetStringMapAttributePar
 	return nil
 }
 
-func (h *jsiiProxy_HostServicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HostServicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (h *jsiiProxy_HostServicesOutputReference) validatePutNtpdParameters(value 
 	return nil
 }
 
-func (h *jsiiProxy_HostServicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HostServicesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

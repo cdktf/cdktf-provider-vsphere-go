@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) va
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineCloneCustomizeWindowsOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

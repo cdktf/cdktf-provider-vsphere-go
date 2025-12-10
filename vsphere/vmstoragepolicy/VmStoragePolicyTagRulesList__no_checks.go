@@ -15,7 +15,7 @@ func (v *jsiiProxy_VmStoragePolicyTagRulesList) validateGetParameters(index *flo
 	return nil
 }
 
-func (v *jsiiProxy_VmStoragePolicyTagRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmStoragePolicyTagRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

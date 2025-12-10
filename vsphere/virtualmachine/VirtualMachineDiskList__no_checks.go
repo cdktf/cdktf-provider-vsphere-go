@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineDiskList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

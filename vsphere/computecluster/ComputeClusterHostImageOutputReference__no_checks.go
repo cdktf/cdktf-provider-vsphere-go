@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeClusterHostImageOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_ComputeClusterHostImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeClusterHostImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeClusterHostImageOutputReference) validatePutComponentP
 	return nil
 }
 
-func (c *jsiiProxy_ComputeClusterHostImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeClusterHostImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

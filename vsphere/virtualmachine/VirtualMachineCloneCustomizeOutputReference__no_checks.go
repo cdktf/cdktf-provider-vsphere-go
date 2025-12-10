@@ -43,7 +43,7 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) validateGetStrin
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) validatePutWindo
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

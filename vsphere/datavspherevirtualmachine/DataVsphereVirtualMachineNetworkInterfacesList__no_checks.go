@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataVsphereVirtualMachineNetworkInterfacesList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereVirtualMachineNetworkInterfacesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVsphereVirtualMachineNetworkInterfacesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

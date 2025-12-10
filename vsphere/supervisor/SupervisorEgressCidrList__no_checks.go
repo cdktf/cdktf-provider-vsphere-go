@@ -15,7 +15,7 @@ func (s *jsiiProxy_SupervisorEgressCidrList) validateGetParameters(index *float6
 	return nil
 }
 
-func (s *jsiiProxy_SupervisorEgressCidrList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SupervisorEgressCidrList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

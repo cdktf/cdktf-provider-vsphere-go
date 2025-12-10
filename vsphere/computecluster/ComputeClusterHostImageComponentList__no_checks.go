@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeClusterHostImageComponentList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ComputeClusterHostImageComponentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeClusterHostImageComponentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuestOsCustomizationSpecWindowsOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

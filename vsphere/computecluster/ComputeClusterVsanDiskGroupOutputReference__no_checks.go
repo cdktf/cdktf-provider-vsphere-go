@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeClusterVsanDiskGroupOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ComputeClusterVsanDiskGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeClusterVsanDiskGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeClusterVsanDiskGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeClusterVsanDiskGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

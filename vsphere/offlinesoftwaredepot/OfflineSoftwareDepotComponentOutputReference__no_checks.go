@@ -43,11 +43,11 @@ func (o *jsiiProxy_OfflineSoftwareDepotComponentOutputReference) validateGetStri
 	return nil
 }
 
-func (o *jsiiProxy_OfflineSoftwareDepotComponentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OfflineSoftwareDepotComponentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OfflineSoftwareDepotComponentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OfflineSoftwareDepotComponentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

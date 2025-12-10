@@ -15,7 +15,7 @@ func (d *jsiiProxy_DistributedVirtualSwitchPvlanMappingList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DistributedVirtualSwitchPvlanMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DistributedVirtualSwitchPvlanMappingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

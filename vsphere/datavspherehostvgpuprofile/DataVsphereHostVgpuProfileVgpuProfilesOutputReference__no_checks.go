@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataVsphereHostVgpuProfileVgpuProfilesOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereHostVgpuProfileVgpuProfilesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataVsphereHostVgpuProfileVgpuProfilesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereHostVgpuProfileVgpuProfilesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVsphereHostVgpuProfileVgpuProfilesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

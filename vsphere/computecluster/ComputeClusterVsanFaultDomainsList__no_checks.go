@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeClusterVsanFaultDomainsList) validateGetParameters(ind
 	return nil
 }
 
-func (c *jsiiProxy_ComputeClusterVsanFaultDomainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeClusterVsanFaultDomainsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

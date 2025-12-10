@@ -15,7 +15,7 @@ func (s *jsiiProxy_SupervisorNamespaceList) validateGetParameters(index *float64
 	return nil
 }
 
-func (s *jsiiProxy_SupervisorNamespaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SupervisorNamespaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

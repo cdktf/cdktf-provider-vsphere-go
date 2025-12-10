@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataVsphereVirtualMachineDisksList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereVirtualMachineDisksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVsphereVirtualMachineDisksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

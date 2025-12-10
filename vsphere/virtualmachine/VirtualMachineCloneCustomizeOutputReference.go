@@ -87,7 +87,7 @@ type VirtualMachineCloneCustomizeOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutLinuxOptions(value *VirtualMachineCloneCustomizeLinuxOptions)
 	PutNetworkInterface(value interface{})
 	PutWindowsOptions(value *VirtualMachineCloneCustomizeWindowsOptions)
@@ -102,7 +102,7 @@ type VirtualMachineCloneCustomizeOutputReference interface {
 	ResetWindowsSysprepText()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -684,8 +684,8 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) InterpolationAsL
 	return returns
 }
 
-func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -693,7 +693,7 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) InterpolationFor
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -805,8 +805,8 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) ResetWindowsSysp
 	)
 }
 
-func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -814,7 +814,7 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

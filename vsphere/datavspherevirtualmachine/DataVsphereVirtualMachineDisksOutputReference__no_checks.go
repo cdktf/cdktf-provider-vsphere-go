@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataVsphereVirtualMachineDisksOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereVirtualMachineDisksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataVsphereVirtualMachineDisksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereVirtualMachineDisksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVsphereVirtualMachineDisksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

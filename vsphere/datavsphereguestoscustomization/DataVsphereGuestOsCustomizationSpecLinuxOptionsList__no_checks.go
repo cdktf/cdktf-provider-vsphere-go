@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecLinuxOptionsList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecLinuxOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVsphereGuestOsCustomizationSpecLinuxOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

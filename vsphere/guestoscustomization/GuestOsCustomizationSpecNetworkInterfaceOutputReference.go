@@ -81,7 +81,7 @@ type GuestOsCustomizationSpecNetworkInterfaceOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDnsDomain()
 	ResetDnsServerList()
 	ResetIpv4Address()
@@ -90,7 +90,7 @@ type GuestOsCustomizationSpecNetworkInterfaceOutputReference interface {
 	ResetIpv6Netmask()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -612,8 +612,8 @@ func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) Inte
 	return returns
 }
 
-func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -621,7 +621,7 @@ func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -676,8 +676,8 @@ func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -685,7 +685,7 @@ func (g *jsiiProxy_GuestOsCustomizationSpecNetworkInterfaceOutputReference) Reso
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

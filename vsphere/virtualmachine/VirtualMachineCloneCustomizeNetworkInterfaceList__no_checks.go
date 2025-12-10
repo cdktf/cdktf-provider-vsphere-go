@@ -15,7 +15,7 @@ func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceList) validateGet
 	return nil
 }
 
-func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualMachineCloneCustomizeNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

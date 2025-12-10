@@ -43,7 +43,7 @@ func (g *jsiiProxy_GuestOsCustomizationSpecOutputReference) validateGetStringMap
 	return nil
 }
 
-func (g *jsiiProxy_GuestOsCustomizationSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GuestOsCustomizationSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (g *jsiiProxy_GuestOsCustomizationSpecOutputReference) validatePutWindowsOp
 	return nil
 }
 
-func (g *jsiiProxy_GuestOsCustomizationSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuestOsCustomizationSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
